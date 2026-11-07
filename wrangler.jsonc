@@ -2,6 +2,8 @@
   // richardmcallister.app — static showcase, served by a Workers static-assets deployment (no Worker script).
   "name": "richardmcallister",
   "compatibility_date": "2026-11-01",
+  "workers_dev": true,
+  "preview_urls": true,
   "assets": {
     "directory": "./public",
     "not_found_handling": "404-page",
