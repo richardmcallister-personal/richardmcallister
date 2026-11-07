@@ -20,7 +20,7 @@
 <header class="rm">
   <a class="brand" href="/" aria-label="Richard McAllister, home">
     <span class="mono" aria-hidden="true">RM</span>
-    <h1><small>richardmcallister.app</small>Richard McAllister</h1>
+    <span class="bname"><small>richardmcallister.app</small>Richard McAllister</span>
   </a>
   <div class="from">Built in Skåne<span>Limerick · Manchester · Dublin</span></div>
 </header>
@@ -32,29 +32,23 @@
 </nav>
 
 <main>
-<section class="sheet" aria-labelledby="hi">
-  <h2 id="hi">Hello</h2>
-  <p class="lede">Fan sites for the things I follow, <em>built properly</em>.</p>
-  <p class="intro">Each one does a single job well: what's on next, how it went, where to watch, and the history behind it. All independent, fast on a phone, and kept up to date automatically.</p>
-  <div class="ticker">
-    <div><span class="k">Live sites</span><span class="v">5</span></div>
-    <div><span class="k">Sports</span><span class="v">3</span></div>
-    <div><span class="k">Seasons of United data</span><span class="v">1886→</span></div>
-    <div><span class="k">Dylan concerts logged</span><span class="v">4000+</span></div>
-  </div>
+<section class="sheet hero" aria-labelledby="hi">
+  <h1 id="hi" class="lede">Independent fan sites for sport and music</h1>
+  <p class="intro">I'm Richard, an Irish fan living in Skåne. I build the sites I want to use on match day or when I'm looking up a Dylan setlist.</p>
 </section>
 
 <section id="sites" aria-labelledby="sites-h">
-  <div class="sheet" style="padding-bottom:10px"><h2 id="sites-h">The sites</h2><p class="sub">Tap a card to open the site.</p></div>
+  <h2 id="sites-h" class="sechead">The sites</h2>
   <div class="sites">
 
     <a class="site wide" href="https://manutd.wiki" style="--acc:var(--s-mu)">
       <div class="band"><span class="mono" aria-hidden="true">MU</span><div class="dom">manutd.wiki<small>Manchester United hub</small></div></div>
       <div class="body">
-        <p>The flagship. Match centre, season, squad and a full club archive, with live data through a Cloudflare Worker.</p>
+        <p>Check the next United match, find where to watch, or plan a trip to Old Trafford.</p>
+        <p class="cstat"><b>United seasons since 1886–87</b>, every one in the archive</p>
         <ul>
           <li>Next match, form, head-to-head and where to watch, in your time zone</li>
-          <li>Every season from 1886-87, every player, every opponent and ground</li>
+          <li>Every player, every opponent and every ground</li>
           <li>Trip planner for Old Trafford: “Should I go?”, flights, hotels and tickets</li>
           <li>Kits, records, comebacks, youth, managers, and match alerts</li>
         </ul>
@@ -66,7 +60,7 @@
     <a class="site" href="https://limerickhurling.wiki" style="--acc:var(--s-lim)">
       <div class="band"><span class="mono" aria-hidden="true">LH</span><div class="dom">limerickhurling.wiki<small>Limerick hurling hub</small></div></div>
       <div class="body">
-        <p>League and championship fixtures, results and the honours roll for the Treaty County.</p>
+        <p>Find Limerick's next fixture, see who scored last time, or browse the county's honours.</p>
         <ul>
           <li>Next fixture and latest result with scorers</li>
           <li>All-Ireland, League and Munster titles</li>
@@ -79,7 +73,7 @@
     <a class="site" href="https://irelandfootball.wiki" style="--acc:var(--s-irf)">
       <div class="band"><span class="mono" aria-hidden="true">IF</span><div class="dom">irelandfootball.wiki<small>Republic of Ireland football</small></div></div>
       <div class="body">
-        <p>The men's national team: what's next, where to watch it, and how the group is shaping up.</p>
+        <p>Find the next Ireland match, check the broadcaster in your country, and see where Ireland stand in the group.</p>
         <ul>
           <li>Next match with broadcasters by country</li>
           <li>Recent form and historical record</li>
@@ -92,7 +86,7 @@
     <a class="site" href="https://irelandrugby.wiki" style="--acc:var(--s-irr)">
       <div class="band"><span class="mono" aria-hidden="true">IR</span><div class="dom">irelandrugby.wiki<small>Ireland and the four provinces</small></div></div>
       <div class="body">
-        <p>Ireland, Munster, Leinster, Ulster and Connacht on one page: Tests, URC and Europe.</p>
+        <p>See when Ireland or your province plays next, then catch up on results and tables.</p>
         <ul>
           <li>Upcoming fixtures across all five teams</li>
           <li>Latest results and tables</li>
@@ -105,9 +99,10 @@
     <a class="site" href="https://bobdylan.app" style="--acc:var(--s-bd)">
       <div class="band"><span class="mono" aria-hidden="true">BD</span><div class="dom">bobdylan.app<small>Albums, songs, shows and tickets</small></div></div>
       <div class="body">
-        <p>Six decades of Dylan: concerts and setlists since 1960, all 82 albums, and guided listening journeys.</p>
+        <p>Look up a setlist, explore the songs Dylan plays most often, or find the next show.</p>
+        <p class="cstat"><b>4000+ concerts</b> with setlists, back to 1960</p>
         <ul>
-          <li>4000+ concerts and 800+ songs played live</li>
+          <li>800+ songs played live, all 82 albums</li>
           <li>Upcoming tour dates with ticket links</li>
           <li>Latest setlist and most-played songs</li>
         </ul>
@@ -124,10 +119,10 @@
     <div>
       <h3>footballclub.wiki</h3>
       <p style="margin:0 0 8px">A reference for clubs across world football: 358 clubs in 19 leagues, with an almanac and a sticker-album side project.</p>
-      <div class="row" style="margin-top:6px"><a class="btn ghost" href="https://footballclub.wiki">footballclub.wiki</a></div>
+      <div class="row" style="margin-top:6px"><a class="btn ghost" href="https://footballclub.wiki">Open early preview</a></div>
     </div>
     <div>
-      <h3>Next up</h3>
+      <h3>Coming next</h3>
       <p style="margin:0">A combined Irish sport calendar: every United, Limerick, Ireland football and Ireland rugby fixture in one subscribable feed.</p>
     </div>
   </div>
@@ -186,13 +181,6 @@
         <li><a href="https://github.com/richardmcallister-personal" target="_blank" rel="noopener">GitHub</a></li>
       </ul></div>
     </div>
-    <div class="fsis"><h2>The sites</h2><ul>
-      <li><a href="https://manutd.wiki/" style="--acc:var(--s-mu)"><span class="mono" aria-hidden="true">MU</span><span><b translate="no">Manchester United</b><small translate="no">manutd.wiki</small></span></a></li>
-      <li><a href="https://limerickhurling.wiki/" style="--acc:var(--s-lim)"><span class="mono" aria-hidden="true">LH</span><span><b translate="no">Limerick Hurling</b><small translate="no">limerickhurling.wiki</small></span></a></li>
-      <li><a href="https://irelandfootball.wiki/" style="--acc:var(--s-irf)"><span class="mono" aria-hidden="true">IF</span><span><b translate="no">Ireland Football</b><small translate="no">irelandfootball.wiki</small></span></a></li>
-      <li><a href="https://irelandrugby.wiki/" style="--acc:var(--s-irr)"><span class="mono" aria-hidden="true">IR</span><span><b translate="no">Ireland Rugby</b><small translate="no">irelandrugby.wiki</small></span></a></li>
-      <li><a href="https://bobdylan.app/" style="--acc:var(--s-bd)"><span class="mono" aria-hidden="true">BD</span><span><b translate="no">Bob Dylan</b><small translate="no">bobdylan.app</small></span></a></li>
-    </ul></div>
   </div>
   <p class="fsmall">© <span id="yr">2026</span> Richard McAllister. Hosted on Cloudflare Workers; no cookies, no tracking. · Appearance:<span class="theme" role="group" aria-label="Appearance"><button type="button" data-t="">auto</button><button type="button" data-t="light">light</button><button type="button" data-t="dark">dark</button></span></p>
 </footer>
