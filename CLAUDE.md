@@ -12,3 +12,4 @@ ink `#16181D` band, off-white `#F6F5F2` ground, orange `#E4572E` accent (logo do
 Rules: commit as Richard (`-c user.name="Richard McAllister" -c user.email=richardmcallister@gmail.com`);
 `node --check` the inline script before pushing; check light + dark at 1280 and 390 wide with no horizontal overflow.
 `tesla.richardmcallister.app` is a separate project — don't route it here.
+When `site.css` changes, bump the `?v=` stamp on its <link> in every HTML file so browsers don't pair new HTML with an old stylesheet.
