@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en-IE">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Richard McAllister · sites</title>
+<meta name="description" content="Richard McAllister's independent sites: manutd.wiki, limerickhurling.wiki, irelandfootball.wiki, irelandrugby.wiki and bobdylan.app.">
+<meta name="theme-color" content="#da020e">
+<meta property="og:title" content="Richard McAllister · sites">
+<meta property="og:description" content="Five fan sites for the things I follow: United, Limerick hurling, Ireland football and rugby, and Bob Dylan.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://richardmcallister.app/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/site.css">
+<script>try{var t=localStorage.getItem("rm-theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+<div class="wrap">
+
+<header class="rm">
+  <a class="brand" href="/" aria-label="Richard McAllister, home">
+    <span class="mono" aria-hidden="true">RM</span>
+    <h1><small>richardmcallister.app</small>Richard McAllister</h1>
+  </a>
+  <div class="from">Built in Skåne<span>Limerick · Manchester · Dublin</span></div>
+</header>
+<nav class="rmnav" aria-label="Sections">
+  <a href="#sites">Sites</a>
+  <a href="#building">Also building</a>
+  <a href="#stack">How they're built</a>
+  <a href="#about">About</a>
+</nav>
+
+<main>
+<section class="sheet" aria-labelledby="hi">
+  <h2 id="hi">Hello</h2>
+  <p class="lede">Fan sites for the things I follow, <em>built properly</em>.</p>
+  <p class="intro">Each one does a single job well: what's on next, how it went, where to watch, and the history behind it. All independent, fast on a phone, and kept up to date automatically.</p>
+  <div class="ticker">
+    <div><span class="k">Live sites</span><span class="v">5</span></div>
+    <div><span class="k">Sports</span><span class="v">3</span></div>
+    <div><span class="k">Seasons of United data</span><span class="v">1886→</span></div>
+    <div><span class="k">Dylan concerts logged</span><span class="v">4000+</span></div>
+  </div>
+</section>
+
+<section id="sites" aria-labelledby="sites-h">
+  <div class="sheet" style="padding-bottom:10px"><h2 id="sites-h">The sites</h2><p class="sub">Tap a card to open the site.</p></div>
+  <div class="sites">
+
+    <a class="site wide" href="https://manutd.wiki" style="--acc:var(--s-mu)">
+      <div class="band"><span class="mono" aria-hidden="true">MU</span><div class="dom">manutd.wiki<small>Manchester United hub</small></div></div>
+      <div class="body">
+        <p>The flagship. Match centre, season, squad and a full club archive, with live data through a Cloudflare Worker.</p>
+        <ul>
+          <li>Next match, form, head-to-head and where to watch, in your time zone</li>
+          <li>Every season from 1886-87, every player, every opponent and ground</li>
+          <li>Trip planner for Old Trafford: “Should I go?”, flights, hotels and tickets</li>
+          <li>Kits, records, comebacks, youth, managers, and match alerts</li>
+        </ul>
+        <div><span class="chip">Live data</span><span class="chip">Archive</span><span class="chip">Installable</span><span class="chip">Push alerts</span></div>
+        <span class="go">Open manutd.wiki →</span>
+      </div>
+    </a>
+
+    <a class="site" href="https://limerickhurling.wiki" style="--acc:var(--s-lim)">
+      <div class="band"><span class="mono" aria-hidden="true">LH</span><div class="dom">limerickhurling.wiki<small>Limerick hurling hub</small></div></div>
+      <div class="body">
+        <p>League and championship fixtures, results and the honours roll for the Treaty County.</p>
+        <ul>
+          <li>Next fixture and latest result with scorers</li>
+          <li>All-Ireland, League and Munster titles</li>
+          <li>All-time top scorers</li>
+        </ul>
+        <span class="go">Open limerickhurling.wiki →</span>
+      </div>
+    </a>
+
+    <a class="site" href="https://irelandfootball.wiki" style="--acc:var(--s-irf)">
+      <div class="band"><span class="mono" aria-hidden="true">IF</span><div class="dom">irelandfootball.wiki<small>Republic of Ireland football</small></div></div>
+      <div class="body">
+        <p>The men's national team: what's next, where to watch it, and how the group is shaping up.</p>
+        <ul>
+          <li>Next match with broadcasters by country</li>
+          <li>Recent form and historical record</li>
+          <li>Live group table</li>
+        </ul>
+        <span class="go">Open irelandfootball.wiki →</span>
+      </div>
+    </a>
+
+    <a class="site" href="https://irelandrugby.wiki" style="--acc:var(--s-irr)">
+      <div class="band"><span class="mono" aria-hidden="true">IR</span><div class="dom">irelandrugby.wiki<small>Ireland and the four provinces</small></div></div>
+      <div class="body">
+        <p>Ireland, Munster, Leinster, Ulster and Connacht on one page: Tests, URC and Europe.</p>
+        <ul>
+          <li>Upcoming fixtures across all five teams</li>
+          <li>Latest results and tables</li>
+          <li>Each province's last game and next opponent</li>
+        </ul>
+        <span class="go">Open irelandrugby.wiki →</span>
+      </div>
+    </a>
+
+    <a class="site" href="https://bobdylan.app" style="--acc:var(--s-bd)">
+      <div class="band"><span class="mono" aria-hidden="true">BD</span><div class="dom">bobdylan.app<small>Albums, songs, shows and tickets</small></div></div>
+      <div class="body">
+        <p>Six decades of Dylan: concerts and setlists since 1960, all 82 albums, and guided listening journeys.</p>
+        <ul>
+          <li>4000+ concerts and 800+ songs played live</li>
+          <li>Upcoming tour dates with ticket links</li>
+          <li>Latest setlist and most-played songs</li>
+        </ul>
+        <span class="go">Open bobdylan.app →</span>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<section id="building" class="sheet" aria-labelledby="b-h">
+  <h2 id="b-h">Also building</h2>
+  <div class="two">
+    <div>
+      <h3>footballclub.wiki</h3>
+      <p style="margin:0 0 8px">A reference for clubs across world football: 358 clubs in 19 leagues, with an almanac and a sticker-album side project.</p>
+      <div class="row" style="margin-top:6px"><a class="btn ghost" href="https://footballclub.wiki">footballclub.wiki</a></div>
+    </div>
+    <div>
+      <h3>Next up</h3>
+      <p style="margin:0">A combined Irish sport calendar: every United, Limerick, Ireland football and Ireland rugby fixture in one subscribable feed.</p>
+    </div>
+  </div>
+</section>
+
+<section id="stack" class="sheet" aria-labelledby="s-h">
+  <h2 id="s-h">How they're built</h2>
+  <p class="sub" style="margin:0 0 10px">Same pattern for every site: small, cheap to run, and deploys itself on every push.</p>
+  <div class="tw"><table class="rm">
+    <thead><tr><th>Layer</th><th>Choice</th><th class="why">Why</th></tr></thead>
+    <tbody>
+      <tr><td>Pages</td><td>Static HTML and Hugo</td><td class="why">Loads instantly, nothing to patch</td></tr>
+      <tr><td>Hosting</td><td>Cloudflare Workers</td><td class="why">Global edge, custom domains, free tier covers it</td></tr>
+      <tr><td>Live data</td><td>Worker proxy with KV cache</td><td class="why">API keys stay server-side; one fetch serves everyone</td></tr>
+      <tr><td>Sources</td><td>Sports data APIs, Wikipedia</td><td class="why">Fixtures and results live; history built into JSON</td></tr>
+      <tr><td>Deploys</td><td>GitHub → Workers Builds</td><td class="why">Push to main and it's live in about a minute</td></tr>
+      <tr><td>Design</td><td>One system, per-site colour</td><td class="why">Grey ground, white cards, light and dark</td></tr>
+      <tr><td>Build partner</td><td>Claude Code</td><td class="why">Pair-programmed end to end</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section id="about" class="sheet" aria-labelledby="a-h">
+  <h2 id="a-h">About</h2>
+  <p style="margin:0;max-width:62ch">I'm Irish, living in Skåne in the south of Sweden. By day I run technology and digital for an international business; these sites are where I build for fun: United since childhood, Limerick in the blood, Ireland whatever the sport, and Dylan on the stereo.</p>
+  <div class="row">
+    <a class="btn" href="https://manutd.wiki">Start with manutd.wiki</a>
+    <a class="btn ghost" href="https://github.com/richardmcallister-personal">GitHub</a>
+  </div>
+</section>
+</main>
+
+<footer class="rm">
+  <span>© <span id="yr">2026</span> Richard McAllister. Independent fan sites, not affiliated with any club, union or artist.</span>
+  <span class="theme" role="group" aria-label="Theme">
+    <button type="button" data-t="">Auto</button><button type="button" data-t="light">Light</button><button type="button" data-t="dark">Dark</button>
+  </span>
+</footer>
+
+</div>
+<script>
+(function(){
+  var root=document.documentElement,btns=document.querySelectorAll(".theme button");
+  function mark(){var cur=root.dataset.theme||"";btns.forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.t===cur))})}
+  btns.forEach(function(b){b.addEventListener("click",function(){
+    if(b.dataset.t){root.dataset.theme=b.dataset.t}else{delete root.dataset.theme}
+    try{b.dataset.t?localStorage.setItem("rm-theme",b.dataset.t):localStorage.removeItem("rm-theme")}catch(e){}
+    mark()})});
+  mark();
+  document.getElementById("yr").textContent=new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
