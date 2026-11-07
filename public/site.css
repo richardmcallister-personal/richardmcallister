@@ -52,7 +52,8 @@ p.intro{margin:0;max-width:62ch;color:var(--muted)}
 
 /* site cards */
 .sites{display:grid;grid-template-columns:1fr;gap:12px;margin-top:12px}
-@media (min-width:700px){.sites{grid-template-columns:1fr 1fr}}
+@media (min-width:700px){.sites{grid-template-columns:1fr 1fr}.sites>.site:nth-child(4){grid-column:1/-1}}
+@media (min-width:980px){.sites{grid-template-columns:repeat(3,1fr)}.sites>.site:nth-child(4){grid-column:auto}}
 .site{background:var(--paper);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;box-shadow:0 1px 0 rgba(0,0,0,.05);text-decoration:none;color:var(--ink);transition:transform .15s ease,box-shadow .15s ease}
 .site:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(0,0,0,.12)}
 .site:focus-visible{outline:3px solid var(--accent-ink);outline-offset:2px}
@@ -72,7 +73,8 @@ p.intro{margin:0;max-width:62ch;color:var(--muted)}
 .site .go{margin-top:auto;font-family:var(--head);font-weight:600;font-size:13px;color:var(--accent-ink)}
 .chip{display:inline-block;font-size:11px;padding:3px 7px;border-radius:4px;background:var(--tint);color:var(--ink);margin:0 6px 4px 0}
 .site.wide{grid-column:1/-1}
-@media (min-width:700px){.site.wide{flex-direction:row}.site.wide .band{flex:0 0 300px;align-items:flex-start;flex-direction:column}}
+.site.wide .band{flex-direction:column;align-items:stretch}
+@media (min-width:700px){.site.wide{flex-direction:row}.site.wide .band{flex:0 0 360px;align-items:stretch;flex-direction:column}}
 
 /* tables */
 table.rm{width:100%;border-collapse:collapse;font-size:15px}
@@ -121,3 +123,34 @@ footer.rm ul{list-style:none;margin:0;padding:0}
 @media (prefers-reduced-motion:reduce){.site{transition:none}.site:hover{transform:none}}
 .pj{display:flex;align-items:center;gap:10px;color:var(--ink);font-size:15px}
 .pjlogo{width:40px;height:40px;border-radius:9px;flex:none;box-shadow:0 0 0 1px var(--rule)}
+/* cards that hold several links */
+article.site:hover{transform:none;box-shadow:0 1px 0 rgba(0,0,0,.05)}
+.site .go{text-decoration:none;align-self:flex-start}
+.site .go:hover{text-decoration:underline}
+.bandhead{display:flex;align-items:center;gap:12px}
+.site.wide .band{gap:16px}
+.find{border-top:1px solid rgba(255,255,255,.35);padding-top:14px;display:flex;flex-direction:column;gap:4px}
+.find p{margin:0}
+.find-k{font-family:var(--head);font-weight:600;font-size:11px;opacity:.85}
+.find-when{font-size:13px;opacity:.9}
+.find-score{font-family:var(--head);font-weight:600;font-size:20px;line-height:1.2;margin:2px 0 4px!important}
+.find-score b{font-weight:300;padding:0 4px;font-variant-numeric:tabular-nums}
+.find-note{font-size:14px;line-height:1.45}
+.find-go{color:#fff;font-family:var(--head);font-weight:600;font-size:14px;margin-top:8px;align-self:flex-start;min-height:32px;display:inline-flex;align-items:center;text-underline-offset:3px}
+.find-go:focus-visible,.links a:focus-visible,.pick-go:focus-visible{outline:3px solid currentColor;outline-offset:2px;border-radius:4px}
+ul.links li{padding:0;border-bottom:1px solid var(--rule)}
+ul.links li::before{display:none}
+ul.links a{display:flex;align-items:center;justify-content:space-between;width:100%;min-height:44px;text-decoration:none;font-weight:600;font-size:15px}
+ul.links a::after{content:"→";color:var(--accent-ink)}
+ul.links a:hover{color:var(--accent-ink)}
+.pick-show{display:flex;flex-direction:column;gap:4px;min-height:168px}
+.pick-open{font-size:14px;opacity:.9;margin:0}
+.pick-open b{font-weight:600;opacity:1}
+.pick-acts{display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px;margin-top:8px}
+.pick-acts .find-go{margin-top:0}
+.pick-btn{font:inherit;font-family:var(--head);font-weight:600;font-size:13px;min-height:44px;padding:0 16px;border:0;border-radius:8px;background:#fff;color:var(--acc);cursor:pointer}
+.pick-btn:hover{background:rgba(255,255,255,.88)}
+.pick-btn:focus-visible{outline:3px solid #fff;outline-offset:2px}
+.pick.flip .pick-show{animation:pickin .25s ease}
+@keyframes pickin{from{opacity:.2;transform:translateY(4px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.pick.flip .pick-show{animation:none}}
