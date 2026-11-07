@@ -1,13 +1,13 @@
-/* richardmcallister.app — manutd.wiki layout system in Richard's own brand: ink masthead, warm off-white ground,
-   white cards, orange as the one accent (from the tile mark's centre dot).
+/* richardmcallister.app — manutd.wiki layout system in Richard's RMC brand: ink masthead, paper ground,
+   white cards, signal orange as the one accent (the C key). Space Grotesk for headings.
    Every colour is a token; dark mode redefines the tokens only. */
-:root{--bg:#F6F5F2;--paper:#fff;--ink:#16181D;--muted:#6b6a66;--rule:#e4e2dc;--band:#16181D;--on-band:#F6F5F2;--accent:#E4572E;--accent-ink:#B8431F;--black:#16181D;--on-black:#F6F5F2;--tint:#F6F5F2;--radius:18px;color-scheme:light;
- --head:"SF Pro Display",system-ui,-apple-system,BlinkMacSystemFont,Inter,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+:root{--bg:#F6F5F2;--paper:#fff;--ink:#16181D;--muted:#5A5F6B;--rule:#e4e2dc;--band:#16181D;--on-band:#F6F5F2;--accent:#E4572E;--accent-ink:#B8431F;--black:#16181D;--on-black:#F6F5F2;--tint:#F6F5F2;--mark-tile:#16181D;--mark-letter:#F6F5F2;--radius:18px;color-scheme:light;
+ --head:"Space Grotesk","SF Pro Display",system-ui,-apple-system,BlinkMacSystemFont,Inter,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
  --body:"SF Pro Text",system-ui,-apple-system,BlinkMacSystemFont,Inter,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
  /* per-site accents (each site's own theme colour) */
  --s-mu:#da020e;--s-lim:#00693e;--s-irf:#0b6e4f;--s-irr:#0a6b3d;--s-bd:#b3261e;--s-fc:#1d1d1f}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e0f12;--paper:#1b1d22;--ink:#F6F5F2;--muted:#a3a29d;--rule:#33353c;--band:#16181D;--on-band:#F6F5F2;--accent:#E4572E;--accent-ink:#FF8A65;--black:#F6F5F2;--on-black:#16181D;--tint:#24262c;--s-fc:#48484a;color-scheme:dark}}
-:root[data-theme="dark"]{--bg:#0e0f12;--paper:#1b1d22;--ink:#F6F5F2;--muted:#a3a29d;--rule:#33353c;--band:#16181D;--on-band:#F6F5F2;--accent:#E4572E;--accent-ink:#FF8A65;--black:#F6F5F2;--on-black:#16181D;--tint:#24262c;--s-fc:#48484a;color-scheme:dark}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e0f12;--paper:#1b1d22;--ink:#F6F5F2;--muted:#C9CCD3;--rule:#33353c;--band:#16181D;--on-band:#F6F5F2;--accent:#E4572E;--accent-ink:#FF8A65;--black:#F6F5F2;--on-black:#16181D;--tint:#24262c;--mark-tile:#F6F5F2;--mark-letter:#16181D;--s-fc:#48484a;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0e0f12;--paper:#1b1d22;--ink:#F6F5F2;--muted:#C9CCD3;--rule:#33353c;--band:#16181D;--on-band:#F6F5F2;--accent:#E4572E;--accent-ink:#FF8A65;--black:#F6F5F2;--on-black:#16181D;--tint:#24262c;--mark-tile:#F6F5F2;--mark-letter:#16181D;--s-fc:#48484a;color-scheme:dark}
 *{box-sizing:border-box}
 html,body{overflow-x:clip}
 body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.45;margin:0;padding:0 max(16px,env(safe-area-inset-right,0px)) 48px max(16px,env(safe-area-inset-left,0px))}
@@ -28,10 +28,11 @@ nav.rmnav{display:flex;gap:2px;flex-wrap:wrap;align-items:center;padding:6px 0 1
 nav.rmnav a{font-family:var(--head);font-size:13px;color:var(--on-band);text-decoration:none;padding:9px 13px;border-radius:6px;white-space:nowrap}
 nav.rmnav a:hover{background:rgba(255,255,255,.1)}
 nav.rmnav a[aria-current="page"]{background:rgba(255,255,255,.14)}
-.lockup{display:block;height:40px;width:auto}
+.lockup{display:block;height:34px;width:auto}
 .brand .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
-.fname .mark{width:34px;height:34px;color:var(--ink);flex:none}
-.fname .mark .dot{fill:var(--accent)}
+.fname .mark{height:30px;width:auto;flex:none}
+.mark .mt{fill:var(--mark-tile)}
+.mark .ml{fill:var(--mark-letter)}
 
 /* cards */
 .sheet{background:var(--paper);padding:18px 20px;border-radius:var(--radius);margin-top:12px;box-shadow:0 1px 0 rgba(0,0,0,.05)}
@@ -87,7 +88,10 @@ table.rm td:first-child{font-weight:600;white-space:nowrap}
 @media (max-width:760px){.two{grid-template-columns:1fr}}
 .btn{display:inline-flex;align-items:center;min-height:44px;background:var(--black);color:var(--on-black);text-decoration:none;font-family:var(--head);font-weight:600;font-size:13px;padding:0 16px;border-radius:8px}
 .btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--rule)}
-.btn:hover{opacity:.88}
+.btn{box-shadow:0 4px 0 #0E1013;border-radius:12px;transition:transform .06s,box-shadow .06s}
+.btn:hover{opacity:.92}
+.btn:active{transform:translateY(3px);box-shadow:0 1px 0 #0E1013}
+.btn.ghost{box-shadow:none}
 .row{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
 
 footer.rm{margin-top:24px;font-size:12px;color:var(--muted)}
@@ -116,7 +120,7 @@ footer.rm ul{list-style:none;margin:0;padding:0}
 
 @media (max-width:640px){
   .bname{font-size:20px}.from{display:none}
-  .sechead{margin-top:18px}.lockup{height:32px}
+  .sechead{margin-top:18px}.lockup{height:28px}
   .sheet{padding:16px} nav.rmnav{min-height:0}
   table.rm .why{display:none}
 }

@@ -3,7 +3,7 @@
 Static showcase of Richard's sites. No build step, no Worker script: `public/` is served as Workers static assets.
 
 Layout system is manutd.wiki's (see richardmcallister-personal/site1 `static/manutd/mu.css`): white cards `.sheet` radius 18,
-masthead band (header + nav), system type, sentence case, 44px tap targets. Colours are Richard's own brand (`public/brand/`):
+masthead band (header + nav), Space Grotesk headings (system body text), sentence case, 44px tap targets. Colours, logo and type are Richard's RMC brand kit (`public/brand/`, rules: only the C key is ever orange; at 32px and below use the C key alone):
 ink `#16181D` band, off-white `#F6F5F2` ground, orange `#E4572E` accent (logo dot and large marks only; small text uses
 `--accent-ink`, which passes contrast). Favicons and the manifest come from the same logo pack.
 **Every colour goes through a token in `site.css` `:root`** and is redefined for dark mode; per-site accents are
