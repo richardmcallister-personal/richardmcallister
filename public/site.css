@@ -76,11 +76,30 @@ table.rm td:first-child{font-weight:600;white-space:nowrap}
 .btn:hover{opacity:.88}
 .row{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
 
-footer.rm{margin-top:24px;font-size:12px;color:var(--muted);display:flex;flex-wrap:wrap;gap:8px 18px;align-items:center}
+footer.rm{margin-top:24px;font-size:12px;color:var(--muted)}
 footer.rm a{color:var(--ink)}
-.theme{display:inline-flex;border:1px solid var(--rule);border-radius:8px;overflow:hidden}
-.theme button{font:inherit;font-size:12px;background:transparent;color:var(--muted);border:0;padding:6px 10px;min-height:32px;cursor:pointer}
-.theme button[aria-pressed="true"]{background:var(--paper);color:var(--ink);font-weight:600}
+.sitefoot{background:var(--paper);border-radius:var(--radius);padding:22px 20px 18px;box-shadow:0 1px 0 rgba(0,0,0,.05);display:grid;gap:20px}
+.fbrand{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 24px;padding-bottom:16px;border-bottom:1px solid var(--rule)}
+.fname{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--head);font-weight:600;font-size:17px;color:var(--ink)}
+.fname .mono{width:36px;height:36px;font-size:14px;background:var(--red);border-radius:10px}
+.fdata{margin:0;font-size:12px;color:var(--muted);max-width:52ch}
+.fcols{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+@media (max-width:760px){.fcols{grid-template-columns:1fr 1fr}}
+footer.rm h2{font-size:12px;color:var(--muted);border:0;padding:0;margin:0 0 8px;display:block}
+footer.rm ul{list-style:none;margin:0;padding:0}
+.fcol li a{display:inline-flex;align-items:center;min-height:32px;font-size:14px;text-decoration:none}
+.fcol li a:hover{color:var(--red-ink)}
+.fsis{padding-top:16px;border-top:1px solid var(--rule)}
+.fsis ul{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:8px}
+.fsis a{display:flex;align-items:center;gap:10px;min-height:44px;padding:6px 8px;border-radius:10px;text-decoration:none}
+.fsis a:hover{background:var(--tint)}
+.fsis .mono{width:40px;height:40px;font-size:14px;background:var(--acc);border-radius:10px}
+.fsis b{display:block;font-size:14px;font-weight:600}
+.fsis small{display:block;font-size:12px;color:var(--muted)}
+.fsmall{margin:14px 2px 0;line-height:1.8}
+.theme{display:inline-flex;border:1px solid var(--rule);border-radius:8px;overflow:hidden;margin-left:8px;vertical-align:middle}
+.theme button{font:inherit;font-size:11px;background:var(--paper);color:var(--muted);border:0;padding:4px 9px;cursor:pointer}
+.theme button[aria-pressed="true"]{background:var(--black);color:var(--on-black)}
 
 @media (max-width:640px){
   h1{font-size:20px}.from{display:none}.mono{width:36px;height:36px;font-size:14px}
