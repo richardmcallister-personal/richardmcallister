@@ -51,7 +51,10 @@ p.intro{margin:0;max-width:62ch;color:var(--muted)}
 .site:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(0,0,0,.12)}
 .site:focus-visible{outline:3px solid var(--red-ink);outline-offset:2px}
 .site .band{background:var(--acc);color:#fff;padding:16px 18px 14px;display:flex;align-items:center;gap:12px;min-height:84px}
-.site .band .mono{background:rgba(0,0,0,.22)}
+.site .band .logo{width:52px;height:52px;flex:none;border-radius:12px;object-fit:cover;background:#fff;border:2px solid rgba(255,255,255,.9);box-shadow:0 1px 3px rgba(0,0,0,.25)}
+.site .band .logo.pad{object-fit:contain;padding:4px}
+.ficon{width:20px;height:20px;border-radius:5px;object-fit:cover;background:#fff;margin-right:8px;flex:none}
+.ficon.pad{object-fit:contain;padding:1px}
 .site .band .dom{font-family:var(--head);font-weight:600;font-size:19px;line-height:1.1}
 .site .band .dom small{display:block;font-weight:400;font-size:12px;opacity:.9;margin-top:3px}
 .site .body{padding:14px 18px 16px;display:flex;flex-direction:column;gap:10px;flex:1}
