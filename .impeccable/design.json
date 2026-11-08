@@ -1,400 +1,571 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-08T08:44:13+00:00",
+  "generatedAt": "2026-11-08T09:43:30+00:00",
   "title": "Design System: richardmcallister.app",
   "extensions": {
     "colorMeta": {
-      "keycap-ink": {
+      "newsprint": {
         "role": "neutral",
-        "displayName": "Keycap Ink",
-        "canonical": "oklch(20.9% 0.010 268.2)",
-        "tonalRamp": [
-          "#0a0b0d",
-          "#232529",
-          "#404247",
-          "#5f6167",
-          "#808289",
-          "#a2a5ab",
-          "#c7c9ce",
-          "#edeef2"
-        ]
-      },
-      "paper": {
-        "role": "neutral",
-        "displayName": "Paper",
-        "canonical": "oklch(97.0% 0.004 91.4)",
+        "displayName": "Newsprint",
+        "canonical": "oklch(98.5% 0.004 91.4)",
         "tonalRamp": [
           "#0b0b0a",
-          "#252523",
+          "#252524",
           "#434240",
           "#62615f",
           "#838280",
+          "#a6a5a3",
+          "#cac9c7",
+          "#efeeed"
+        ]
+      },
+      "press-ink": {
+        "role": "neutral",
+        "displayName": "Press Ink",
+        "canonical": "oklch(17.7% 0.002 106.6)",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#252524",
+          "#424241",
+          "#616160",
+          "#828281",
+          "#a5a5a4",
+          "#c9c9c8",
+          "#eeeeee"
+        ]
+      },
+      "byline-grey": {
+        "role": "neutral",
+        "displayName": "Byline Grey",
+        "canonical": "oklch(42.0% 0.007 95.2)",
+        "tonalRamp": [
+          "#0b0b0a",
+          "#262523",
+          "#43423f",
+          "#62615d",
+          "#83827e",
+          "#a6a5a1",
+          "#cac9c6",
+          "#efeeed"
+        ]
+      },
+      "column-hairline": {
+        "role": "neutral",
+        "displayName": "Column Hairline",
+        "canonical": "oklch(84.5% 0.011 89.7)",
+        "tonalRamp": [
+          "#0c0b09",
+          "#262521",
+          "#44423c",
+          "#64615a",
+          "#85827b",
+          "#a7a59e",
+          "#cbc9c4",
+          "#efeeec"
+        ]
+      },
+      "logo-plate": {
+        "role": "neutral",
+        "displayName": "Logo Plate",
+        "canonical": "oklch(100.0% 0.000 89.9)",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#a5a5a5",
+          "#c9c9c9",
+          "#eeeeee"
+        ]
+      },
+      "dylan-ground": {
+        "role": "neutral",
+        "displayName": "Dylan Ground",
+        "canonical": "oklch(19.7% 0.005 67.5)",
+        "tonalRamp": [
+          "#0c0b0a",
+          "#262524",
+          "#434240",
+          "#63615e",
+          "#84827f",
+          "#a7a4a2",
+          "#cac9c7",
+          "#efeeed"
+        ]
+      },
+      "highlighter": {
+        "role": "neutral",
+        "displayName": "Highlighter",
+        "canonical": "oklch(91.6% 0.128 94.1)",
+        "tonalRamp": [
+          "#110a00",
+          "#312300",
+          "#553f00",
+          "#795e00",
+          "#9c8000",
+          "#bba452",
+          "#d9c992",
+          "#f7efd0"
+        ]
+      },
+      "united-red": {
+        "role": "primary",
+        "displayName": "United Red",
+        "canonical": "oklch(55.9% 0.228 28.2)",
+        "tonalRamp": [
+          "#220000",
+          "#540000",
+          "#8c0000",
+          "#c20000",
+          "#ec2924",
+          "#ff6d5e",
+          "#ffa799",
+          "#ffdcd3"
+        ]
+      },
+      "limerick-green": {
+        "role": "primary",
+        "displayName": "Limerick Green",
+        "canonical": "oklch(45.8% 0.109 157.1)",
+        "tonalRamp": [
+          "#000f06",
+          "#002e18",
+          "#00502e",
+          "#167347",
+          "#419668",
+          "#74b68e",
+          "#a8d6b9",
+          "#dcf6e5"
+        ]
+      },
+      "ireland-football-green": {
+        "role": "primary",
+        "displayName": "Ireland Football Green",
+        "canonical": "oklch(47.8% 0.098 164.9)",
+        "tonalRamp": [
+          "#000f08",
+          "#002d1e",
+          "#004f37",
+          "#147253",
+          "#409573",
+          "#73b598",
+          "#a8d5c0",
+          "#dcf6e9"
+        ]
+      },
+      "ireland-rugby-green": {
+        "role": "primary",
+        "displayName": "Ireland Rugby Green",
+        "canonical": "oklch(46.5% 0.111 155.2)",
+        "tonalRamp": [
+          "#000f05",
+          "#012e17",
+          "#03502c",
+          "#197345",
+          "#439665",
+          "#75b68c",
+          "#a9d6b7",
+          "#dcf6e4"
+        ]
+      },
+      "dylan-brick": {
+        "role": "primary",
+        "displayName": "Dylan Brick",
+        "canonical": "oklch(50.1% 0.178 28.7)",
+        "tonalRamp": [
+          "#1e0101",
+          "#4b0403",
+          "#7e0b08",
+          "#b0221b",
+          "#d84c3f",
+          "#f37d6e",
+          "#ffb0a3",
+          "#ffe1d8"
+        ]
+      },
+      "footballclub-ink": {
+        "role": "primary",
+        "displayName": "footballclub Ink",
+        "canonical": "oklch(17.7% 0.002 106.6)",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#252524",
+          "#424241",
+          "#616160",
+          "#828281",
+          "#a5a5a4",
+          "#c9c9c8",
+          "#eeeeee"
+        ]
+      },
+      "night-newsprint": {
+        "role": "neutral",
+        "displayName": "Night Newsprint",
+        "canonical": "oklch(18.7% 0.004 84.6)",
+        "tonalRamp": [
+          "#0b0b0a",
+          "#262524",
+          "#434240",
+          "#62615e",
+          "#83827f",
           "#a6a5a2",
           "#cac9c7",
           "#efeeed"
         ]
       },
-      "signal-orange": {
-        "role": "primary",
-        "displayName": "Signal Orange",
-        "canonical": "oklch(63.7% 0.184 36.5)",
-        "tonalRamp": [
-          "#250000",
-          "#520000",
-          "#830000",
-          "#b12300",
-          "#d94d23",
-          "#f97b57",
-          "#ffab8f",
-          "#ffdbc6"
-        ]
-      },
-      "accent-ink": {
-        "role": "primary",
-        "displayName": "Accent Ink",
-        "canonical": "oklch(54.0% 0.159 36.9)",
-        "tonalRamp": [
-          "#220000",
-          "#4d0300",
-          "#7b1600",
-          "#a8340a",
-          "#cf5835",
-          "#ef8263",
-          "#ffb097",
-          "#ffdecb"
-        ]
-      },
-      "slate": {
+      "night-ink": {
         "role": "neutral",
-        "displayName": "Slate",
-        "canonical": "oklch(48.5% 0.020 267.6)",
+        "displayName": "Night Press Ink",
+        "canonical": "oklch(94.0% 0.010 87.5)",
         "tonalRamp": [
-          "#090b0f",
-          "#22252c",
-          "#3e424c",
-          "#5c616d",
-          "#7d828f",
-          "#a0a5b1",
-          "#c5c9d2",
-          "#eceef5"
+          "#0c0b0a",
+          "#262522",
+          "#44423d",
+          "#64615b",
+          "#85827c",
+          "#a7a59f",
+          "#cbc9c5",
+          "#efeeec"
         ]
       },
-      "site-united": {
-        "role": "secondary",
-        "displayName": "United Red",
-        "canonical": "oklch(55.9% 0.228 28.2)",
+      "night-byline-grey": {
+        "role": "neutral",
+        "displayName": "Night Byline Grey",
+        "canonical": "oklch(77.4% 0.013 86.8)",
         "tonalRamp": [
-          "#2a0000",
-          "#5b0000",
-          "#900000",
-          "#c20000",
-          "#ec2924",
-          "#ff6658",
-          "#ff9f8f",
-          "#ffd3c6"
+          "#0c0b09",
+          "#272521",
+          "#44423b",
+          "#646159",
+          "#868279",
+          "#a8a59d",
+          "#cbc9c4",
+          "#f0eeeb"
         ]
       },
-      "site-limerick": {
-        "role": "secondary",
-        "displayName": "Limerick Green",
-        "canonical": "oklch(45.8% 0.109 157.1)",
+      "night-hairline": {
+        "role": "neutral",
+        "displayName": "Night Column Hairline",
+        "canonical": "oklch(34.1% 0.009 88.7)",
+        "tonalRamp": [
+          "#0c0b0a",
+          "#262522",
+          "#43423e",
+          "#63615c",
+          "#84827c",
+          "#a7a5a0",
+          "#cac9c5",
+          "#efeeec"
+        ]
+      },
+      "night-logo-plate": {
+        "role": "neutral",
+        "displayName": "Night Logo Plate",
+        "canonical": "oklch(95.3% 0.010 87.5)",
+        "tonalRamp": [
+          "#0c0b0a",
+          "#262522",
+          "#44423d",
+          "#64615b",
+          "#85827c",
+          "#a7a59f",
+          "#cbc9c5",
+          "#efeeec"
+        ]
+      },
+      "night-highlighter": {
+        "role": "neutral",
+        "displayName": "Night Highlighter",
+        "canonical": "oklch(47.1% 0.089 94.8)",
+        "tonalRamp": [
+          "#0f0b00",
+          "#2d2402",
+          "#4e4107",
+          "#71601a",
+          "#93823f",
+          "#b3a56f",
+          "#d3c9a4",
+          "#f4efd9"
+        ]
+      },
+      "night-united-red": {
+        "role": "primary",
+        "displayName": "Night United Red",
+        "canonical": "oklch(65.5% 0.231 26.4)",
+        "tonalRamp": [
+          "#230000",
+          "#550000",
+          "#8d0000",
+          "#c30000",
+          "#ed232b",
+          "#ff6b62",
+          "#ffa69b",
+          "#ffdcd4"
+        ]
+      },
+      "night-limerick-green": {
+        "role": "primary",
+        "displayName": "Night Limerick Green",
+        "canonical": "oklch(71.4% 0.155 153.7)",
         "tonalRamp": [
           "#001103",
-          "#002f16",
-          "#00512c",
-          "#167347",
-          "#419668",
-          "#6fb88d",
-          "#a1d8b6",
-          "#d3fae1"
+          "#00300e",
+          "#00541e",
+          "#007933",
+          "#009c54",
+          "#5cbc7f",
+          "#9bdbaf",
+          "#d5f9df"
         ]
       },
-      "site-ireland-football": {
-        "role": "secondary",
-        "displayName": "Ireland Football Green",
-        "canonical": "oklch(47.8% 0.098 164.9)",
+      "night-ireland-football-green": {
+        "role": "primary",
+        "displayName": "Night Ireland Football Green",
+        "canonical": "oklch(69.2% 0.130 166.5)",
         "tonalRamp": [
-          "#001106",
-          "#002f1d",
-          "#005036",
-          "#147253",
-          "#409573",
-          "#6eb797",
-          "#a1d7be",
-          "#d3f9e7"
+          "#001007",
+          "#00301d",
+          "#005335",
+          "#007750",
+          "#009a71",
+          "#59ba96",
+          "#9ad9be",
+          "#d5f8e8"
         ]
       },
-      "site-ireland-rugby": {
-        "role": "secondary",
-        "displayName": "Ireland Rugby Green",
-        "canonical": "oklch(46.5% 0.111 155.2)",
+      "night-ireland-rugby-green": {
+        "role": "primary",
+        "displayName": "Night Ireland Rugby Green",
+        "canonical": "oklch(70.5% 0.140 155.3)",
         "tonalRamp": [
-          "#001103",
-          "#002f14",
-          "#00512a",
-          "#197345",
-          "#439665",
-          "#70b88a",
-          "#a2d8b4",
-          "#d4fae0"
+          "#001004",
+          "#003012",
+          "#005325",
+          "#00773c",
+          "#1f9a5c",
+          "#64ba85",
+          "#9fd9b3",
+          "#d7f8e1"
         ]
       },
-      "site-dylan": {
-        "role": "secondary",
-        "displayName": "Dylan Red",
-        "canonical": "oklch(50.1% 0.178 28.7)",
+      "night-dylan-brick": {
+        "role": "primary",
+        "displayName": "Night Dylan Brick",
+        "canonical": "oklch(64.8% 0.146 28.4)",
         "tonalRamp": [
-          "#250000",
-          "#510000",
-          "#820000",
-          "#b0221b",
-          "#d84c3f",
-          "#f8796a",
-          "#ffaa9c",
-          "#ffdacf"
-        ]
-      },
-      "site-footballclub": {
-        "role": "secondary",
-        "displayName": "Footballclub Near-Black",
-        "canonical": "oklch(23.2% 0.004 286.1)",
-        "tonalRamp": [
-          "#0b0b0c",
-          "#252526",
-          "#424244",
-          "#616163",
-          "#828284",
-          "#a5a5a7",
-          "#c9c9cb",
-          "#eeeef0"
+          "#1b0302",
+          "#460f0b",
+          "#751f19",
+          "#a4372d",
+          "#cb5a4e",
+          "#e7867a",
+          "#fbb5aa",
+          "#ffe3dd"
         ]
       }
     },
     "typographyMeta": {
       "display": {
         "displayName": "Display",
-        "purpose": "Hero headline only."
+        "purpose": "Masthead name only."
       },
       "headline": {
         "displayName": "Headline",
-        "purpose": "Section heads."
+        "purpose": "The lead story headline on the front."
+      },
+      "page-head": {
+        "displayName": "Page Head",
+        "purpose": "Page-level heads over a 5px double rule."
       },
       "title": {
         "displayName": "Title",
-        "purpose": "Domain name on each site band."
+        "purpose": "A site's name at the head of its section."
       },
-      "score": {
-        "displayName": "Score",
-        "purpose": "Archive scorelines and show venues on bands; tabular figures."
+      "column-head": {
+        "displayName": "Column Head",
+        "purpose": "Front-page column heads and secondary section heads over a 3px rule."
+      },
+      "standfirst": {
+        "displayName": "Standfirst",
+        "purpose": "Serif italic standfirst under the lead headline."
       },
       "body": {
         "displayName": "Body",
-        "purpose": "Reading text; intro capped at 62ch."
+        "purpose": "Reading text; 17px under 720px."
       },
-      "body-small": {
-        "displayName": "Body small",
-        "purpose": "Lists, stat tiles, footer links."
+      "link": {
+        "displayName": "Link",
+        "purpose": "Link rows inside a site's section."
+      },
+      "action": {
+        "displayName": "Action",
+        "purpose": "Open links, section bar, run-in datelines."
       },
       "label": {
         "displayName": "Label",
-        "purpose": "Nav, buttons, Open links."
+        "purpose": "Datelines, metadata, colophon, edition toggle; tabular figures."
       },
-      "micro-label": {
-        "displayName": "Micro label",
-        "purpose": "Eyebrows, table headers, footer column heads; sentence case."
+      "agate": {
+        "displayName": "Agate",
+        "purpose": "The How they're built table; tabular figures."
       }
     },
-    "shadows": [
-      {
-        "name": "resting-hairline",
-        "value": "0 1px 0 rgba(0,0,0,.05)",
-        "purpose": "Every sheet, site card and footer card at rest."
-      },
-      {
-        "name": "hover-lift",
-        "value": "0 10px 30px rgba(0,0,0,.12)",
-        "purpose": "Single-link site cards on hover, with translateY(-2px)."
-      },
-      {
-        "name": "keycap-base",
-        "value": "0 4px 0 #0E1013",
-        "purpose": "Primary button base; 0 1px 0 when pressed."
-      },
-      {
-        "name": "logo-contact",
-        "value": "0 1px 3px rgba(0,0,0,.25)",
-        "purpose": "Logo tiles on colour bands."
-      }
-    ],
+    "shadows": [],
     "motion": [
       {
-        "name": "card-lift",
-        "value": "transform .15s ease, box-shadow .15s ease",
-        "purpose": "Site card hover lift; off under reduced motion."
+        "name": "ease-arrow",
+        "value": "transform .2s cubic-bezier(.2,.7,.2,1)",
+        "purpose": "Arrow nudges 3px right on link hover."
       },
       {
-        "name": "keycap-press",
-        "value": "transform .06s, box-shadow .06s",
-        "purpose": "Keycap button press."
+        "name": "fade-night",
+        "value": "opacity .25s ease",
+        "purpose": "Dylan night text fades out and in when Another night draws a new show."
       },
       {
-        "name": "pick-in",
-        "value": "pickin .25s ease",
-        "purpose": "Show picker fade-up; off under reduced motion."
+        "name": "reduced-motion",
+        "value": "transition: none",
+        "purpose": "Both transitions are removed under prefers-reduced-motion: reduce."
       }
     ],
     "breakpoints": [
       {
-        "name": "phone-max",
-        "value": "640px"
+        "name": "tablet",
+        "value": "1060px"
       },
       {
-        "name": "two-col",
-        "value": "700px"
-      },
-      {
-        "name": "stack-max",
-        "value": "760px"
-      },
-      {
-        "name": "three-col",
-        "value": "980px"
-      },
-      {
-        "name": "container",
-        "value": "1080px"
+        "name": "mobile",
+        "value": "720px"
       }
     ]
   },
   "components": [
     {
-      "name": "Keycap Button",
-      "kind": "button",
-      "refersTo": "button-keycap",
-      "description": "Primary action; a keycap that presses down.",
-      "html": "<a class=\"ds-btn-key\" href=\"#\">Start with manutd.wiki</a>",
-      "css": ".ds-btn-key{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border-radius:12px;background:var(--black,#16181D);color:var(--on-black,#F6F5F2);text-decoration:none;font-family:var(--head,'Space Grotesk',system-ui,sans-serif);font-weight:600;font-size:13px;box-shadow:0 4px 0 #0E1013;transition:transform .06s,box-shadow .06s}.ds-btn-key:hover{opacity:.92}.ds-btn-key:active{transform:translateY(3px);box-shadow:0 1px 0 #0E1013}.ds-btn-key:focus-visible{outline:3px solid var(--accent-ink,#B8431F);outline-offset:2px}"
-    },
-    {
-      "name": "Ghost Keycap Button",
-      "kind": "button",
-      "refersTo": "button-keycap-ghost",
-      "description": "Secondary link with no base.",
-      "html": "<a class=\"ds-btn-ghost\" href=\"#\">GitHub</a>",
-      "css": ".ds-btn-ghost{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border-radius:12px;background:transparent;color:var(--ink,#16181D);border:1px solid var(--rule,#E4E2DC);text-decoration:none;font-family:var(--head,'Space Grotesk',system-ui,sans-serif);font-weight:600;font-size:13px;}.ds-btn-ghost:hover{background:var(--tint,#F6F5F2)}.ds-btn-ghost:focus-visible{outline:3px solid var(--accent-ink,#B8431F);outline-offset:2px}"
-    },
-    {
-      "name": "On-band Button",
-      "kind": "button",
-      "refersTo": "button-on-band",
-      "description": "White control on a site colour band, text in the site colour.",
-      "html": "<div class=\"ds-band\" style=\"--acc:#b3261e\"><button class=\"ds-btn-band\" type=\"button\">Pick a show</button></div>",
-      "css": ".ds-band{background:var(--acc);padding:16px 18px;border-radius:18px}.ds-btn-band{min-height:44px;padding:0 16px;border:0;border-radius:8px;background:#fff;color:var(--acc);cursor:pointer;font-family:var(--head,'Space Grotesk',system-ui,sans-serif);font-weight:600;font-size:13px;}.ds-btn-band:hover{background:rgba(255,255,255,.88)}.ds-btn-band:focus-visible{outline:3px solid #fff;outline-offset:2px}"
-    },
-    {
-      "name": "Masthead Navigation",
-      "kind": "nav",
-      "refersTo": "nav-link",
-      "description": "Pill links on the ink masthead band.",
-      "html": "<nav class=\"ds-nav\"><a href=\"#\" aria-current=\"page\">Sites</a><a href=\"#\">Also building</a><a href=\"#\">How they're built</a><a href=\"#\">About</a></nav>",
-      "css": ".ds-nav{display:flex;flex-wrap:wrap;gap:2px;background:var(--band,#16181D);padding:6px 8px 12px}.ds-nav a{font-family:var(--head,'Space Grotesk',system-ui,sans-serif);font-size:13px;color:var(--on-band,#F6F5F2);text-decoration:none;padding:9px 13px;border-radius:6px;white-space:nowrap}.ds-nav a:hover{background:rgba(255,255,255,.1)}.ds-nav a[aria-current=page]{background:rgba(255,255,255,.14)}.ds-nav a:focus-visible{outline:3px solid currentColor;outline-offset:2px}"
-    },
-    {
-      "name": "Site Card",
-      "kind": "card",
-      "refersTo": "site-card",
-      "description": "The key on the ring: a site colour band over a white body.",
-      "html": "<a class=\"ds-site\" href=\"#\" style=\"--acc:#00693e\"><div class=\"ds-site-band\"><span class=\"ds-site-logo\"></span><div class=\"ds-site-dom\">limerickhurling.wiki<small>Limerick hurling hub</small></div></div><div class=\"ds-site-body\"><p>Find Limerick's next fixture or browse the county's honours.</p><ul><li>Next fixture and latest result</li><li>All-time top scorers</li></ul><span class=\"ds-site-go\">Open limerickhurling.wiki →</span></div></a>",
-      "css": ".ds-site{display:flex;flex-direction:column;max-width:340px;background:var(--paper,#fff);color:var(--ink,#16181D);border-radius:18px;overflow:hidden;text-decoration:none;box-shadow:0 1px 0 rgba(0,0,0,.05);transition:transform .15s ease,box-shadow .15s ease}.ds-site:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(0,0,0,.12)}.ds-site:focus-visible{outline:3px solid var(--accent-ink,#B8431F);outline-offset:2px}.ds-site-band{background:var(--acc);color:#fff;padding:16px 18px 14px;display:flex;align-items:center;gap:12px;min-height:84px}.ds-site-logo{width:52px;height:52px;border-radius:12px;background:#fff;border:2px solid rgba(255,255,255,.9);box-shadow:0 1px 3px rgba(0,0,0,.25);flex:none}.ds-site-dom{font-family:var(--head,'Space Grotesk',system-ui,sans-serif);font-weight:600;font-size:19px;line-height:1.1}.ds-site-dom small{display:block;font-weight:400;font-size:12px;opacity:.9;margin-top:3px}.ds-site-body{padding:14px 18px 16px;display:flex;flex-direction:column;gap:10px}.ds-site-body p{margin:0;font-size:15px}.ds-site-body ul{list-style:none;margin:0;padding:0;font-size:14px}.ds-site-body li{display:flex;gap:8px;padding:6px 0;border-bottom:1px solid var(--rule,#E4E2DC)}.ds-site-body li:last-child{border-bottom:0}.ds-site-body li::before{content:'';flex:none;width:6px;height:6px;border-radius:50%;background:var(--acc);margin-top:8px}.ds-site-go{font-family:var(--head,'Space Grotesk',system-ui,sans-serif);font-weight:600;font-size:13px;color:var(--accent-ink,#B8431F)}@media (prefers-reduced-motion:reduce){.ds-site{transition:none}.ds-site:hover{transform:none}}"
-    },
-    {
-      "name": "Sheet",
-      "kind": "card",
-      "refersTo": "card-sheet",
-      "description": "Plain white section card with an underlined h2.",
-      "html": "<section class=\"ds-sheet\"><h2>Also building</h2><p>A reference for clubs across world football.</p></section>",
-      "css": ".ds-sheet{background:var(--paper,#fff);color:var(--ink,#16181D);padding:18px 20px;border-radius:18px;box-shadow:0 1px 0 rgba(0,0,0,.05)}.ds-sheet h2{font-family:var(--head,'Space Grotesk',system-ui,sans-serif);font-weight:600;font-size:15px;margin:0 0 10px;padding-bottom:6px;border-bottom:2px solid var(--ink,#16181D);display:inline-block}.ds-sheet p{margin:0;color:var(--muted,#5A5F6B)}"
-    },
-    {
-      "name": "Chip",
-      "kind": "chip",
-      "refersTo": "chip",
-      "description": "Small metadata tag.",
-      "html": "<span class=\"ds-chip\">Early preview</span>",
-      "css": ".ds-chip{display:inline-block;font-size:11px;padding:3px 7px;border-radius:4px;background:var(--tint,#F6F5F2);color:var(--ink,#16181D)}"
-    },
-    {
-      "name": "Stat Tile",
+      "name": "Open Link",
       "kind": "custom",
-      "refersTo": "stat-tile",
-      "description": "One headline fact per card.",
-      "html": "<p class=\"ds-stat\"><b>4000+ concerts</b> with setlists, back to 1960</p>",
-      "css": ".ds-stat{margin:0;font-size:14px;color:var(--muted,#5A5F6B);background:var(--tint,#F6F5F2);border-radius:10px;padding:8px 12px}.ds-stat b{color:var(--ink,#16181D);font-weight:600}"
+      "refersTo": "link-open",
+      "description": "Franklin 800 link in the site colour ending every story and section, with a drawn arrow.",
+      "html": "<a class=\"ds-go\" href=\"#\" style=\"--c:var(--mu,#DA020E)\">Open manutd.wiki</a>",
+      "css": ".ds-go{font-family:var(--head,\"Libre Franklin\",\"Franklin Gothic Medium\",\"Helvetica Neue\",Arial,sans-serif);font-weight:800;font-size:16px;color:var(--c);text-decoration:none;display:inline-flex;align-items:center;min-height:44px;text-underline-offset:.18em}.ds-go::after{content:\"\";display:inline-block;width:.8em;height:.8em;margin-left:.35em;background:currentColor;-webkit-mask:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M1 8h12M8.5 3.5 13 8l-4.5 4.5' fill='none' stroke='black' stroke-width='2.2' stroke-linecap='square'/%3E%3C/svg%3E\") center/contain no-repeat;mask:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M1 8h12M8.5 3.5 13 8l-4.5 4.5' fill='none' stroke='black' stroke-width='2.2' stroke-linecap='square'/%3E%3C/svg%3E\") center/contain no-repeat;transition:transform .2s cubic-bezier(.2,.7,.2,1)}.ds-go:hover{text-decoration:underline;text-decoration-thickness:2px}.ds-go:hover::after{transform:translateX(3px)}.ds-go:focus-visible{outline:3px solid var(--ink,#111110);outline-offset:3px}"
+    },
+    {
+      "name": "Another Night Button",
+      "kind": "button",
+      "refersTo": "button-another",
+      "description": "Square ink-outlined button that inverts on hover.",
+      "html": "<button type=\"button\" class=\"ds-another\">Another night</button>",
+      "css": ".ds-another{font-family:var(--head,\"Libre Franklin\",\"Franklin Gothic Medium\",\"Helvetica Neue\",Arial,sans-serif);font-weight:800;font-size:14px;color:var(--ink,#111110);background:transparent;border:1px solid var(--rule,#111110);min-height:44px;padding:0 14px;cursor:pointer;border-radius:0}.ds-another:hover{background:var(--ink,#111110);color:var(--paper,#FBFAF7)}.ds-another:focus-visible{outline:3px solid var(--ink,#111110);outline-offset:3px}"
+    },
+    {
+      "name": "Edition Toggle",
+      "kind": "chip",
+      "refersTo": "edition-toggle",
+      "description": "Auto / Day / Night segmented group in the colophon; pressed state is ink.",
+      "html": "<div class=\"ds-edition\" role=\"group\" aria-label=\"Appearance\"><span>Edition</span><button type=\"button\" aria-pressed=\"true\">Auto</button><button type=\"button\" aria-pressed=\"false\">Day</button><button type=\"button\" aria-pressed=\"false\">Night</button></div>",
+      "css": ".ds-edition{font-family:var(--head,\"Libre Franklin\",\"Franklin Gothic Medium\",\"Helvetica Neue\",Arial,sans-serif);font-size:14px;display:flex;align-items:center;gap:8px;font-weight:600;color:var(--ink,#111110)}.ds-edition button{font:inherit;font-weight:600;color:var(--ink,#111110);background:transparent;border:1px solid var(--hair,#CFCCC4);min-height:44px;padding:0 12px;cursor:pointer;border-radius:0}.ds-edition button:hover{border-color:var(--ink,#111110)}.ds-edition button[aria-pressed=\"true\"]{background:var(--ink,#111110);color:var(--paper,#FBFAF7);border-color:var(--ink,#111110)}.ds-edition button:focus-visible{outline:3px solid var(--ink,#111110);outline-offset:3px}"
+    },
+    {
+      "name": "Section Bar",
+      "kind": "nav",
+      "refersTo": "section-nav-link",
+      "description": "Masthead section bar naming every site in its own colour.",
+      "html": "<nav class=\"ds-sections\"><a href=\"#\" style=\"--c:var(--mu,#DA020E)\">United</a><a href=\"#\" style=\"--c:var(--lim,#00693E)\">Hurling</a><a href=\"#\" style=\"--c:var(--irf,#0B6E4F)\">Ireland football</a><a href=\"#\" style=\"--c:var(--irr,#0A6B3D)\">Ireland rugby</a><a href=\"#\" style=\"--c:var(--bd,#B3261E)\">Dylan</a><a class=\"ds-sp\" href=\"#\">About</a></nav>",
+      "css": ".ds-sections{display:flex;flex-wrap:wrap;gap:0 26px;font-family:var(--head,\"Libre Franklin\",\"Franklin Gothic Medium\",\"Helvetica Neue\",Arial,sans-serif);font-weight:800;font-size:15px;border-top:5px double var(--rule,#111110);border-bottom:1px solid var(--rule,#111110)}.ds-sections a{display:inline-flex;align-items:center;min-height:44px;text-decoration:none;color:var(--c,var(--ink,#111110))}.ds-sections a:hover{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:.18em}.ds-sections a:focus-visible{outline:3px solid var(--ink,#111110);outline-offset:3px}.ds-sections .ds-sp{margin-left:auto}"
+    },
+    {
+      "name": "Site Section Head",
+      "kind": "card",
+      "refersTo": "site-mark",
+      "description": "Signature: 6px colour rule, real logo on its plate, site name with subtitle in the site colour, then link rows.",
+      "html": "<section class=\"ds-sec\" style=\"--c:var(--bd,#B3261E)\"><div class=\"ds-top\"><span class=\"ds-mark\"></span><h3>bobdylan.app<small>Albums, songs, shows and tickets</small></h3></div><ul class=\"ds-links\"><li><a href=\"#\">Next shows and tickets</a></li><li><a href=\"#\">Every concert and setlist</a></li></ul></section>",
+      "css": ".ds-sec{max-width:520px;color:var(--ink,#111110)}.ds-top{display:flex;align-items:center;gap:14px;border-top:6px solid var(--c);padding-top:14px}.ds-mark{width:56px;height:56px;border-radius:8px;flex:none;background:var(--dylan-ground,#171513)}.ds-top h3{margin:0;font-family:var(--head,\"Libre Franklin\",\"Franklin Gothic Medium\",\"Helvetica Neue\",Arial,sans-serif);font-weight:900;font-size:32px;letter-spacing:-.025em;line-height:1}.ds-top small{display:block;font-weight:600;font-size:15px;letter-spacing:0;color:var(--c);margin-top:5px}.ds-links{list-style:none;margin:14px 0 0;padding:0}.ds-links li{border-bottom:1px solid var(--hair,#CFCCC4)}.ds-links a{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:46px;padding:9px 0;line-height:1.3;font-family:var(--head,\"Libre Franklin\",\"Franklin Gothic Medium\",\"Helvetica Neue\",Arial,sans-serif);font-weight:600;font-size:16px;text-decoration:none;color:inherit}.ds-links a::after{content:\"\";display:inline-block;width:.8em;height:.8em;background:var(--c);-webkit-mask:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M1 8h12M8.5 3.5 13 8l-4.5 4.5' fill='none' stroke='black' stroke-width='2.2' stroke-linecap='square'/%3E%3C/svg%3E\") center/contain no-repeat;mask:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M1 8h12M8.5 3.5 13 8l-4.5 4.5' fill='none' stroke='black' stroke-width='2.2' stroke-linecap='square'/%3E%3C/svg%3E\") center/contain no-repeat;transition:transform .2s cubic-bezier(.2,.7,.2,1)}.ds-links a:hover{color:var(--c)}.ds-links a:hover::after{transform:translateX(3px)}.ds-links a:focus-visible{outline:3px solid var(--ink,#111110);outline-offset:3px}"
+    },
+    {
+      "name": "Results Strip",
+      "kind": "custom",
+      "description": "Score as a typeset line between a colour rule and an ink rule.",
+      "html": "<p class=\"ds-strip\" style=\"--c:var(--mu,#DA020E)\"><span>Fleetwood Rangers 2</span><span class=\"ds-comp\">FA Cup, first round</span><span class=\"ds-away\">Newton Heath 2</span></p>",
+      "css": ".ds-strip{display:grid;grid-template-columns:1fr auto 1fr;gap:16px;align-items:baseline;font-family:var(--head,\"Libre Franklin\",\"Franklin Gothic Medium\",\"Helvetica Neue\",Arial,sans-serif);font-weight:800;font-size:20px;color:var(--ink,#111110);border-top:3px solid var(--c);border-bottom:1px solid var(--rule,#111110);padding:10px 0;margin:0;font-variant-numeric:tabular-nums}.ds-comp{font-weight:600;font-size:14px;color:var(--mute,#4E4D49);text-align:center}.ds-away{text-align:right}"
+    },
+    {
+      "name": "Agate Table",
+      "kind": "custom",
+      "description": "Franklin agate table with tabular figures and hairline rows.",
+      "html": "<table class=\"ds-agate\"><thead><tr><th>Layer</th><th>Choice</th><th>Why</th></tr></thead><tbody><tr><td>Pages</td><td>Static HTML and Hugo</td><td>Loads instantly, nothing to patch</td></tr><tr><td>Hosting</td><td>Cloudflare Workers</td><td>Global edge, custom domains</td></tr></tbody></table>",
+      "css": ".ds-agate{width:100%;border-collapse:collapse;font-family:var(--head,\"Libre Franklin\",\"Franklin Gothic Medium\",\"Helvetica Neue\",Arial,sans-serif);font-size:15px;line-height:1.35;color:var(--ink,#111110);font-variant-numeric:tabular-nums}.ds-agate th{text-align:left;font-weight:800;font-size:13px;padding:10px 12px 8px 0;border-bottom:2px solid var(--rule,#111110)}.ds-agate td{padding:10px 12px 10px 0;border-bottom:1px solid var(--hair,#CFCCC4);vertical-align:top}.ds-agate td:first-child{font-weight:800;white-space:nowrap}.ds-agate td:last-child{color:var(--mute,#4E4D49)}"
+    },
+    {
+      "name": "Lead Story with Run-in Dateline",
+      "kind": "custom",
+      "refersTo": "headline",
+      "description": "Franklin 900 headline, serif italic standfirst, body opening with a run-in dateline in the site colour.",
+      "html": "<article class=\"ds-lead\" style=\"--c:var(--mu,#DA020E)\"><h1>Newton Heath refuse extra time and are thrown out of the cup</h1><p class=\"ds-stand\">The club’s first FA Cup tie ends level, and then ends early.</p><p><span class=\"ds-dl\">From the manutd.wiki archive, 30 October 1886.</span> Jack Doughty scored both.</p></article>",
+      "css": ".ds-lead{max-width:640px;color:var(--ink,#111110);font-family:var(--text,\"Source Serif 4\",Georgia,\"Times New Roman\",serif);font-size:18px;line-height:1.55}.ds-lead h1{font-family:var(--head,\"Libre Franklin\",\"Franklin Gothic Medium\",\"Helvetica Neue\",Arial,sans-serif);font-weight:900;font-size:48px;line-height:.98;letter-spacing:-.03em;margin:0 0 16px;text-wrap:balance}.ds-stand{font-size:21px;line-height:1.45;font-style:italic;margin:0 0 16px}.ds-lead p{margin:0 0 12px}.ds-dl{font-family:var(--head,\"Libre Franklin\",\"Franklin Gothic Medium\",\"Helvetica Neue\",Arial,sans-serif);font-weight:800;font-size:.82em;color:var(--c)}"
     }
   ],
   "narrative": {
-    "northStar": "The Keyring",
-    "overview": "Every site Richard runs is a key on one ring, and this page is the ring. Each site card is a key you grab and go: it carries its own club or artist colour in a solid band at the top, while everything around it (the ink masthead, the paper ground, the white cards) stays the same for every site. The RMC three-key logo and the keycap buttons, which press down when you click them, are the signature details. The page should feel plain, warm and tactile: like a well-worn set of keys, not a pitch deck.\n\nThe page is quiet so the sites' colours can be loud. Neutrals are slightly warm (paper, not grey), there is one brand accent, and type is set in sentence case with Space Grotesk for anything that labels or announces and the system font for reading. Layout is a single centred column of white cards on paper. It's dense enough to scan on a phone around match day, with 44px tap targets throughout. Depth is minimal: surfaces sit flat, lift slightly when you hover, and the keycaps press.",
+    "northStar": "The Sunday Back Pages",
+    "overview": "The site is the back pages of a Sunday broadsheet that covers only Richard's teams and Dylan. It reads as a printed page: a heavy grotesque masthead with today's date over a double rule, a section bar, a front of three columns split by hairlines, then one section per site, an agate table and a bylined column. Real archive stories lead, and the sites are the sections. Every story ends in a link into its site.\n\nThe page is dense in the way a newspaper is dense. Columns, rules and type weight carry the structure. There are no boxes, cards or shadows. The ground is newsprint white by day and a warm near-black in the Night edition, and the ink is black or bone. The only colour on the page is each site's own colour, and it stays inside that site's section as rules, names and links, next to the site's real logo, which is its section mark. That keeps each site recognisable while the page reads as one paper rather than a fan-site directory.\n\nConfirmed rejections: the generic fan-site look (crests as decoration, sports-graphics clichés), gimmicks and costume (a teletext version was tried and turned down as hard to read and not his world), and the category default of a hero headline over a row of equal site cards.",
     "keyCharacteristics": [
-      "Ink masthead band across the full width; paper ground; white cards with 18px corners.",
-      "Per-site colour bands carry each site's identity; the frame around them never changes.",
-      "One brand accent, signal orange, kept to the logo's C key and large marks.",
-      "Keycap buttons with a solid base that presses down.",
-      "Light and dark themes defined entirely through tokens."
+      "Libre Franklin at 800 to 900 for everything you scan; Source Serif 4 for everything you read.",
+      "Structure from rules: 5px double under the masthead and page heads, a 1px ink rule under the section bar and front, 1px hairlines between columns and rows, 3 to 6px colour rules on top of each site's section.",
+      "A site's colour appears only inside its own section.",
+      "Two editions, Day and Night, plus Auto, chosen in the colophon.",
+      "Square everywhere except the logos."
     ],
     "rules": [
       {
-        "name": "The One Orange Key Rule",
-        "body": "Only the C key is ever orange. Signal orange appears on the logo and large marks; small text and links use accent ink instead.",
+        "name": "The Own Colour Rule",
+        "body": "A site's colour is set on its section through the `--c` custom property and is used only there: the top rule, the site name's subtitle, the dateline, link hovers, the arrows and the \"Open\" link. Shared furniture (masthead, section rules, toggles, agate, About) is ink. If a colour shows up outside its site's section, it is in the wrong place.",
         "section": "colors"
       },
       {
-        "name": "The Token-Only Rule",
-        "body": "Every colour goes through a token in the `:root` block of `site.css` and is redefined for dark mode. No colour value is written straight into a rule unless it is a translucent overlay on an already-tokened surface.",
+        "name": "The Two Editions Rule",
+        "body": "Every colour is a token in the `site.css` `:root` block and is redefined for Night under both `prefers-color-scheme: dark` (unless `data-theme=\"light\"`) and `:root[data-theme=\"dark\"]`. Night site colours are lighter versions of the same hues, not new hues. Never write a literal colour in a component.",
         "section": "colors"
       },
       {
-        "name": "The Borrowed Colours Rule",
-        "body": "A site's colour lives only inside that site's card. It never tints the masthead, the page ground or another card.",
-        "section": "colors"
-      },
-      {
-        "name": "The Sentence Case Rule",
-        "body": "Every heading, label, button and nav item is in sentence case. No all-caps eyebrows, no letter-spaced shouting.",
+        "name": "The Two Faces Rule",
+        "body": "Franklin is for anything you scan (heads, navigation, links, labels, tables, scores). Source Serif is for anything you read through (standfirsts, decks, stories, the About column). Do not mix them within one role.",
         "section": "typography"
       },
       {
-        "name": "The Two Voices Rule",
-        "body": "Space Grotesk labels and announces; the system font explains. Don't set paragraphs in Space Grotesk or headings in the system font.",
+        "name": "The Run-in Dateline Rule",
+        "body": "A story's source and date open its first paragraph as a run-in (Franklin 800 at 0.82em, in the site colour, with a 20px logo). They never sit above the headline.",
         "section": "typography"
       },
       {
-        "name": "The Flat Until Touched Rule",
-        "body": "Surfaces are flat at rest. Depth appears only when you hover or press: the lift and the keycap press. Never add resting shadows to cards.",
-        "section": "elevation"
+        "name": "The Typographic Apostrophe Rule",
+        "body": "Use curly quotes and apostrophes (’ “ ”) and proper en dashes in ranges (1886–87). Never use straight quotes in copy.",
+        "section": "typography"
       },
       {
-        "name": "The Many-Links Card Stays Put Rule",
-        "body": "A card that holds several links (an `article`, not one big link) does not lift on hover, because lifting suggests the whole card is a single target.",
+        "name": "The Printed Page Rule",
+        "body": "If something needs separating, use a rule. If it needs emphasis, use weight. Nothing floats above the page.",
         "section": "elevation"
       }
     ],
     "dos": [
-      "Do put every new colour in the `:root` block of `site.css` and redefine it under both dark-mode selectors.",
-      "Do give each new site its own site-colour token and set it on its card as the card accent.",
-      "Do keep tap targets at least 44px tall, including link-list rows and buttons.",
-      "Do use accent ink, not signal orange, for any accent text or link.",
-      "Do use the C key alone (no lockup) when the mark is 32px or smaller.",
-      "Do check light and dark at 1280 and 390 wide with no horizontal overflow.",
-      "Do bump the `?v=` stamp on the `site.css` link in every HTML file when the stylesheet changes."
+      "**Do** set every colour as a `:root` token in `site.css` and redefine it for Night under both the `prefers-color-scheme` and `data-theme` selectors.",
+      "**Do** pass a site's colour in through `--c` on its section, and keep it within that section's rules, names and links.",
+      "**Do** use the site's real logo as its section mark, on the logo plate unless the logo has a transparent background.",
+      "**Do** separate content with rules (5px double, 6px or 3px colour, 1px ink, 1px hairline), never with boxes.",
+      "**Do** put a story's source and date in a run-in dateline at the start of the first paragraph.",
+      "**Do** keep every tap target at least 44px tall.",
+      "**Do** draw arrows and icons as SVG masks or inline SVG on currentColor.",
+      "**Do** use typographic apostrophes, quotes and en dashes.",
+      "**Do** end every story with a link into its site."
     ],
     "donts": [
-      "Don't make anything but the C key orange.",
-      "Don't add resting shadows to cards; depth is for hover and press only.",
-      "Don't let a site's colour leak outside its own card.",
-      "Don't use uppercase or letter-spaced labels; everything is sentence case.",
-      "Don't make cards that hold several links lift on hover.",
-      "Don't set paragraphs in Space Grotesk."
+      "**Don't** put kickers or eyebrows above headlines.",
+      "**Don't** use hero-metric figures. Numbers belong in running text, the results strip and the agate table.",
+      "**Don't** number lists that aren't sequences.",
+      "**Don't** use font glyphs for arrows or icons.",
+      "**Don't** add shadows, gradients, cards or rounded containers; only logo plates are rounded.",
+      "**Don't** use a site's colour outside its own section, or introduce a house accent colour.",
+      "**Don't** use crests as decoration, sports-graphics clichés or any costume treatment such as teletext.",
+      "**Don't** use straight quotes or apostrophes in copy."
     ]
   }
 }
