@@ -1,0 +1,35 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "tight-leading",
+        "value": "*",
+        "files": [
+          "public/index.html"
+        ],
+        "createdAt": "2026-11-08T09:10:48.275Z",
+        "reason": "Claude decided: teletext form (user-chosen direction) uses a fixed 1em row grid, flush 2-row title bands and scaleY(2) double height"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "public/index.html"
+        ],
+        "createdAt": "2026-11-08T09:10:48.286Z",
+        "reason": "Claude decided: teletext form (user-chosen direction) uses a fixed 1em row grid, flush 2-row title bands and scaleY(2) double height"
+      },
+      {
+        "rule": "flat-type-hierarchy",
+        "value": "*",
+        "files": [
+          "public/index.html"
+        ],
+        "createdAt": "2026-11-08T09:10:48.298Z",
+        "reason": "Claude decided: teletext form (user-chosen direction) uses a fixed 1em row grid, flush 2-row title bands and scaleY(2) double height"
+      }
+    ]
+  }
+}
