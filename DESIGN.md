@@ -26,9 +26,10 @@ colors:
 typography:
   display:
     fontFamily: "Space Grotesk, SF Pro Display, system-ui, -apple-system, sans-serif"
-    fontSize: "clamp(24px, 3.4vw, 34px)"
-    fontWeight: 600
-    lineHeight: 1.12
+    fontSize: "clamp(38px, 6.4vw, 74px)"
+    fontWeight: 700
+    lineHeight: 1
+    letterSpacing: "-0.03em"
   headline:
     fontFamily: "Space Grotesk, SF Pro Display, system-ui, -apple-system, sans-serif"
     fontSize: "17px"
@@ -141,7 +142,7 @@ Every site Richard runs is a key on one ring, and this page is the ring. Each si
 The page is quiet so the sites' colours can be loud. Neutrals are slightly warm (paper, not grey), there is one brand accent, and type is set in sentence case with Space Grotesk for anything that labels or announces and the system font for reading. Layout is a single centred column of white cards on paper. It's dense enough to scan on a phone around match day, with 44px tap targets throughout. Depth is minimal: surfaces sit flat, lift slightly when you hover, and the keycaps press.
 
 **Key Characteristics:**
-- Ink masthead band across the full width; paper ground; white cards with 18px corners.
+- Ink masthead band across the full width that runs on into a big-type hero; paper ground; white cards with 18px corners.
 - Per-site colour bands carry each site's identity; the frame around them never changes.
 - One brand accent, signal orange, kept to the logo's C key and large marks.
 - Keycap buttons with a solid base that presses down.
@@ -182,7 +183,7 @@ Warm neutrals, one signal accent, and a set of borrowed club colours that each l
 **Character:** Space Grotesk is slightly mechanical and keyboard-like, which matches the keycap world. It handles everything that labels or announces. The system font does the reading so text loads instantly and feels native on each device.
 
 ### Hierarchy
-- **Display**: the hero headline only, capped at about 24 characters per line.
+- **Display**: the hero headline only, set in paper on the ink band, capped at 13 characters per line. Its closing phrase ("sport and music") is the page's one large signal-orange mark.
 - **Headline**: section heads ("The sites", "Also building"). Inside sheets, h2s are 15px with a 2px ink underline sized to the text.
 - **Title**: the domain name on each site band, with a 12px descriptor below it at regular weight.
 - **Score**: archive scorelines and show venues on the bands, with tabular figures. The score itself is set at weight 300.
@@ -197,7 +198,7 @@ Warm neutrals, one signal accent, and a set of borrowed club colours that each l
 
 ## Layout
 
-The page is a single column, centred, at most 1080px wide, with a 16px side gutter that respects safe-area insets. Below the masthead band, content is a stack of white sheets with 12px between them. The site cards form a grid: one column on phones, two from 700px (the fourth card spans both columns so the grid stays even), and three from 980px. Cards marked wide (manutd.wiki, bobdylan.app) span the full row; from 700px they split side by side, with a 360px colour band on the left and the body on the right. Spacing steps between 4, 8, 12, 16 and 20px. Cards pad 18–20px, dropping to 16px under 640px, where the masthead tagline also hides and the lockup shrinks from 34px to 28px tall. Wide tables scroll inside their own container, and their "Why" column is hidden on phones. Nothing may scroll horizontally at 390px.
+The page is a single column, centred, at most 1080px wide, with a 16px side gutter that respects safe-area insets. The masthead's ink band runs on, full width, into the hero, so the page opens on one dark block holding the logo, nav and headline. Below it, content is a stack of white sheets with 12px between them. The site cards form a grid: one column on phones, two from 700px (the fourth card spans both columns so the grid stays even), and three from 980px. Cards marked wide (manutd.wiki, bobdylan.app) span the full row; from 700px they split side by side, with a 360px colour band on the left and the body on the right. Spacing steps between 4, 8, 12, 16 and 20px. Cards pad 18–20px, dropping to 16px under 640px, where the masthead tagline also hides and the lockup shrinks from 34px to 28px tall. Wide tables scroll inside their own container, and their "Why" column is hidden on phones. Nothing may scroll horizontally at 390px.
 
 ## Elevation & Depth
 

@@ -44,6 +44,13 @@ h3{font-family:var(--head);font-weight:600;font-size:13px;color:var(--muted);mar
 .site .body .cstat{font-size:14px;color:var(--muted);background:var(--tint);border-radius:10px;padding:8px 12px}
 .cstat b{color:var(--ink);font-weight:600}
 .lede em{font-style:normal;color:var(--accent-ink)}
+
+/* hero: the ink band runs on from the masthead; big type, signal orange as a large mark */
+.hero{position:relative;z-index:1;padding:28px 0 48px;color:var(--on-band)}
+.hero::before{content:"";position:absolute;inset:0 -100vmax;background:var(--band);z-index:-1}
+.hero .lede{color:var(--on-band);font-weight:700;font-size:clamp(38px,6.4vw,74px);line-height:1;letter-spacing:-.03em;max-width:13ch;margin:0 0 20px;text-wrap:balance}
+.hero .lede em{color:var(--accent)}
+.hero .intro{color:var(--on-band);opacity:.78;font-size:clamp(17px,1.6vw,19px);line-height:1.5;max-width:46ch;text-wrap:pretty}
 p.intro{margin:0;max-width:62ch;color:var(--muted)}
 
 /* ticker */
@@ -119,6 +126,7 @@ footer.rm ul{list-style:none;margin:0;padding:0}
 .theme button[aria-pressed="true"]{background:var(--black);color:var(--on-black)}
 
 @media (max-width:640px){
+  .hero{padding:22px 0 44px}
   .bname{font-size:20px}.from{display:none}
   .sechead{margin-top:18px}.lockup{height:28px}
   .sheet{padding:16px} nav.rmnav{min-height:0}
