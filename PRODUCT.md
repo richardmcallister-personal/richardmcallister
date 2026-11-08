@@ -23,15 +23,17 @@ One person's own stack of fan sites, built for his own use: United since childho
 ## Capabilities and Constraints
 - Static site: everything lives in `public/` (`index.html`, `site.css`, `404.html`, brand assets, per-site logos). No build step, no Worker script.
 - Deployed as Cloudflare Workers static assets (`wrangler.jsonc`), custom domains `richardmcallister.app` and `www`. Pushes to `main` deploy automatically.
-- Light and dark themes, with the choice stored in `localStorage` (`rm-theme`).
+- Light and dark themes (shown as the Day and Night editions, plus Auto), with the choice stored in `localStorage` (`rm-theme`). Both themes and the toggle are a confirmed requirement.
 - Working rules in `CLAUDE.md`: every colour goes through a `:root` token in `site.css`, redefined for dark mode; bump the `?v=` stamp on the `site.css` link in every HTML file when the CSS changes; `node --check` the inline script; check light and dark at 1280 and 390 wide with no horizontal overflow; commit as Richard.
 - `tesla.richardmcallister.app` is a separate project and must not be routed here.
 - Undecided: whether and when the combined Irish sport calendar ships.
 
 ## Brand Commitments
-- RMC brand kit in `public/brand/` (three-key logo, lockups, mark). Only the C key is ever orange. At 32px and below, use the C key on its own.
+- RMC brand kit in `public/brand/` (three-key logo, lockups, mark) is Richard's signature: it appears on the About byline and in the favicons. The mark is used as drawn, so its C key stays orange. At 32px and below, use the C key on its own.
 - Favicons, app icons, the manifest and the share image (`og-image-1200x630.png`) come from the same logo pack.
+- Every fan site keeps its own identity on this page: its real logo and its own colour.
 - Voice: first person, plain and warm, sentence case.
+- Rejected looks: a generic fan site (crests as decoration, sports-graphics clichés) and gimmicks or costumes (a teletext version was tried and rejected as hard to read and not Richard's world).
 - Disclaimer stays: "Independent fan sites, built and run by me. Not affiliated with any club, union or artist."
 
 ## Evidence on Hand

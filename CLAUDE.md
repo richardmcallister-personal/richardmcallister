@@ -2,12 +2,12 @@
 
 Static showcase of Richard's sites. No build step, no Worker script: `public/` is served as Workers static assets.
 
-Layout system is manutd.wiki's (see richardmcallister-personal/site1 `static/manutd/mu.css`): white cards `.sheet` radius 18,
-masthead band (header + nav), Space Grotesk headings (system body text), sentence case, 44px tap targets. Colours, logo and type are Richard's RMC brand kit (`public/brand/`, rules: only the C key is ever orange; at 32px and below use the C key alone):
-ink `#16181D` band, off-white `#F6F5F2` ground, orange `#E4572E` accent (logo dot and large marks only; small text uses
-`--accent-ink`, which passes contrast). Favicons and the manifest come from the same logo pack.
-**Every colour goes through a token in `site.css` `:root`** and is redefined for dark mode; per-site accents are
-`--s-*` tokens set on each card via `--acc`.
+Design: the Sunday back pages of a broadsheet that covers only Richard's teams and Dylan (see `DESIGN.md` and the direction contract in `.impeccable/surfaces/public-index-html.md`).
+Masthead over a double rule; front page with the 1886 archive lead, a Sport column and a Music column; then The sites (United wide, three Irish briefs, Dylan in Music), an agate table and an About column with the RMC mark on the byline.
+Libre Franklin for headlines and labels, Source Serif 4 for reading, both self-hosted from `public/fonts/` (no Google Fonts link).
+Day edition on newsprint white `#FBFAF7`; Night edition on `#141311`.
+**Every colour goes through a token in `site.css` `:root`** and is redefined for dark under both the media query and `[data-theme="dark"]`. Each site's colour (`--mu`, `--lim`, `--irf`, `--irr`, `--bd`) lives only inside its own story or section.
+No kickers above headlines (use a run-in dateline), no hero-metric numerals, typographic apostrophes, 44px tap targets.
 
 Rules: commit as Richard (`-c user.name="Richard McAllister" -c user.email=richardmcallister@gmail.com`);
 `node --check` the inline script before pushing; check light + dark at 1280 and 390 wide with no horizontal overflow.
