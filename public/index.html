@@ -22,7 +22,7 @@
 <link rel="manifest" href="/site.webmanifest">
 <link rel="preload" href="/fonts/libre-franklin-latin-900-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/source-serif-4-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/site.css?v=202611081244">
+<link rel="stylesheet" href="/site.css?v=202611081407">
 <script>try{var t=localStorage.getItem("rm-theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
 </head>
 <body>
@@ -49,13 +49,13 @@
 <div class="front">
   <article class="lead" style="--c:var(--mu)" aria-labelledby="lead-h">
     <h1 id="lead-h">Newton Heath refuse extra time and are thrown out of the cup</h1>
-    <p class="stand">The club’s first FA Cup tie ends level, and then ends early. It is the opening page in an archive of every United season on manutd.wiki.</p>
-    <p class="strip"><span>Fleetwood Rangers 2</span><span class="comp">FA Cup, first round</span><span class="away">Newton Heath 2</span></p>
+    <p class="stand" id="lead-stand">The club’s first FA Cup tie ends level, and then ends early. It is the opening page in an archive of every United season on manutd.wiki.</p>
+    <p class="strip"><span id="lead-home">Fleetwood Rangers 2</span><span class="comp" id="lead-comp">FA Cup, first round</span><span class="away" id="lead-away">Newton Heath 2</span></p>
     <div class="body">
-      <p><span class="dl"><img class="bare" src="/logos/manutd.png" alt="" width="20" height="20">From the manutd.wiki archive, 30 October 1886.</span> Jack Doughty scored both. Newton Heath refused to play extra time and were thrown out of the cup.</p>
+      <p><span class="dl"><img class="bare" src="/logos/manutd.png" alt="" width="20" height="20">From the manutd.wiki archive, <span id="lead-date">30 October 1886</span>.</span> <span id="lead-p1">Jack Doughty scored both. Newton Heath refused to play extra time and were thrown out of the cup.</span></p>
       <p>Every season since 1886–87 has its own page on manutd.wiki, alongside the next match, where to watch it, and how to get to Old Trafford.</p>
     </div>
-    <a class="go" href="https://manutd.wiki/history/season/?s=1886-87">Explore the 1886–87 season</a>
+    <div class="acts"><a class="go" id="lead-go" href="https://manutd.wiki/history/season/?s=1886-87"><span id="lead-season">Explore the 1886–87 season</span></a><button type="button" class="another" id="lead-btn">Another story</button></div>
   </article>
 
   <section class="col" aria-labelledby="fx-h" style="--c:var(--ink)">
@@ -224,6 +224,49 @@
     document.getElementById("pick-go").href=band.site+"/concert/?id="+x[1];}
   document.getElementById("pick-btn").addEventListener("click",function(){var n;do{n=Math.floor(Math.random()*SHOWS.length)}while(n===cur);
     if(still){show(n);return}box.classList.add("out");setTimeout(function(){show(n);box.classList.remove("out")},220)});
+
+  // Front page lead: a story from the manutd.wiki archive, new on each visit and on request
+  var STORIES=[
+    {d:"30 October 1886",s:"1886-87",h:"Newton Heath refuse extra time and are thrown out of the cup",
+     st:"The club’s first FA Cup tie ends level, and then ends early. It is the opening page in an archive of every United season on manutd.wiki.",
+     home:"Fleetwood Rangers 2",comp:"FA Cup, first round",away:"Newton Heath 2",
+     p:"Jack Doughty scored both. Newton Heath refused to play extra time and were thrown out of the cup."},
+    {d:"24 April 1909",s:"1908-09",h:"Sandy Turnbull’s goal wins United their first FA Cup",
+     st:"One goal at Crystal Palace is enough against Bristol City, and the cup comes to Manchester United for the first time.",
+     home:"Manchester United 1",comp:"FA Cup final",away:"Bristol City 0",
+     p:"Sandy Turnbull scored the only goal of the final, played at Crystal Palace in London."},
+    {d:"1 February 1958",s:"1957-58",h:"Nine goals at Highbury in the Busby Babes’ last game in England",
+     st:"Arsenal and United share nine goals in north London. Five days later, the team’s plane crashes at Munich on the way home from Belgrade.",
+     home:"Arsenal 4",comp:"First Division",away:"Manchester United 5",
+     p:"Tommy Taylor scored twice, and Bobby Charlton, Duncan Edwards and Dennis Viollet got the others."},
+    {d:"19 February 1958",s:"1957-58",h:"Thirteen days after Munich, United play again and win",
+     st:"A patched-up side beats Sheffield Wednesday at Old Trafford in the FA Cup fifth round.",
+     home:"Manchester United 3",comp:"FA Cup, fifth round",away:"Sheffield Wednesday 0",
+     p:"Shay Brennan scored twice and Alex Dawson got the third. The run went all the way to Wembley, where Bolton won the final."},
+    {d:"14 May 1994",s:"1993-94",h:"Cantona scores twice from the spot and United win the Double",
+     st:"Chelsea are beaten 4–0 at Wembley, and the FA Cup joins the league title for the first time in the club’s history.",
+     home:"Manchester United 4",comp:"FA Cup final",away:"Chelsea 0",
+     p:"Eric Cantona scored two penalties, then Mark Hughes and Brian McClair added two more."},
+    {d:"14 April 1999",s:"1998-99",h:"Giggs runs through Arsenal and United are in the final",
+     st:"Ten men, a penalty saved in stoppage time, and a solo goal in extra time at Villa Park.",
+     home:"Manchester United 2",comp:"FA Cup semi-final replay, after extra time",away:"Arsenal 1",
+     p:"David Beckham scored first and Ryan Giggs won it in extra time. United went on to win the Treble."}
+  ];
+  var lead=document.querySelector(".lead"),cs=0;
+  function tell(i){var x=STORIES[i];cs=i;
+    document.getElementById("lead-h").textContent=x.h;
+    document.getElementById("lead-stand").textContent=x.st;
+    document.getElementById("lead-home").textContent=x.home;
+    document.getElementById("lead-comp").textContent=x.comp;
+    document.getElementById("lead-away").textContent=x.away;
+    document.getElementById("lead-date").textContent=x.d;
+    document.getElementById("lead-p1").textContent=x.p;
+    document.getElementById("lead-season").textContent="Explore the "+x.s.replace("-","–")+" season";
+    document.getElementById("lead-go").href="https://manutd.wiki/history/season/?s="+x.s;}
+  function other(){var n;do{n=Math.floor(Math.random()*STORIES.length)}while(n===cs);return n}
+  tell(Math.floor(Math.random()*STORIES.length));
+  document.getElementById("lead-btn").addEventListener("click",function(){var n=other();lead.setAttribute("aria-live","polite");
+    if(still){tell(n);return}lead.classList.add("out");setTimeout(function(){tell(n);lead.classList.remove("out")},220)});
 })();
 </script>
 </body>

@@ -101,6 +101,9 @@ ul,ol{list-style:none}
 .another:hover{background:var(--ink);color:var(--paper)}
 .night{transition:opacity .25s ease}
 .night.out{opacity:0}
+.lead > :not(.acts){transition:opacity .25s ease}
+.lead.out > :not(.acts){opacity:0}
+.lead .acts{margin-top:2px}
 
 /* sections, one per site */
 .paper-h{font-family:var(--head);font-weight:900;font-size:clamp(28px,3vw,40px);letter-spacing:-.025em;line-height:1;margin:44px 0 0;padding-bottom:12px;border-bottom:5px double var(--rule)}
@@ -210,4 +213,4 @@ img.bare{background:transparent!important}
  .irish{padding:22px 0 10px;border-left:0;margin-left:0;border-top:1px solid var(--hair)}
  .sec.lead-site{padding-bottom:26px}
 }
-@media (prefers-reduced-motion:reduce){.night,.music figure,.go::after,.links a::after{transition:none}}
+@media (prefers-reduced-motion:reduce){.lead > :not(.acts),.night,.music figure,.go::after,.links a::after{transition:none}}
