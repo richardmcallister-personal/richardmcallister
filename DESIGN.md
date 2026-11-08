@@ -183,7 +183,7 @@ Warm neutrals, one signal accent, and a set of borrowed club colours that each l
 **Character:** Space Grotesk is slightly mechanical and keyboard-like, which matches the keycap world. It handles everything that labels or announces. The system font does the reading so text loads instantly and feels native on each device.
 
 ### Hierarchy
-- **Display**: the hero headline only, set in paper on the ink band, capped at 13 characters per line. Its closing phrase ("get going") is the page's one large signal-orange mark.
+- **Display**: the hero headline only, set in paper on the ink band, capped at 13 characters per line. Its closing phrase ("sport and music") is the page's one large signal-orange mark.
 - **Headline**: section heads ("The sites", "Also building"). Inside sheets, h2s are 15px with a 2px ink underline sized to the text.
 - **Title**: the domain name on each site band, with a 12px descriptor below it at regular weight.
 - **Score**: archive scorelines and show venues on the bands, with tabular figures. The score itself is set at weight 300.
