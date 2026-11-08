@@ -1,0 +1,17 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "public/index.html"
+        ],
+        "createdAt": "2026-11-08T09:22:53.355Z",
+        "reason": "Claude decided: hairline-ruled newspaper rows and column rules; text is inset by 44px min-height rows and column padding"
+      }
+    ]
+  }
+}

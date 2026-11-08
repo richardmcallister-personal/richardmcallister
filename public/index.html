@@ -5,7 +5,8 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Richard McAllister · sites</title>
 <meta name="description" content="Richard McAllister's independent sites: manutd.wiki, limerickhurling.wiki, irelandfootball.wiki, irelandrugby.wiki and bobdylan.app.">
-<meta name="theme-color" content="#16181D">
+<meta name="theme-color" content="#FBFAF7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#141311" media="(prefers-color-scheme: dark)">
 <meta property="og:title" content="Richard McAllister · sites">
 <meta property="og:description" content="Five fan sites for the things I follow: United, Limerick hurling, Ireland football and rugby, and Bob Dylan.">
 <meta property="og:type" content="website">
@@ -19,225 +20,188 @@
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap">
-<link rel="stylesheet" href="/site.css?v=202611080855">
+<link rel="preload" href="/fonts/libre-franklin-latin-900-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/source-serif-4-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/site.css?v=202611080921">
 <script>try{var t=localStorage.getItem("rm-theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
 </head>
 <body>
 <div class="wrap">
 
-<header class="rm">
-  <a class="brand" href="/" aria-label="Richard McAllister, home">
-    <img class="lockup" src="/brand/rmc-lockup-on-dark.svg" alt="" width="277" height="34">
-  </a>
+<header>
+  <div class="mast">
+    <a class="name" href="/">Richard McAllister</a>
+    <p class="dateline">Sport &amp; music · five sites<br><span id="today">Sunday 8 November 2026</span> · Skåne</p>
+  </div>
+  <nav class="sections" aria-label="Sections">
+    <a href="#united" style="--c:var(--mu)">United</a>
+    <a href="#limerick" style="--c:var(--lim)">Hurling</a>
+    <a href="#ireland-football" style="--c:var(--irf)">Ireland football</a>
+    <a href="#ireland-rugby" style="--c:var(--irr)">Ireland rugby</a>
+    <a href="#dylan" style="--c:var(--bd)">Dylan</a>
+    <a class="sp" href="#built">How they're built</a>
+    <a href="#about">About</a>
+  </nav>
 </header>
-<nav class="rmnav" aria-label="Sections">
-  <a href="#sites">Sites</a>
-  <a href="#building">Also building</a>
-  <a href="#stack">How they're built</a>
-  <a href="#about">About</a>
-</nav>
 
 <main>
-<section class="hero" aria-labelledby="hi">
-  <h1 id="hi" class="lede">Independent fan sites for <em>sport and music</em></h1>
-</section>
+<div class="front">
+  <article class="lead" style="--c:var(--mu)" aria-labelledby="lead-h">
+    <h1 id="lead-h">Newton Heath refuse extra time and are thrown out of the cup</h1>
+    <p class="strip"><span>Fleetwood Rangers 2</span><span class="comp">FA Cup, first round</span><span class="away">Newton Heath 2</span></p>
+    <div class="body">
+      <p><span class="dl"><img src="/logos/manutd.png" alt="" width="20" height="20">From the manutd.wiki archive, 30 October 1886.</span> Jack Doughty scored both. Newton Heath refused to play extra time and were thrown out of the cup. It was the club's first FA Cup tie.</p>
+      <p>Every season since 1886–87 has its own page on manutd.wiki, alongside the next match, where to watch it, and how to get to Old Trafford.</p>
+    </div>
+    <a class="go" href="https://manutd.wiki/history/season/?s=1886-87">Explore the 1886–87 season</a>
+  </article>
 
-<section id="sites" aria-labelledby="sites-h">
-  <h2 id="sites-h" class="sechead">The sites</h2>
-  <div class="sites">
+  <section class="col" aria-labelledby="fx-h" style="--c:var(--lim)">
+    <h2 id="fx-h">Fixtures &amp; results</h2>
+    <ul class="fx">
+      <li><a href="https://manutd.wiki/" style="--c:var(--mu)"><img src="/logos/manutd.png" alt="" width="30" height="30"><b>Manchester United</b><small>Next match and where to watch</small></a></li>
+      <li><a href="https://limerickhurling.wiki" style="--c:var(--lim)"><img src="/logos/limerickhurling.png" alt="" width="30" height="30"><b>Limerick hurling</b><small>Next fixture, last result, scorers</small></a></li>
+      <li><a href="https://irelandfootball.wiki" style="--c:var(--irf)"><img src="/logos/irelandfootball.png" alt="" width="30" height="30"><b>Ireland football</b><small>Broadcasters by country, the group</small></a></li>
+      <li><a href="https://irelandrugby.wiki" style="--c:var(--irr)"><img src="/logos/irelandrugby.png" alt="" width="30" height="30"><b>Ireland rugby</b><small>All five teams, results and tables</small></a></li>
+    </ul>
+    <div class="brief" style="--c:var(--fc)">
+      <h2>Also building</h2>
+      <p>footballclub.wiki: a reference for clubs across world football, 358 clubs in 19 leagues, with an almanac and a sticker-album side project.</p>
+      <a class="go" href="https://footballclub.wiki">Open the early preview</a>
+      <p style="margin-top:10px">Coming next: a combined Irish sport calendar, every United, Limerick, Ireland football and Ireland rugby fixture in one subscribable feed.</p>
+    </div>
+  </section>
 
-    <article class="site wide" style="--acc:var(--s-mu)">
-      <div class="band">
-        <div class="bandhead"><img class="logo pad" src="/logos/manutd.png" alt="" width="52" height="52" decoding="async"><div class="dom">manutd.wiki<small>Manchester United hub</small></div></div>
-        <div class="find">
-          <p class="find-k">From the archive · the first FA Cup tie</p>
-          <p class="find-when">Sat 30 Oct 1886 · FA Cup, first round</p>
-          <p class="find-score">Fleetwood Rangers <b>2–2</b> Newton Heath</p>
-          <p class="find-note">Jack Doughty scored both. Newton Heath refused to play extra time and were thrown out of the cup.</p>
-          <a class="find-go" href="https://manutd.wiki/history/season/?s=1886-87">Explore the 1886–87 season →</a>
-        </div>
-      </div>
-      <div class="body">
-        <p>Check the next United match, find where to watch, or plan a trip to Old Trafford.</p>
-        <ul class="links">
-          <li><a href="https://manutd.wiki/">Next match and where to watch</a></li>
-          <li><a href="https://manutd.wiki/trips/">Plan a trip to Old Trafford</a></li>
-          <li><a href="https://manutd.wiki/history/seasons/">Every season since 1886–87</a></li>
-          <li><a href="https://manutd.wiki/squad/">Squad and availability</a></li>
-        </ul>
-        <a class="go" href="https://manutd.wiki">Open manutd.wiki →</a>
-      </div>
-    </article>
+  <section class="col music" aria-labelledby="mu-h" style="--c:var(--bd)">
+    <h2 id="mu-h">Music</h2>
+    <figure><img src="/logos/bobdylan.png" alt="bobdylan.app logo" width="512" height="512"></figure>
+    <div class="night" id="night" aria-live="polite">
+      <h3 id="pick-where">Free Trade Hall, Manchester</h3>
+      <p class="opened"><span id="pick-when">Tue 17 May 1966</span> · Opened with <b id="pick-open">She Belongs to Me</b></p>
+      <p id="pick-note">The “Judas!” night. Bootlegged for decades under the wrong name, as the Royal Albert Hall concert.</p>
+    </div>
+    <div class="acts"><a class="go" id="pick-go" href="https://bobdylan.app/concert/?id=13d6bd6d">See the full setlist</a><button type="button" class="another" id="pick-btn">Another night</button></div>
+  </section>
+</div>
 
-    <a class="site" href="https://limerickhurling.wiki" style="--acc:var(--s-lim)">
-      <div class="band"><img class="logo" src="/logos/limerickhurling.png" alt="" width="52" height="52" decoding="async"><div class="dom">limerickhurling.wiki<small>Limerick hurling hub</small></div></div>
-      <div class="body">
-        <p>Find Limerick's next fixture, see who scored last time, or browse the county's honours.</p>
-        <ul>
-          <li>Next fixture and latest result with scorers</li>
-          <li>All-Ireland, League and Munster titles</li>
-          <li>All-time top scorers</li>
-        </ul>
-        <span class="go">Open limerickhurling.wiki →</span>
-      </div>
-    </a>
-
-    <a class="site" href="https://irelandfootball.wiki" style="--acc:var(--s-irf)">
-      <div class="band"><img class="logo" src="/logos/irelandfootball.png" alt="" width="52" height="52" decoding="async"><div class="dom">irelandfootball.wiki<small>Republic of Ireland football</small></div></div>
-      <div class="body">
-        <p>Find the next Ireland match, check the broadcaster in your country, and see where Ireland stand in the group.</p>
-        <ul>
-          <li>Next match with broadcasters by country</li>
-          <li>Recent form and historical record</li>
-          <li>Live group table</li>
-        </ul>
-        <span class="go">Open irelandfootball.wiki →</span>
-      </div>
-    </a>
-
-    <a class="site" href="https://irelandrugby.wiki" style="--acc:var(--s-irr)">
-      <div class="band"><img class="logo" src="/logos/irelandrugby.png" alt="" width="52" height="52" decoding="async"><div class="dom">irelandrugby.wiki<small>Ireland and the four provinces</small></div></div>
-      <div class="body">
-        <p>See when Ireland or your province plays next, then catch up on results and tables.</p>
-        <ul>
-          <li>Upcoming fixtures across all five teams</li>
-          <li>Latest results and tables</li>
-          <li>Each province's last game and next opponent</li>
-        </ul>
-        <span class="go">Open irelandrugby.wiki →</span>
-      </div>
-    </a>
-
-    <article class="site wide" style="--acc:var(--s-bd)">
-      <div class="band">
-        <div class="bandhead"><img class="logo" src="/logos/bobdylan.png" alt="" width="52" height="52" decoding="async"><div class="dom">bobdylan.app<small>Albums, songs, shows and tickets</small></div></div>
-        <div class="find pick" id="pick">
-          <p class="find-k">Pick a show from the archive</p>
-          <div class="pick-show" aria-live="polite">
-            <p class="find-when" id="pick-when">Tue 17 May 1966</p>
-            <p class="find-score" id="pick-where">Free Trade Hall, Manchester</p>
-            <p class="pick-open">Opened with <b id="pick-open">She Belongs to Me</b></p>
-            <p class="find-note" id="pick-note">The “Judas!” night. Bootlegged for decades under the wrong name, as the Royal Albert Hall concert.</p>
-          </div>
-          <div class="pick-acts"><button type="button" class="pick-btn" id="pick-btn">Pick a show</button><a class="find-go" id="pick-go" href="https://bobdylan.app/concert/?id=13d6bd6d">See the full setlist →</a></div>
-        </div>
-      </div>
-      <div class="body">
-        <p>Look up a setlist, explore the songs Dylan plays most often, or find the next show.</p>
-        <ul class="links">
-          <li><a href="https://bobdylan.app/">Next shows and tickets</a></li>
-          <li><a href="https://bobdylan.app/concerts/">Every concert and setlist</a></li>
-          <li><a href="https://bobdylan.app/songs/">The songs he plays most</a></li>
-          <li><a href="https://bobdylan.app/journeys/">Listening journeys</a></li>
-        </ul>
-        <p class="cstat"><b>4000+ concerts</b> with setlists, back to 1960</p>
-        <a class="go" href="https://bobdylan.app">Open bobdylan.app →</a>
-      </div>
-    </article>
-
-  </div>
-</section>
-
-<section id="building" class="sheet" aria-labelledby="b-h">
-  <h2 id="b-h">Also building</h2>
-  <div class="two">
+<h2 class="paper-h" id="sites">The sites</h2>
+<div class="secs">
+  <section class="sec" id="united" style="--c:var(--mu)" aria-labelledby="united-h">
+    <div class="top"><img src="/logos/manutd.png" alt="" width="56" height="56"><h3 id="united-h">manutd.wiki<small>Manchester United</small></h3></div>
+    <p class="deck">Check the next United match, find where to watch, or plan a trip to Old Trafford.</p>
+    <ul class="links">
+      <li><a href="https://manutd.wiki/">Next match and where to watch</a></li>
+      <li><a href="https://manutd.wiki/trips/">Plan a trip to Old Trafford</a></li>
+      <li><a href="https://manutd.wiki/history/seasons/">Every season since 1886–87</a></li>
+      <li><a href="https://manutd.wiki/squad/">Squad and availability</a></li>
+    </ul>
+    <a class="go" href="https://manutd.wiki">Open manutd.wiki</a>
+  </section>
+  <section class="sec" id="limerick" style="--c:var(--lim)" aria-labelledby="lim-h">
+    <div class="top"><img src="/logos/limerickhurling.png" alt="" width="56" height="56"><h3 id="lim-h">limerickhurling.wiki<small>Limerick hurling</small></h3></div>
+    <p class="deck">Find Limerick's next fixture, see who scored last time, or browse the county's honours.</p>
+    <ul class="links">
+      <li><a href="https://limerickhurling.wiki">Next fixture and latest result with scorers</a></li>
+      <li><a href="https://limerickhurling.wiki">All-Ireland, League and Munster titles</a></li>
+      <li><a href="https://limerickhurling.wiki">All-time top scorers</a></li>
+    </ul>
+    <a class="go" href="https://limerickhurling.wiki">Open limerickhurling.wiki</a>
+  </section>
+  <section class="sec" id="ireland-football" style="--c:var(--irf)" aria-labelledby="irf-h">
+    <div class="top"><img src="/logos/irelandfootball.png" alt="" width="56" height="56"><h3 id="irf-h">irelandfootball.wiki<small>Republic of Ireland football</small></h3></div>
+    <p class="deck">Find the next Ireland match, check the broadcaster in your country, and see where Ireland stand in the group.</p>
+    <ul class="links">
+      <li><a href="https://irelandfootball.wiki">Next match with broadcasters by country</a></li>
+      <li><a href="https://irelandfootball.wiki">Recent form and historical record</a></li>
+      <li><a href="https://irelandfootball.wiki">Live group table</a></li>
+    </ul>
+    <a class="go" href="https://irelandfootball.wiki">Open irelandfootball.wiki</a>
+  </section>
+  <section class="sec" id="ireland-rugby" style="--c:var(--irr)" aria-labelledby="irr-h">
+    <div class="top"><img src="/logos/irelandrugby.png" alt="" width="56" height="56"><h3 id="irr-h">irelandrugby.wiki<small>Ireland and the four provinces</small></h3></div>
+    <p class="deck">See when Ireland or your province plays next, then catch up on results and tables.</p>
+    <ul class="links">
+      <li><a href="https://irelandrugby.wiki">Upcoming fixtures across all five teams</a></li>
+      <li><a href="https://irelandrugby.wiki">Latest results and tables</a></li>
+      <li><a href="https://irelandrugby.wiki">Each province's last game and next opponent</a></li>
+    </ul>
+    <a class="go" href="https://irelandrugby.wiki">Open irelandrugby.wiki</a>
+  </section>
+  <section class="sec wide" id="dylan" style="--c:var(--bd)" aria-labelledby="bd-h">
     <div>
-      <h3 class="pj"><img class="pjlogo" src="/logos/footballclub.svg" alt="" width="40" height="40">footballclub.wiki</h3>
-      <p style="margin:0 0 8px">A reference for clubs across world football: 358 clubs in 19 leagues, with an almanac and a sticker-album side project.</p>
-      <div class="row" style="margin-top:6px"><a class="btn ghost" href="https://footballclub.wiki">Open early preview</a></div>
+      <div class="top"><img src="/logos/bobdylan.png" alt="" width="56" height="56"><h3 id="bd-h">bobdylan.app<small>Albums, songs, shows and tickets</small></h3></div>
+      <p class="deck">Look up a setlist, explore the songs Dylan plays most often, or find the next show.</p>
+      <p class="stat"><b>4000+ concerts</b> with setlists, back to 1960</p>
     </div>
     <div>
-      <h3>Coming next</h3>
-      <p style="margin:0">A combined Irish sport calendar: every United, Limerick, Ireland football and Ireland rugby fixture in one subscribable feed.</p>
+      <ul class="links">
+        <li><a href="https://bobdylan.app/">Next shows and tickets</a></li>
+        <li><a href="https://bobdylan.app/concerts/">Every concert and setlist</a></li>
+        <li><a href="https://bobdylan.app/songs/">The songs he plays most</a></li>
+        <li><a href="https://bobdylan.app/journeys/">Listening journeys</a></li>
+      </ul>
+      <a class="go" href="https://bobdylan.app">Open bobdylan.app</a>
     </div>
-  </div>
-</section>
+  </section>
+</div>
 
-<section id="stack" class="sheet" aria-labelledby="s-h">
-  <h2 id="s-h">How they're built</h2>
-  <p class="sub" style="margin:0 0 10px">Same pattern for every site: small, cheap to run, and deploys itself on every push.</p>
-  <div class="tw"><table class="rm">
-    <thead><tr><th>Layer</th><th>Choice</th><th class="why">Why</th></tr></thead>
-    <tbody>
-      <tr><td>Pages</td><td>Static HTML and Hugo</td><td class="why">Loads instantly, nothing to patch</td></tr>
-      <tr><td>Hosting</td><td>Cloudflare Workers</td><td class="why">Global edge, custom domains, free tier covers it</td></tr>
-      <tr><td>Live data</td><td>Worker proxy with KV cache</td><td class="why">API keys stay server-side; one fetch serves everyone</td></tr>
-      <tr><td>Sources</td><td>Sports data APIs, Wikipedia</td><td class="why">Fixtures and results live; history built into JSON</td></tr>
-      <tr><td>Deploys</td><td>GitHub → Workers Builds</td><td class="why">Push to main and it's live in about a minute</td></tr>
-      <tr><td>Design</td><td>One system, per-site colour</td><td class="why">Grey ground, white cards, light and dark</td></tr>
-      <tr><td>Build partner</td><td>Claude Code</td><td class="why">Pair-programmed end to end</td></tr>
-    </tbody>
-  </table></div>
-</section>
-
-<section id="about" class="sheet" aria-labelledby="a-h">
-  <h2 id="a-h">About</h2>
-  <p style="margin:0;max-width:62ch">I'm Irish, living in Skåne in the south of Sweden. By day I run technology and digital for an international business; these sites are where I build for fun: United since childhood, Limerick in the blood, Ireland whatever the sport, and Dylan on the stereo.</p>
-  <div class="row">
-    <a class="btn" href="https://manutd.wiki">Start with manutd.wiki</a>
-    <a class="btn ghost" href="https://github.com/richardmcallister-personal">GitHub</a>
-  </div>
-</section>
+<div class="two">
+  <section id="built" aria-labelledby="built-h">
+    <h2 class="sechead" id="built-h">How they're built</h2>
+    <p style="font-size:17px;margin:10px 0 4px">Same pattern for every site: small, cheap to run, and deploys itself on every push.</p>
+    <table class="agate">
+      <thead><tr><th scope="col">Layer</th><th scope="col">Choice</th><th scope="col">Why</th></tr></thead>
+      <tbody>
+        <tr><td>Pages</td><td>Static HTML and Hugo</td><td>Loads instantly, nothing to patch</td></tr>
+        <tr><td>Hosting</td><td>Cloudflare Workers</td><td>Global edge, custom domains, free tier covers it</td></tr>
+        <tr><td>Live data</td><td>Worker proxy with KV cache</td><td>API keys stay server-side; one fetch serves everyone</td></tr>
+        <tr><td>Sources</td><td>Sports data APIs, Wikipedia</td><td>Fixtures and results live; history built into JSON</td></tr>
+        <tr><td>Deploys</td><td>GitHub to Workers Builds</td><td>Push to main and it's live in about a minute</td></tr>
+        <tr><td>Design</td><td>One system, per-site colour</td><td>Light and dark on every site</td></tr>
+        <tr><td>Partner</td><td>Claude Code</td><td>Pair-programmed end to end</td></tr>
+      </tbody>
+    </table>
+  </section>
+  <section id="about" class="column" aria-labelledby="about-h">
+    <h2 class="sechead" id="about-h">About</h2>
+    <div class="byline"><span class="mono" aria-hidden="true">RM</span><div><b>Richard McAllister</b><span>Skåne, Sweden</span></div></div>
+    <p>I'm Irish, living in Skåne in the south of Sweden. By day I run technology and digital for an international business; these sites are where I build for fun: United since childhood, Limerick in the blood, Ireland whatever the sport, and Dylan on the stereo.</p>
+    <div class="row" style="--c:var(--ink)"><a class="go" href="https://manutd.wiki">Start with manutd.wiki</a><a class="go" href="https://github.com/richardmcallister-personal">GitHub</a></div>
+  </section>
+</div>
 </main>
 
-<footer class="rm big">
-  <div class="sitefoot">
-    <div class="fbrand">
-      <a class="fname" href="/"><svg class="mark" viewBox="0 0 297 92" aria-hidden="true"><rect x="0" y="0" width="92" height="92" rx="20.0" class="mt"/><path d="M31.5928 65.32V26.679999999999993H48.373599999999996Q52.0168 26.679999999999993 54.7216 27.949599999999993Q57.4264 29.219199999999994 58.9168 31.537599999999994Q60.4072 33.855999999999995 60.4072 37.002399999999994V37.66479999999999Q60.4072 41.142399999999995 58.7512 43.295199999999994Q57.0952 45.44799999999999 54.666399999999996 46.441599999999994V47.435199999999995Q56.8744 47.54559999999999 58.088800000000006 48.953199999999995Q59.303200000000004 50.3608 59.303200000000004 52.679199999999994V65.32H52.0168V53.727999999999994Q52.0168 52.40319999999999 51.326800000000006 51.575199999999995Q50.6368 50.74719999999999 49.036 50.74719999999999H38.8792V65.32ZM38.8792 44.1232H47.6008Q50.1952 44.1232 51.658 42.715599999999995Q53.1208 41.30799999999999 53.1208 38.989599999999996V38.43759999999999Q53.1208 36.11919999999999 51.6856 34.71159999999999Q50.2504 33.303999999999995 47.6008 33.303999999999995H38.8792Z" class="ml"/><rect x="102.12" y="0" width="92" height="92" rx="20.0" class="mt"/><path d="M127.42 65.32V26.679999999999993H140.94400000000002L147.6232 60.35199999999999H148.6168L155.296 26.679999999999993H168.82V65.32H161.7544V32.03439999999999H160.76080000000002L154.1368 65.32H142.10320000000002L135.47920000000002 32.03439999999999H134.4856V65.32Z" class="ml"/><rect x="204.24" y="0" width="92" height="92" rx="20.0" fill="#E4572E"/><path d="M250.5712 66.0928Q243.3952 66.0928 239.2 62.090799999999994Q235.0048 58.08879999999999 235.0048 50.636799999999994V41.36319999999999Q235.0048 33.911199999999994 239.2 29.909199999999995Q243.3952 25.907199999999996 250.5712 25.907199999999996Q257.692 25.907199999999996 261.5836 29.798799999999996Q265.4752 33.6904 265.4752 40.47999999999999V40.81119999999999H258.2992V40.25919999999999Q258.2992 36.8368 256.3948 34.6288Q254.4904 32.42079999999999 250.5712 32.42079999999999Q246.7072 32.42079999999999 244.4992 34.794399999999996Q242.2912 37.16799999999999 242.2912 41.25279999999999V50.74719999999999Q242.2912 54.776799999999994 244.4992 57.178Q246.7072 59.57919999999999 250.5712 59.57919999999999Q254.4904 59.57919999999999 256.3948 57.343599999999995Q258.2992 55.10799999999999 258.2992 51.74079999999999V50.74719999999999H265.4752V51.519999999999996Q265.4752 58.309599999999996 261.5836 62.2012Q257.692 66.0928 250.5712 66.0928Z" fill="#16181D"/></svg>
-<span>Richard McAllister</span></a>
-      <p class="fdata">Independent fan sites, built and run by me. Not affiliated with any club, union or artist.</p>
-    </div>
-    <div class="fcols">
-      <div class="fcol"><h2>Football</h2><ul>
-        <li><a href="https://manutd.wiki/"><img class="ficon pad" src="/logos/manutd.png" alt="" width="20" height="20" loading="lazy">manutd.wiki</a></li>
-        <li><a href="https://irelandfootball.wiki/"><img class="ficon" src="/logos/irelandfootball.png" alt="" width="20" height="20" loading="lazy">irelandfootball.wiki</a></li>
-        <li><a href="https://footballclub.wiki/"><img class="ficon" src="/logos/footballclub.svg" alt="" width="20" height="20" loading="lazy">footballclub.wiki</a></li>
-      </ul></div>
-      <div class="fcol"><h2>Hurling and rugby</h2><ul>
-        <li><a href="https://limerickhurling.wiki/"><img class="ficon" src="/logos/limerickhurling.png" alt="" width="20" height="20" loading="lazy">limerickhurling.wiki</a></li>
-        <li><a href="https://irelandrugby.wiki/"><img class="ficon" src="/logos/irelandrugby.png" alt="" width="20" height="20" loading="lazy">irelandrugby.wiki</a></li>
-      </ul></div>
-      <div class="fcol"><h2>Music</h2><ul>
-        <li><a href="https://bobdylan.app/"><img class="ficon" src="/logos/bobdylan.png" alt="" width="20" height="20" loading="lazy">bobdylan.app</a></li>
-      </ul></div>
-      <div class="fcol"><h2>This site</h2><ul>
-        <li><a href="#sites">The sites</a></li>
-        <li><a href="#stack">How they're built</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="https://github.com/richardmcallister-personal" target="_blank" rel="noopener">GitHub</a></li>
-      </ul></div>
-    </div>
-  </div>
-  <p class="fsmall">© <span id="yr">2026</span> Richard McAllister. Hosted on Cloudflare Workers; no cookies, no tracking. · Appearance:<span class="theme" role="group" aria-label="Appearance"><button type="button" data-t="">auto</button><button type="button" data-t="light">light</button><button type="button" data-t="dark">dark</button></span></p>
+<footer class="colophon">
+  <p>Independent fan sites, built and run by me. Not affiliated with any club, union or artist. © <span id="yr">2026</span> Richard McAllister. Hosted on Cloudflare Workers; no cookies, no tracking.</p>
+  <div class="edition" role="group" aria-label="Appearance"><span>Edition</span><button type="button" data-t="">Auto</button><button type="button" data-t="light">Day</button><button type="button" data-t="dark">Night</button></div>
 </footer>
 
 </div>
 <script>
 (function(){
-  var root=document.documentElement,btns=document.querySelectorAll(".theme button");
+  var root=document.documentElement,btns=document.querySelectorAll(".edition button");
   function mark(){var cur=root.dataset.theme||"";btns.forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.t===cur))})}
   btns.forEach(function(b){b.addEventListener("click",function(){
     if(b.dataset.t){root.dataset.theme=b.dataset.t}else{delete root.dataset.theme}
     try{b.dataset.t?localStorage.setItem("rm-theme",b.dataset.t):localStorage.removeItem("rm-theme")}catch(e){}
     mark()})});
   mark();
-  document.getElementById("yr").textContent=new Date().getFullYear();
+  var now=new Date();
+  document.getElementById("yr").textContent=now.getFullYear();
+  try{document.getElementById("today").textContent=now.toLocaleDateString("en-GB",{weekday:"long",day:"numeric",month:"long",year:"numeric",timeZone:"Europe/Stockholm"}).replace(/,/g,"")}catch(e){}
 
-  // Dylan card: pick a show
+  // Music column: a night from the archive
   var SHOWS=[
     ["1963-10-26","73d62a05","Carnegie Hall, New York","The Times They Are A-Changin'","The title song of his next album, still months from release, opened the night."],
     ["1965-07-25","3bd7b098","Newport Folk Festival, Rhode Island","Maggie's Farm","His first electric set. Maggie's Farm, Like a Rolling Stone and It Takes a Lot to Laugh all had their live debut."],
     ["1966-05-05","6bd7c69a","Adelphi Cinema, Dublin","She Belongs to Me","The 1966 tour reaches Dublin: an acoustic first half, then an electric second half with the band."],
-    ["1966-05-17","13d6bd6d","Free Trade Hall, Manchester","She Belongs to Me","The \u201cJudas!\u201d night. Bootlegged for decades under the wrong name, as the Royal Albert Hall concert."],
+    ["1966-05-17","13d6bd6d","Free Trade Hall, Manchester","She Belongs to Me","The “Judas!” night. Bootlegged for decades under the wrong name, as the Royal Albert Hall concert."],
     ["1975-10-30","3bd7b068","Plymouth Memorial Hall, Massachusetts","When I Paint My Masterpiece","Opening night of the Rolling Thunder Revue."],
     ["1978-02-28","43d7c3fb","Nippon Budokan, Tokyo","A Hard Rain's A-Gonna Fall","Recorded, with the next night's show, for the album Bob Dylan at Budokan."],
     ["1984-07-08","73d75ead","Slane Castle, Co. Meath","Highway 61 Revisited","Van Morrison, Bono and Carlos Santana all joined him in the encores."],
     ["2026-11-05","637da247","Palazzo dello Sport, Rome","Watching the River Flow","A recent night on the Lights of Autumn tour."]
   ];
-  var cur=3,btn=document.getElementById("pick-btn");
+  var cur=3,box=document.getElementById("night"),still=window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches;
   function fmt(d){var t=new Date(d+"T12:00:00Z");return t.toLocaleDateString("en-GB",{weekday:"short",day:"numeric",month:"short",year:"numeric",timeZone:"UTC"}).replace(/,/g,"")}
   function show(i){var x=SHOWS[i];cur=i;
     document.getElementById("pick-when").textContent=fmt(x[0]);
@@ -245,8 +209,8 @@
     document.getElementById("pick-open").textContent=x[3];
     document.getElementById("pick-note").textContent=x[4];
     document.getElementById("pick-go").href="https://bobdylan.app/concert/?id="+x[1];}
-  if(btn){btn.addEventListener("click",function(){var n;do{n=Math.floor(Math.random()*SHOWS.length)}while(n===cur&&SHOWS.length>1);show(n);
-    var box=document.getElementById("pick");box.classList.remove("flip");void box.offsetWidth;box.classList.add("flip");});}
+  document.getElementById("pick-btn").addEventListener("click",function(){var n;do{n=Math.floor(Math.random()*SHOWS.length)}while(n===cur);
+    if(still){show(n);return}box.classList.add("out");setTimeout(function(){show(n);box.classList.remove("out")},220)});
 })();
 </script>
 </body>
