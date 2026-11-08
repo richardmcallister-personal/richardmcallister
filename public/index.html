@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Richard McAllister · sites</title>
-<meta name="description" content="Richard McAllister's independent sites: manutd.wiki, limerickhurling.wiki, irelandfootball.wiki, irelandrugby.wiki and bobdylan.app.">
+<meta name="description" content="Richard McAllister's independent sites: manutd.wiki, limerickhurling.wiki, irelandfootball.wiki, irelandrugby.wiki, bobdylan.app and ledzeppelin.app.">
 <meta name="theme-color" content="#FBFAF7" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#141311" media="(prefers-color-scheme: dark)">
 <meta property="og:title" content="Richard McAllister · sites">
-<meta property="og:description" content="Five fan sites for the things I follow: United, Limerick hurling, Ireland football and rugby, and Bob Dylan.">
+<meta property="og:description" content="Six fan sites for the things I follow: United, Limerick hurling, Ireland football and rugby, Bob Dylan and Led Zeppelin.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://richardmcallister.app/">
 <meta property="og:image" content="https://richardmcallister.app/og-image-1200x630.png">
@@ -22,7 +22,7 @@
 <link rel="manifest" href="/site.webmanifest">
 <link rel="preload" href="/fonts/libre-franklin-latin-900-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/source-serif-4-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/site.css?v=202611080943">
+<link rel="stylesheet" href="/site.css?v=202611081244">
 <script>try{var t=localStorage.getItem("rm-theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
 </head>
 <body>
@@ -31,7 +31,7 @@
 <header>
   <div class="mast">
     <a class="name" href="/">Richard McAllister</a>
-    <p class="dateline">Sport &amp; music · five sites<br><span id="today">Sunday 8 November 2026</span> · Skåne</p>
+    <p class="dateline">Sport &amp; music · six sites<br><span id="today">Sunday 8 November 2026</span> · Skåne</p>
   </div>
   <nav class="sections" aria-label="Sections">
     <a href="#united" style="--c:var(--mu)">United</a>
@@ -39,6 +39,7 @@
     <a href="#ireland-football" style="--c:var(--irf)">Ireland football</a>
     <a href="#ireland-rugby" style="--c:var(--irr)">Ireland rugby</a>
     <a href="#dylan" style="--c:var(--bd)">Dylan</a>
+    <a href="#ledzeppelin" style="--c:var(--lz)">Zeppelin</a>
     <a class="sp" href="#built">How they’re built</a>
     <a href="#about">About</a>
   </nav>
@@ -72,15 +73,19 @@
     </div>
   </section>
 
-  <section class="col music" aria-labelledby="mu-h" style="--c:var(--bd)">
+  <section class="col music" id="music" aria-labelledby="mu-h" style="--c:var(--bd)">
     <h2 id="mu-h">Music</h2>
-    <figure><img src="/logos/bobdylan.png" alt="bobdylan.app logo" width="512" height="512"></figure>
+    <figure id="pick-fig"><img id="pick-logo" src="/logos/bobdylan.png" alt="bobdylan.app logo" width="512" height="512"></figure>
     <div class="night" id="night" aria-live="polite">
       <h3 id="pick-head">The night someone shouted “Judas!”</h3>
       <p class="opened"><span id="pick-where">Free Trade Hall, Manchester</span>, <span id="pick-when">Tue 17 May 1966</span> · Opened with <b id="pick-open">She Belongs to Me</b></p>
       <p id="pick-note">Bootlegged for decades under the wrong name, as the Royal Albert Hall concert.</p>
     </div>
     <div class="acts"><a class="go" id="pick-go" href="https://bobdylan.app/concert/?id=13d6bd6d">See the full setlist</a><button type="button" class="another" id="pick-btn">Another night</button></div>
+    <ul class="fx bands">
+      <li><a href="https://bobdylan.app" style="--c:var(--bd)"><img src="/logos/bobdylan.png" alt="" width="30" height="30"><b>Bob Dylan</b><small>Shows, setlists and songs since 1960</small></a></li>
+      <li><a href="https://ledzeppelin.app" style="--c:var(--lz)"><img src="/logos/ledzeppelin.png" alt="" width="30" height="30"><b>Led Zeppelin</b><small>Every show on record, 1968 to 2007</small></a></li>
+    </ul>
   </section>
 </div>
 
@@ -117,12 +122,11 @@
   </div>
 </div>
 <h3 class="grp">Music</h3>
-<section class="sec dy" id="dylan" style="--c:var(--bd)" aria-labelledby="bd-h">
-  <div>
-    <div class="top"><img src="/logos/bobdylan.png" alt="" width="56" height="56"><h3 id="bd-h">bobdylan.app<small>Albums, songs, shows and tickets</small></h3></div>
-    <p class="deck">Look up a setlist, explore the songs Dylan plays most often, or find the next show. <b>4000+ concerts</b> with setlists, back to 1960.</p>
-    <a class="go" href="https://bobdylan.app">Open bobdylan.app</a>
-  </div>
+<div class="music-sites">
+<section class="sec band" id="dylan" style="--c:var(--bd)" aria-labelledby="bd-h">
+  <div class="top"><img src="/logos/bobdylan.png" alt="" width="56" height="56"><h3 id="bd-h">bobdylan.app<small>Albums, songs, shows and tickets</small></h3></div>
+  <p class="deck">Look up a setlist, explore the songs Dylan plays most often, or find the next show. <b>4000+ concerts</b> with setlists, back to 1960.</p>
+  <a class="go" href="https://bobdylan.app">Open bobdylan.app</a>
   <ul class="links setlist">
     <li><a href="https://bobdylan.app/">Next shows and tickets</a></li>
     <li><a href="https://bobdylan.app/concerts/">Every concert and setlist</a></li>
@@ -130,6 +134,18 @@
     <li><a href="https://bobdylan.app/journeys/">Listening journeys</a></li>
   </ul>
 </section>
+<section class="sec band" id="ledzeppelin" style="--c:var(--lz)" aria-labelledby="lz-h">
+  <div class="top"><img src="/logos/ledzeppelin.png" alt="" width="56" height="56"><h3 id="lz-h">ledzeppelin.app<small>Records, songs and shows</small></h3></div>
+  <p class="deck">Look up a setlist, see every song they played live, or follow a listening journey. <b>536 shows</b> on record, from 1968 to the O2 in 2007.</p>
+  <a class="go" href="https://ledzeppelin.app">Open ledzeppelin.app</a>
+  <ul class="links setlist">
+    <li><a href="https://ledzeppelin.app/concerts/">Every show and setlist</a></li>
+    <li><a href="https://ledzeppelin.app/songs/">Every song they played live</a></li>
+    <li><a href="https://ledzeppelin.app/journeys/">Listening journeys</a></li>
+    <li><a href="https://ledzeppelin.app/gallery/">Tour photographs</a></li>
+  </ul>
+</section>
+</div>
 
 <div class="two">
   <section id="built" aria-labelledby="built-h">
@@ -151,7 +167,7 @@
   <section id="about" class="column" aria-labelledby="about-h">
     <h2 class="sechead" id="about-h">About</h2>
     <div class="byline"><img class="mk on-light" src="/brand/rmc-mark.svg" alt="" width="129" height="40"><img class="mk on-dark" src="/brand/rmc-mark-on-dark.svg" alt="" width="129" height="40"><div><b>Richard McAllister</b><span>Skåne, Sweden</span></div></div>
-    <p>I’m Irish, living in Skåne in the south of Sweden. By day I run technology and digital for an international business; these sites are where I build for fun: United since childhood, Limerick in the blood, Ireland whatever the sport, and Dylan on the stereo.</p>
+    <p>I’m Irish, living in Skåne in the south of Sweden. By day I run technology and digital for an international business; these sites are where I build for fun: United since childhood, Limerick in the blood, Ireland whatever the sport, and Dylan or Zeppelin on the stereo.</p>
     <div class="row" style="--c:var(--ink)"><a class="go" href="https://manutd.wiki">Start with manutd.wiki</a><a class="go" href="https://github.com/richardmcallister-personal">GitHub</a></div>
   </section>
 </div>
@@ -176,7 +192,7 @@
   document.getElementById("yr").textContent=now.getFullYear();
   try{document.getElementById("today").textContent=now.toLocaleDateString("en-GB",{weekday:"long",day:"numeric",month:"long",year:"numeric",timeZone:"Europe/Stockholm"}).replace(/,/g,"")}catch(e){}
 
-  // Music column: a night from the archive
+  // Music column: a night from either archive (band: d = Dylan, z = Zeppelin)
   var SHOWS=[
     ["1963-10-26","73d62a05","Carnegie Hall, New York","The Times They Are A-Changin’","The title song of his next album, still months from release, opened the night.","A title song, months early"],
     ["1965-07-25","3bd7b098","Newport Folk Festival, Rhode Island","Maggie’s Farm","His first electric set. Maggie’s Farm, Like a Rolling Stone and It Takes a Lot to Laugh all had their live debut.","Dylan goes electric at Newport"],
@@ -185,8 +201,15 @@
     ["1975-10-30","3bd7b068","Plymouth Memorial Hall, Massachusetts","When I Paint My Masterpiece","Opening night of the Rolling Thunder Revue.","Rolling Thunder opens"],
     ["1978-02-28","43d7c3fb","Nippon Budokan, Tokyo","A Hard Rain’s A-Gonna Fall","Recorded, with the next night’s show, for the album Bob Dylan at Budokan.","Recording at the Budokan"],
     ["1984-07-08","73d75ead","Slane Castle, Co. Meath","Highway 61 Revisited","Van Morrison, Bono and Carlos Santana all joined him in the encores.","Van, Bono and Santana join in at Slane"],
-    ["2026-11-05","637da247","Palazzo dello Sport, Rome","Watching the River Flow","A recent night on the Lights of Autumn tour.","Lights of Autumn in Rome"]
+    ["2026-11-05","637da247","Palazzo dello Sport, Rome","Watching the River Flow","A recent night on the Lights of Autumn tour.","Lights of Autumn in Rome"],
+    ["1970-01-09","1bd12988","Royal Albert Hall, London","We’re Gonna Groove","Jimmy Page’s 26th birthday. The show was filmed, and the footage finally came out on DVD in 2003.","Filmed on Jimmy Page’s birthday","z"],
+    ["1971-03-05","2bd6189a","Ulster Hall, Belfast","Immigrant Song","Stairway to Heaven, played live for the first time, eight months before the album came out.","Stairway, live for the first time","z"],
+    ["1973-07-29","3bd600dc","Madison Square Garden, New York","Rock and Roll","One of the three nights filmed for The Song Remains the Same.","Filming The Song Remains the Same","z"],
+    ["1979-08-04","13d6316d","Knebworth House, Hertfordshire","The Song Remains the Same","Their first show in Britain for four years.","Back home at Knebworth","z"],
+    ["2007-12-10","13d6bd65","The O2 Arena, London","Good Times Bad Times","The reunion for Ahmet Ertegun, with Jason Bonham on drums.","One more night, at the O2","z"]
   ];
+  var BAND={d:{site:"https://bobdylan.app",logo:"/logos/bobdylan.png",alt:"bobdylan.app logo",c:"var(--bd)",ground:"var(--dylan-ground)"},
+            z:{site:"https://ledzeppelin.app",logo:"/logos/ledzeppelin.png",alt:"ledzeppelin.app logo",c:"var(--lz)",ground:"var(--zep-ground)"}};
   var cur=3,box=document.getElementById("night"),still=window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches;
   function fmt(d){var t=new Date(d+"T12:00:00Z");return t.toLocaleDateString("en-GB",{weekday:"short",day:"numeric",month:"short",year:"numeric",timeZone:"UTC"}).replace(/,/g,"")}
   function show(i){var x=SHOWS[i];cur=i;
@@ -195,7 +218,10 @@
     document.getElementById("pick-where").textContent=x[2];
     document.getElementById("pick-open").textContent=x[3];
     document.getElementById("pick-note").textContent=x[4];
-    document.getElementById("pick-go").href="https://bobdylan.app/concert/?id="+x[1];}
+    var band=BAND[x[6]||"d"],col=document.getElementById("music"),logo=document.getElementById("pick-logo");
+    col.style.setProperty("--c",band.c);document.getElementById("pick-fig").style.background=band.ground;
+    if(logo.getAttribute("src")!==band.logo){logo.src=band.logo;logo.alt=band.alt}
+    document.getElementById("pick-go").href=band.site+"/concert/?id="+x[1];}
   document.getElementById("pick-btn").addEventListener("click",function(){var n;do{n=Math.floor(Math.random()*SHOWS.length)}while(n===cur);
     if(still){show(n);return}box.classList.add("out");setTimeout(function(){show(n);box.classList.remove("out")},220)});
 })();

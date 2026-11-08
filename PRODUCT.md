@@ -7,13 +7,13 @@
 web
 
 ## Users
-Primarily Richard himself: richardmcallister.app is his personal launchpad to the sites he builds and uses, on match day or when looking up a Dylan setlist. Other visitors (fans who land here, anyone following a link from GitHub) are incidental. They should still be able to find their way, but the page isn't shaped around winning them over.
+Primarily Richard himself: richardmcallister.app is his personal launchpad to the sites he builds and uses, on match day or when looking up a Dylan or Led Zeppelin setlist. Other visitors (fans who land here, anyone following a link from GitHub) are incidental. They should still be able to find their way, but the page isn't shaped around winning them over.
 
 ## Product Purpose
-A single page that lists Richard's independent fan sites and gets you into the right one fast. A visit succeeds when it ends with a click into a site: manutd.wiki, limerickhurling.wiki, irelandfootball.wiki, irelandrugby.wiki, bobdylan.app, or the early footballclub.wiki preview.
+A single page that lists Richard's independent fan sites and gets you into the right one fast. A visit succeeds when it ends with a click into a site: manutd.wiki, limerickhurling.wiki, irelandfootball.wiki, irelandrugby.wiki, bobdylan.app, ledzeppelin.app, or the early footballclub.wiki preview.
 
 ## Positioning
-One person's own stack of fan sites, built for his own use: United since childhood, Limerick in the blood, Ireland whatever the sport, Dylan on the stereo. It's a personal index, not a portfolio pitch or an agency site.
+One person's own stack of fan sites, built for his own use: United since childhood, Limerick in the blood, Ireland whatever the sport, Dylan or Zeppelin on the stereo. It's a personal index, not a portfolio pitch or an agency site.
 
 ## Operating Context
 - Used to jump to a site, often on a phone and often around match days.

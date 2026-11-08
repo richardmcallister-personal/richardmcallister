@@ -1,6 +1,6 @@
 ---
 name: richardmcallister.app
-description: The back pages of a Sunday broadsheet that covers only Richard's teams and Dylan.
+description: The back pages of a Sunday broadsheet that covers only Richard's teams and his bands.
 colors:
   newsprint: "#FBFAF7"
   press-ink: "#111110"
@@ -14,6 +14,8 @@ colors:
   ireland-football-green: "#0B6E4F"
   ireland-rugby-green: "#0A6B3D"
   dylan-brick: "#B3261E"
+  zeppelin-amber: "#8A5A12"
+  zeppelin-ground: "#202322"
   footballclub-ink: "#111110"
   night-newsprint: "#141311"
   night-ink: "#EEEBE4"
@@ -26,6 +28,7 @@ colors:
   night-ireland-football-green: "#2FB58A"
   night-ireland-rugby-green: "#48B979"
   night-dylan-brick: "#D9675A"
+  night-zeppelin-amber: "#E4A952"
 typography:
   display:
     fontFamily: "Libre Franklin, Franklin Gothic Medium, Helvetica Neue, Arial, sans-serif"
@@ -149,7 +152,7 @@ components:
 
 **Creative North Star: "The Sunday Back Pages"**
 
-The site is the back pages of a Sunday broadsheet that covers only Richard's teams and Dylan. It reads as a printed page: a heavy grotesque masthead with today's date over a double rule, a section bar, a front of three columns split by hairlines, then one section per site, an agate table and a bylined column. Real archive stories lead, and the sites are the sections. Every story ends in a link into its site.
+The site is the back pages of a Sunday broadsheet that covers only Richard's teams and his bands. It reads as a printed page: a heavy grotesque masthead with today's date over a double rule, a section bar, a front of three columns split by hairlines, then one section per site, an agate table and a bylined column. Real archive stories lead, and the sites are the sections. Every story ends in a link into its site.
 
 The page is dense in the way a newspaper is dense. Columns, rules and type weight carry the structure. There are no boxes, cards or shadows. The ground is newsprint white by day and a warm near-black in the Night edition, and the ink is black or bone. The only colour on the page is each site's own colour, and it stays inside that site's section as rules, names and links, next to the site's real logo, which is its section mark. That keeps each site recognisable while the page reads as one paper rather than a fan-site directory.
 
@@ -172,7 +175,8 @@ There is no house accent. Each site's colour is the primary colour inside its ow
 - **Limerick Green** (`limerick-green`; night `night-limerick-green`): limerickhurling.wiki's section.
 - **Ireland Football Green** (`ireland-football-green`; night `night-ireland-football-green`): irelandfootball.wiki's section.
 - **Ireland Rugby Green** (`ireland-rugby-green`; night `night-ireland-rugby-green`): irelandrugby.wiki's section.
-- **Dylan Brick** (`dylan-brick`; night `night-dylan-brick`): bobdylan.app's section and the Music column.
+- **Dylan Brick** (`dylan-brick`; night `night-dylan-brick`): bobdylan.app's section, and the Music column while a Dylan night is showing.
+- **Zeppelin Amber** (`zeppelin-amber`; night `night-zeppelin-amber`): ledzeppelin.app's section, and the Music column while a Zeppelin night is showing. Taken from the site's own amber, darkened by day to pass contrast on newsprint.
 - **footballclub Ink** (`footballclub-ink`, the same value as ink; night `night-ink`): the early-preview footballclub.wiki gets no colour of its own until it ships one.
 
 ### Neutral
@@ -182,6 +186,7 @@ There is no house accent. Each site's colour is the primary colour inside its ow
 - **Column Hairline** (`column-hairline`; night `night-hairline`): 1px rules between columns, list rows and table rows.
 - **Logo Plate** (`logo-plate`; night `night-logo-plate`): the plate behind logos that need a light ground. Logos with a transparent background drop the plate.
 - **Dylan Ground** (`dylan-ground`): the fixed dark ground behind the bobdylan.app logo figure in the Music column. It is the same in both editions.
+- **Zeppelin Ground** (`zeppelin-ground`): the same role for the ledzeppelin.app logo, matching that logo's own charcoal.
 - **Highlighter** (`highlighter`; night `night-highlighter`): text selection only.
 
 ### Named Rules
@@ -200,7 +205,7 @@ There is no house accent. Each site's colour is the primary colour inside its ow
 - **Display** (900, clamp 40 to 84px, 0.92, -0.035em): the masthead name only. The 404 headline uses the same voice at clamp 40 to 76px.
 - **Headline** (900, clamp 36 to 62px, 0.98, -0.03em, balanced wrap): the lead story on the front.
 - **Page head** (900, clamp 28 to 40px, 1, -0.025em): page-level heads such as "The sites", set over a 5px double rule.
-- **Title** (900, clamp 26 to 34px, 1, -0.025em): a site's name in its section, with a 600 15px subtitle in the site colour. The Dylan night head (clamp 24 to 30px) and the smaller site briefs (22px) step down from it.
+- **Title** (900, clamp 26 to 34px, 1, -0.025em): a site's name in its section, with a 600 15px subtitle in the site colour. The archive night head (clamp 24 to 30px) and the smaller site briefs (22px) step down from it.
 - **Column head** (900, 17px, 1.2): front-page column heads and secondary section heads, set over a 3px rule in the column's colour or ink.
 - **Standfirst** (400 italic, 21px, 1.45): the serif italic under the lead headline.
 - **Body** (400, 18px, 1.55; 17px under 720px): reading text, capped between 46ch and 62ch depending on the column. Decks run at 19 to 21px.
@@ -222,10 +227,10 @@ The page is a single 1320px measure with a 20px minimum edge (larger where the s
 
 - **Masthead:** the name on the left, a two-line dateline on the right (desk, live date, Skåne), then a 5px double rule and a wrapping section bar closed by a 1px ink rule. The section bar names every site in its colour; "How they're built" and "About" are pushed to the right.
 - **Front:** three columns at 2fr / 1fr / 1fr. The lead story is in the wide column and its body runs as two newspaper columns (28px gap).
-- **Sections:** one site per section, never crowded. United leads the Sport group, and the three Irish sites share the column beside it as briefs. Dylan gets a two-column section with its links set as a setlist. "How they're built" and About sit as a pair.
+- **Sections:** one site per section, never crowded. United leads the Sport group, and the three Irish sites share the column beside it as briefs. Dylan and Led Zeppelin share the Music group as two equal sections split by a hairline, each with its links set as a setlist. "How they're built" and About sit as a pair.
 - **Rhythm:** 22px between blocks, 44px before page heads, 48px before the colophon, and 12 to 16px within a block.
 - **At 1060px or less:** the lead spans the full width and the other two columns pair up under it.
-- **At 720px or less:** everything stacks into one column with hairlines between, the lead body goes to one column, the results strip stacks, the section bar drops its right-hand links, and the Dylan figure is capped at 280px.
+- **At 720px or less:** everything stacks into one column with hairlines between, the lead body goes to one column, the results strip stacks, the section bar drops its right-hand links, and the Music figure is capped at 280px.
 
 ## Elevation & Depth
 
@@ -267,8 +272,8 @@ Franklin 15px with tabular figures. An 800 13px head row over a 2px ink rule, ha
 ### Byline
 The RMC mark at 40px tall (`rmc-mark.svg` by day, `rmc-mark-on-dark.svg` by night), then the name in Franklin 900 20px and the place in Byline Grey 14px.
 
-### Dylan night
-The Music column shows a different real night from the archive each time "Another night" is pressed. The text fades out and back in over 0.25s, and the fade is turned off under `prefers-reduced-motion`.
+### Archive night
+The Music column shows a different real night from the Dylan or Led Zeppelin archive each time "Another night" is pressed. The text fades out and back in over 0.25s, and the fade is turned off under `prefers-reduced-motion`.
 
 ## Do's and Don'ts
 
