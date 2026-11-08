@@ -50,6 +50,7 @@ h3{font-family:var(--head);font-weight:600;font-size:13px;color:var(--muted);mar
 .hero::before{content:"";position:absolute;inset:0 -100vmax;background:var(--band);z-index:-1}
 .hero .lede{color:var(--on-band);font-weight:700;font-size:clamp(38px,6.4vw,74px);line-height:1;letter-spacing:-.03em;max-width:13ch;margin:0 0 20px;text-wrap:balance}
 .hero .lede em{color:var(--accent)}
+.hero .lede:last-child{margin-bottom:0}
 .hero .intro{color:var(--on-band);opacity:.78;font-size:clamp(17px,1.6vw,19px);line-height:1.5;max-width:46ch;text-wrap:pretty}
 p.intro{margin:0;max-width:62ch;color:var(--muted)}
 
