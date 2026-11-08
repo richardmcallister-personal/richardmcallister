@@ -1,0 +1,400 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-08T08:44:13+00:00",
+  "title": "Design System: richardmcallister.app",
+  "extensions": {
+    "colorMeta": {
+      "keycap-ink": {
+        "role": "neutral",
+        "displayName": "Keycap Ink",
+        "canonical": "oklch(20.9% 0.010 268.2)",
+        "tonalRamp": [
+          "#0a0b0d",
+          "#232529",
+          "#404247",
+          "#5f6167",
+          "#808289",
+          "#a2a5ab",
+          "#c7c9ce",
+          "#edeef2"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "canonical": "oklch(97.0% 0.004 91.4)",
+        "tonalRamp": [
+          "#0b0b0a",
+          "#252523",
+          "#434240",
+          "#62615f",
+          "#838280",
+          "#a6a5a2",
+          "#cac9c7",
+          "#efeeed"
+        ]
+      },
+      "signal-orange": {
+        "role": "primary",
+        "displayName": "Signal Orange",
+        "canonical": "oklch(63.7% 0.184 36.5)",
+        "tonalRamp": [
+          "#250000",
+          "#520000",
+          "#830000",
+          "#b12300",
+          "#d94d23",
+          "#f97b57",
+          "#ffab8f",
+          "#ffdbc6"
+        ]
+      },
+      "accent-ink": {
+        "role": "primary",
+        "displayName": "Accent Ink",
+        "canonical": "oklch(54.0% 0.159 36.9)",
+        "tonalRamp": [
+          "#220000",
+          "#4d0300",
+          "#7b1600",
+          "#a8340a",
+          "#cf5835",
+          "#ef8263",
+          "#ffb097",
+          "#ffdecb"
+        ]
+      },
+      "slate": {
+        "role": "neutral",
+        "displayName": "Slate",
+        "canonical": "oklch(48.5% 0.020 267.6)",
+        "tonalRamp": [
+          "#090b0f",
+          "#22252c",
+          "#3e424c",
+          "#5c616d",
+          "#7d828f",
+          "#a0a5b1",
+          "#c5c9d2",
+          "#eceef5"
+        ]
+      },
+      "site-united": {
+        "role": "secondary",
+        "displayName": "United Red",
+        "canonical": "oklch(55.9% 0.228 28.2)",
+        "tonalRamp": [
+          "#2a0000",
+          "#5b0000",
+          "#900000",
+          "#c20000",
+          "#ec2924",
+          "#ff6658",
+          "#ff9f8f",
+          "#ffd3c6"
+        ]
+      },
+      "site-limerick": {
+        "role": "secondary",
+        "displayName": "Limerick Green",
+        "canonical": "oklch(45.8% 0.109 157.1)",
+        "tonalRamp": [
+          "#001103",
+          "#002f16",
+          "#00512c",
+          "#167347",
+          "#419668",
+          "#6fb88d",
+          "#a1d8b6",
+          "#d3fae1"
+        ]
+      },
+      "site-ireland-football": {
+        "role": "secondary",
+        "displayName": "Ireland Football Green",
+        "canonical": "oklch(47.8% 0.098 164.9)",
+        "tonalRamp": [
+          "#001106",
+          "#002f1d",
+          "#005036",
+          "#147253",
+          "#409573",
+          "#6eb797",
+          "#a1d7be",
+          "#d3f9e7"
+        ]
+      },
+      "site-ireland-rugby": {
+        "role": "secondary",
+        "displayName": "Ireland Rugby Green",
+        "canonical": "oklch(46.5% 0.111 155.2)",
+        "tonalRamp": [
+          "#001103",
+          "#002f14",
+          "#00512a",
+          "#197345",
+          "#439665",
+          "#70b88a",
+          "#a2d8b4",
+          "#d4fae0"
+        ]
+      },
+      "site-dylan": {
+        "role": "secondary",
+        "displayName": "Dylan Red",
+        "canonical": "oklch(50.1% 0.178 28.7)",
+        "tonalRamp": [
+          "#250000",
+          "#510000",
+          "#820000",
+          "#b0221b",
+          "#d84c3f",
+          "#f8796a",
+          "#ffaa9c",
+          "#ffdacf"
+        ]
+      },
+      "site-footballclub": {
+        "role": "secondary",
+        "displayName": "Footballclub Near-Black",
+        "canonical": "oklch(23.2% 0.004 286.1)",
+        "tonalRamp": [
+          "#0b0b0c",
+          "#252526",
+          "#424244",
+          "#616163",
+          "#828284",
+          "#a5a5a7",
+          "#c9c9cb",
+          "#eeeef0"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero headline only."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section heads."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Domain name on each site band."
+      },
+      "score": {
+        "displayName": "Score",
+        "purpose": "Archive scorelines and show venues on bands; tabular figures."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Reading text; intro capped at 62ch."
+      },
+      "body-small": {
+        "displayName": "Body small",
+        "purpose": "Lists, stat tiles, footer links."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Nav, buttons, Open links."
+      },
+      "micro-label": {
+        "displayName": "Micro label",
+        "purpose": "Eyebrows, table headers, footer column heads; sentence case."
+      }
+    },
+    "shadows": [
+      {
+        "name": "resting-hairline",
+        "value": "0 1px 0 rgba(0,0,0,.05)",
+        "purpose": "Every sheet, site card and footer card at rest."
+      },
+      {
+        "name": "hover-lift",
+        "value": "0 10px 30px rgba(0,0,0,.12)",
+        "purpose": "Single-link site cards on hover, with translateY(-2px)."
+      },
+      {
+        "name": "keycap-base",
+        "value": "0 4px 0 #0E1013",
+        "purpose": "Primary button base; 0 1px 0 when pressed."
+      },
+      {
+        "name": "logo-contact",
+        "value": "0 1px 3px rgba(0,0,0,.25)",
+        "purpose": "Logo tiles on colour bands."
+      }
+    ],
+    "motion": [
+      {
+        "name": "card-lift",
+        "value": "transform .15s ease, box-shadow .15s ease",
+        "purpose": "Site card hover lift; off under reduced motion."
+      },
+      {
+        "name": "keycap-press",
+        "value": "transform .06s, box-shadow .06s",
+        "purpose": "Keycap button press."
+      },
+      {
+        "name": "pick-in",
+        "value": "pickin .25s ease",
+        "purpose": "Show picker fade-up; off under reduced motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "phone-max",
+        "value": "640px"
+      },
+      {
+        "name": "two-col",
+        "value": "700px"
+      },
+      {
+        "name": "stack-max",
+        "value": "760px"
+      },
+      {
+        "name": "three-col",
+        "value": "980px"
+      },
+      {
+        "name": "container",
+        "value": "1080px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Keycap Button",
+      "kind": "button",
+      "refersTo": "button-keycap",
+      "description": "Primary action; a keycap that presses down.",
+      "html": "<a class=\"ds-btn-key\" href=\"#\">Start with manutd.wiki</a>",
+      "css": ".ds-btn-key{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border-radius:12px;background:var(--black,#16181D);color:var(--on-black,#F6F5F2);text-decoration:none;font-family:var(--head,'Space Grotesk',system-ui,sans-serif);font-weight:600;font-size:13px;box-shadow:0 4px 0 #0E1013;transition:transform .06s,box-shadow .06s}.ds-btn-key:hover{opacity:.92}.ds-btn-key:active{transform:translateY(3px);box-shadow:0 1px 0 #0E1013}.ds-btn-key:focus-visible{outline:3px solid var(--accent-ink,#B8431F);outline-offset:2px}"
+    },
+    {
+      "name": "Ghost Keycap Button",
+      "kind": "button",
+      "refersTo": "button-keycap-ghost",
+      "description": "Secondary link with no base.",
+      "html": "<a class=\"ds-btn-ghost\" href=\"#\">GitHub</a>",
+      "css": ".ds-btn-ghost{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border-radius:12px;background:transparent;color:var(--ink,#16181D);border:1px solid var(--rule,#E4E2DC);text-decoration:none;font-family:var(--head,'Space Grotesk',system-ui,sans-serif);font-weight:600;font-size:13px;}.ds-btn-ghost:hover{background:var(--tint,#F6F5F2)}.ds-btn-ghost:focus-visible{outline:3px solid var(--accent-ink,#B8431F);outline-offset:2px}"
+    },
+    {
+      "name": "On-band Button",
+      "kind": "button",
+      "refersTo": "button-on-band",
+      "description": "White control on a site colour band, text in the site colour.",
+      "html": "<div class=\"ds-band\" style=\"--acc:#b3261e\"><button class=\"ds-btn-band\" type=\"button\">Pick a show</button></div>",
+      "css": ".ds-band{background:var(--acc);padding:16px 18px;border-radius:18px}.ds-btn-band{min-height:44px;padding:0 16px;border:0;border-radius:8px;background:#fff;color:var(--acc);cursor:pointer;font-family:var(--head,'Space Grotesk',system-ui,sans-serif);font-weight:600;font-size:13px;}.ds-btn-band:hover{background:rgba(255,255,255,.88)}.ds-btn-band:focus-visible{outline:3px solid #fff;outline-offset:2px}"
+    },
+    {
+      "name": "Masthead Navigation",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Pill links on the ink masthead band.",
+      "html": "<nav class=\"ds-nav\"><a href=\"#\" aria-current=\"page\">Sites</a><a href=\"#\">Also building</a><a href=\"#\">How they're built</a><a href=\"#\">About</a></nav>",
+      "css": ".ds-nav{display:flex;flex-wrap:wrap;gap:2px;background:var(--band,#16181D);padding:6px 8px 12px}.ds-nav a{font-family:var(--head,'Space Grotesk',system-ui,sans-serif);font-size:13px;color:var(--on-band,#F6F5F2);text-decoration:none;padding:9px 13px;border-radius:6px;white-space:nowrap}.ds-nav a:hover{background:rgba(255,255,255,.1)}.ds-nav a[aria-current=page]{background:rgba(255,255,255,.14)}.ds-nav a:focus-visible{outline:3px solid currentColor;outline-offset:2px}"
+    },
+    {
+      "name": "Site Card",
+      "kind": "card",
+      "refersTo": "site-card",
+      "description": "The key on the ring: a site colour band over a white body.",
+      "html": "<a class=\"ds-site\" href=\"#\" style=\"--acc:#00693e\"><div class=\"ds-site-band\"><span class=\"ds-site-logo\"></span><div class=\"ds-site-dom\">limerickhurling.wiki<small>Limerick hurling hub</small></div></div><div class=\"ds-site-body\"><p>Find Limerick's next fixture or browse the county's honours.</p><ul><li>Next fixture and latest result</li><li>All-time top scorers</li></ul><span class=\"ds-site-go\">Open limerickhurling.wiki →</span></div></a>",
+      "css": ".ds-site{display:flex;flex-direction:column;max-width:340px;background:var(--paper,#fff);color:var(--ink,#16181D);border-radius:18px;overflow:hidden;text-decoration:none;box-shadow:0 1px 0 rgba(0,0,0,.05);transition:transform .15s ease,box-shadow .15s ease}.ds-site:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(0,0,0,.12)}.ds-site:focus-visible{outline:3px solid var(--accent-ink,#B8431F);outline-offset:2px}.ds-site-band{background:var(--acc);color:#fff;padding:16px 18px 14px;display:flex;align-items:center;gap:12px;min-height:84px}.ds-site-logo{width:52px;height:52px;border-radius:12px;background:#fff;border:2px solid rgba(255,255,255,.9);box-shadow:0 1px 3px rgba(0,0,0,.25);flex:none}.ds-site-dom{font-family:var(--head,'Space Grotesk',system-ui,sans-serif);font-weight:600;font-size:19px;line-height:1.1}.ds-site-dom small{display:block;font-weight:400;font-size:12px;opacity:.9;margin-top:3px}.ds-site-body{padding:14px 18px 16px;display:flex;flex-direction:column;gap:10px}.ds-site-body p{margin:0;font-size:15px}.ds-site-body ul{list-style:none;margin:0;padding:0;font-size:14px}.ds-site-body li{display:flex;gap:8px;padding:6px 0;border-bottom:1px solid var(--rule,#E4E2DC)}.ds-site-body li:last-child{border-bottom:0}.ds-site-body li::before{content:'';flex:none;width:6px;height:6px;border-radius:50%;background:var(--acc);margin-top:8px}.ds-site-go{font-family:var(--head,'Space Grotesk',system-ui,sans-serif);font-weight:600;font-size:13px;color:var(--accent-ink,#B8431F)}@media (prefers-reduced-motion:reduce){.ds-site{transition:none}.ds-site:hover{transform:none}}"
+    },
+    {
+      "name": "Sheet",
+      "kind": "card",
+      "refersTo": "card-sheet",
+      "description": "Plain white section card with an underlined h2.",
+      "html": "<section class=\"ds-sheet\"><h2>Also building</h2><p>A reference for clubs across world football.</p></section>",
+      "css": ".ds-sheet{background:var(--paper,#fff);color:var(--ink,#16181D);padding:18px 20px;border-radius:18px;box-shadow:0 1px 0 rgba(0,0,0,.05)}.ds-sheet h2{font-family:var(--head,'Space Grotesk',system-ui,sans-serif);font-weight:600;font-size:15px;margin:0 0 10px;padding-bottom:6px;border-bottom:2px solid var(--ink,#16181D);display:inline-block}.ds-sheet p{margin:0;color:var(--muted,#5A5F6B)}"
+    },
+    {
+      "name": "Chip",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Small metadata tag.",
+      "html": "<span class=\"ds-chip\">Early preview</span>",
+      "css": ".ds-chip{display:inline-block;font-size:11px;padding:3px 7px;border-radius:4px;background:var(--tint,#F6F5F2);color:var(--ink,#16181D)}"
+    },
+    {
+      "name": "Stat Tile",
+      "kind": "custom",
+      "refersTo": "stat-tile",
+      "description": "One headline fact per card.",
+      "html": "<p class=\"ds-stat\"><b>4000+ concerts</b> with setlists, back to 1960</p>",
+      "css": ".ds-stat{margin:0;font-size:14px;color:var(--muted,#5A5F6B);background:var(--tint,#F6F5F2);border-radius:10px;padding:8px 12px}.ds-stat b{color:var(--ink,#16181D);font-weight:600}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Keyring",
+    "overview": "Every site Richard runs is a key on one ring, and this page is the ring. Each site card is a key you grab and go: it carries its own club or artist colour in a solid band at the top, while everything around it (the ink masthead, the paper ground, the white cards) stays the same for every site. The RMC three-key logo and the keycap buttons, which press down when you click them, are the signature details. The page should feel plain, warm and tactile: like a well-worn set of keys, not a pitch deck.\n\nThe page is quiet so the sites' colours can be loud. Neutrals are slightly warm (paper, not grey), there is one brand accent, and type is set in sentence case with Space Grotesk for anything that labels or announces and the system font for reading. Layout is a single centred column of white cards on paper. It's dense enough to scan on a phone around match day, with 44px tap targets throughout. Depth is minimal: surfaces sit flat, lift slightly when you hover, and the keycaps press.",
+    "keyCharacteristics": [
+      "Ink masthead band across the full width; paper ground; white cards with 18px corners.",
+      "Per-site colour bands carry each site's identity; the frame around them never changes.",
+      "One brand accent, signal orange, kept to the logo's C key and large marks.",
+      "Keycap buttons with a solid base that presses down.",
+      "Light and dark themes defined entirely through tokens."
+    ],
+    "rules": [
+      {
+        "name": "The One Orange Key Rule",
+        "body": "Only the C key is ever orange. Signal orange appears on the logo and large marks; small text and links use accent ink instead.",
+        "section": "colors"
+      },
+      {
+        "name": "The Token-Only Rule",
+        "body": "Every colour goes through a token in the `:root` block of `site.css` and is redefined for dark mode. No colour value is written straight into a rule unless it is a translucent overlay on an already-tokened surface.",
+        "section": "colors"
+      },
+      {
+        "name": "The Borrowed Colours Rule",
+        "body": "A site's colour lives only inside that site's card. It never tints the masthead, the page ground or another card.",
+        "section": "colors"
+      },
+      {
+        "name": "The Sentence Case Rule",
+        "body": "Every heading, label, button and nav item is in sentence case. No all-caps eyebrows, no letter-spaced shouting.",
+        "section": "typography"
+      },
+      {
+        "name": "The Two Voices Rule",
+        "body": "Space Grotesk labels and announces; the system font explains. Don't set paragraphs in Space Grotesk or headings in the system font.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Until Touched Rule",
+        "body": "Surfaces are flat at rest. Depth appears only when you hover or press: the lift and the keycap press. Never add resting shadows to cards.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Many-Links Card Stays Put Rule",
+        "body": "A card that holds several links (an `article`, not one big link) does not lift on hover, because lifting suggests the whole card is a single target.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do put every new colour in the `:root` block of `site.css` and redefine it under both dark-mode selectors.",
+      "Do give each new site its own site-colour token and set it on its card as the card accent.",
+      "Do keep tap targets at least 44px tall, including link-list rows and buttons.",
+      "Do use accent ink, not signal orange, for any accent text or link.",
+      "Do use the C key alone (no lockup) when the mark is 32px or smaller.",
+      "Do check light and dark at 1280 and 390 wide with no horizontal overflow.",
+      "Do bump the `?v=` stamp on the `site.css` link in every HTML file when the stylesheet changes."
+    ],
+    "donts": [
+      "Don't make anything but the C key orange.",
+      "Don't add resting shadows to cards; depth is for hover and press only.",
+      "Don't let a site's colour leak outside its own card.",
+      "Don't use uppercase or letter-spaced labels; everything is sentence case.",
+      "Don't make cards that hold several links lift on hover.",
+      "Don't set paragraphs in Space Grotesk."
+    ]
+  }
+}
