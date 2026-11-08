@@ -76,7 +76,7 @@
   <section class="col music" id="music" aria-labelledby="mu-h" style="--c:var(--bd)">
     <h2 id="mu-h">Music</h2>
     <figure id="pick-fig"><img id="pick-logo" src="/logos/bobdylan.png" alt="bobdylan.app logo" width="512" height="512"></figure>
-    <div class="night" id="night" aria-live="polite">
+    <div class="night" id="night">
       <h3 id="pick-head">The night someone shouted “Judas!”</h3>
       <p class="opened"><span id="pick-where">Free Trade Hall, Manchester</span>, <span id="pick-when">Tue 17 May 1966</span> · Opened with <b id="pick-open">She Belongs to Me</b></p>
       <p id="pick-note">Bootlegged for decades under the wrong name, as the Royal Albert Hall concert.</p>
@@ -222,7 +222,9 @@
     col.style.setProperty("--c",band.c);document.getElementById("pick-fig").style.background=band.ground;
     if(logo.getAttribute("src")!==band.logo){logo.src=band.logo;logo.alt=band.alt}
     document.getElementById("pick-go").href=band.site+"/concert/?id="+x[1];}
+  show(Math.floor(Math.random()*SHOWS.length));
   document.getElementById("pick-btn").addEventListener("click",function(){var n;do{n=Math.floor(Math.random()*SHOWS.length)}while(n===cur);
+    box.setAttribute("aria-live","polite");
     if(still){show(n);return}box.classList.add("out");setTimeout(function(){show(n);box.classList.remove("out")},220)});
 
   // Front page lead: a story from the manutd.wiki archive, new on each visit and on request

@@ -276,7 +276,7 @@ The RMC mark at 40px tall (`rmc-mark.svg` by day, `rmc-mark-on-dark.svg` by nigh
 The lead story is drawn at random from six real United stories in the manutd.wiki archive (league and FA Cup only, since European ties are not in the archive) on each visit, and "Another story" swaps it with the same 0.25s fade as the archive night. The page ships the 1886 story in its HTML, so it still reads with scripts off.
 
 ### Archive night
-The Music column shows a different real night from the Dylan or Led Zeppelin archive each time "Another night" is pressed. The text fades out and back in over 0.25s, and the fade is turned off under `prefers-reduced-motion`.
+The Music column opens on a random real night from the Dylan or Led Zeppelin archive on each visit, and shows a different one each time "Another night" is pressed. The text fades out and back in over 0.25s, and the fade is turned off under `prefers-reduced-motion`.
 
 ## Do's and Don'ts
 
