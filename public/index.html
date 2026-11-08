@@ -22,7 +22,7 @@
 <link rel="manifest" href="/site.webmanifest">
 <link rel="preload" href="/fonts/libre-franklin-latin-900-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/source-serif-4-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/site.css?v=202611080933">
+<link rel="stylesheet" href="/site.css?v=202611080939">
 <script>try{var t=localStorage.getItem("rm-theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
 </head>
 <body>
@@ -86,8 +86,8 @@
 
 <h2 class="paper-h" id="sites">The sites</h2>
 <h3 class="grp">Sport</h3>
-<div class="secs quads">
-  <section class="sec quad" id="united" style="--c:var(--mu)" aria-labelledby="united-h">
+<div class="sport">
+  <section class="sec lead-site" id="united" style="--c:var(--mu)" aria-labelledby="united-h">
     <div class="top"><img class="bare" src="/logos/manutd.png" alt="" width="56" height="56"><h3 id="united-h">manutd.wiki<small>Manchester United</small></h3></div>
     <p class="deck">Check the next United match, find where to watch, or plan a trip to Old Trafford.</p>
     <ul class="links">
@@ -98,36 +98,23 @@
     </ul>
     <a class="go" href="https://manutd.wiki">Open manutd.wiki</a>
   </section>
-  <section class="sec quad" id="limerick" style="--c:var(--lim)" aria-labelledby="lim-h">
-    <div class="top"><img src="/logos/limerickhurling.png" alt="" width="56" height="56"><h3 id="lim-h">limerickhurling.wiki<small>Limerick hurling</small></h3></div>
-    <p class="deck">Find Limerick’s next fixture, see who scored last time, or browse the county’s honours.</p>
-    <ul class="links">
-      <li><a href="https://limerickhurling.wiki">Next fixture and latest result with scorers</a></li>
-      <li><a href="https://limerickhurling.wiki">All-Ireland, League and Munster titles</a></li>
-      <li><a href="https://limerickhurling.wiki">All-time top scorers</a></li>
-    </ul>
-    <a class="go" href="https://limerickhurling.wiki">Open limerickhurling.wiki</a>
-  </section>
-  <section class="sec quad" id="ireland-football" style="--c:var(--irf)" aria-labelledby="irf-h">
-    <div class="top"><img src="/logos/irelandfootball.png" alt="" width="56" height="56"><h3 id="irf-h">irelandfootball.wiki<small>Republic of Ireland football</small></h3></div>
-    <p class="deck">Find the next Ireland match, check the broadcaster in your country, and see where Ireland stand in the group.</p>
-    <ul class="links">
-      <li><a href="https://irelandfootball.wiki">Next match with broadcasters by country</a></li>
-      <li><a href="https://irelandfootball.wiki">Recent form and historical record</a></li>
-      <li><a href="https://irelandfootball.wiki">Live group table</a></li>
-    </ul>
-    <a class="go" href="https://irelandfootball.wiki">Open irelandfootball.wiki</a>
-  </section>
-  <section class="sec quad" id="ireland-rugby" style="--c:var(--irr)" aria-labelledby="irr-h">
-    <div class="top"><img src="/logos/irelandrugby.png" alt="" width="56" height="56"><h3 id="irr-h">irelandrugby.wiki<small>Ireland and the four provinces</small></h3></div>
-    <p class="deck">See when Ireland or your province plays next, then catch up on results and tables.</p>
-    <ul class="links">
-      <li><a href="https://irelandrugby.wiki">Upcoming fixtures across all five teams</a></li>
-      <li><a href="https://irelandrugby.wiki">Latest results and tables</a></li>
-      <li><a href="https://irelandrugby.wiki">Each province’s last game and next opponent</a></li>
-    </ul>
-    <a class="go" href="https://irelandrugby.wiki">Open irelandrugby.wiki</a>
-  </section>
+  <div class="irish">
+    <section class="brief-site" id="limerick" style="--c:var(--lim)" aria-labelledby="lim-h">
+      <div class="top"><img src="/logos/limerickhurling.png" alt="" width="40" height="40"><h3 id="lim-h">limerickhurling.wiki<small>Limerick hurling</small></h3></div>
+      <p>Find Limerick’s next fixture, see who scored last time, or browse the county’s honours.</p>
+      <a class="go" href="https://limerickhurling.wiki">Open limerickhurling.wiki</a>
+    </section>
+    <section class="brief-site" id="ireland-football" style="--c:var(--irf)" aria-labelledby="irf-h">
+      <div class="top"><img src="/logos/irelandfootball.png" alt="" width="40" height="40"><h3 id="irf-h">irelandfootball.wiki<small>Republic of Ireland football</small></h3></div>
+      <p>Find the next Ireland match, check the broadcaster in your country, and see where Ireland stand in the group.</p>
+      <a class="go" href="https://irelandfootball.wiki">Open irelandfootball.wiki</a>
+    </section>
+    <section class="brief-site" id="ireland-rugby" style="--c:var(--irr)" aria-labelledby="irr-h">
+      <div class="top"><img src="/logos/irelandrugby.png" alt="" width="40" height="40"><h3 id="irr-h">irelandrugby.wiki<small>Ireland and the four provinces</small></h3></div>
+      <p>See when Ireland or your province plays next, then catch up on results and tables.</p>
+      <a class="go" href="https://irelandrugby.wiki">Open irelandrugby.wiki</a>
+    </section>
+  </div>
 </div>
 <h3 class="grp">Music</h3>
 <section class="sec dy" id="dylan" style="--c:var(--bd)" aria-labelledby="bd-h">
