@@ -165,14 +165,34 @@ img.bare{background:transparent!important}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .byline .mk.on-light{display:none}:root:not([data-theme="light"]) .byline .mk.on-dark{display:block}}
 :root[data-theme="dark"] .byline .mk.on-light{display:none}
 :root[data-theme="dark"] .byline .mk.on-dark{display:block}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .cp-name .mk.on-light{display:none}:root:not([data-theme="light"]) .cp-name .mk.on-dark{display:block}}
+:root[data-theme="dark"] .cp-name .mk.on-light{display:none}
+:root[data-theme="dark"] .cp-name .mk.on-dark{display:block}
 .byline b{font-family:var(--head);font-weight:900;font-size:20px;display:block;line-height:1.1}
 .byline span{font-family:var(--head);font-size:14px;color:var(--mute)}
 .column p{font-size:19px;line-height:1.55;max-width:58ch}
 .row{display:flex;flex-wrap:wrap;gap:0 22px;margin-top:6px}
 
 /* colophon */
-.colophon{margin-top:48px;border-top:5px double var(--rule);padding:16px 0 40px;display:grid;grid-template-columns:1fr auto;gap:12px 32px;align-items:start;font-family:var(--head);font-size:14px;color:var(--mute)}
-.colophon p{max-width:70ch}
+.colophon{margin-top:48px;border-top:5px double var(--rule);padding-bottom:40px;font-family:var(--head)}
+.cp-name{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 32px;padding:16px 0 14px;border-bottom:1px solid var(--rule)}
+.cp-name a{display:inline-flex;align-items:center;gap:14px;min-height:44px;text-decoration:none}
+.cp-name .mk{height:30px;width:auto;flex:none}
+.cp-name .mk.on-dark{display:none}
+.cp-name b{font-weight:900;font-size:clamp(22px,2.4vw,30px);letter-spacing:-.025em;line-height:1}
+.cp-src{font-size:14px;line-height:1.5;color:var(--mute);max-width:56ch}
+.cp-cols{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));padding:20px 0 22px;border-bottom:1px solid var(--hair)}
+.cp-cols > div{min-width:0;padding:0 var(--col);border-left:1px solid var(--hair)}
+.cp-cols > :first-child{padding-left:0;border-left:0}
+.cp-cols > :last-child{padding-right:0}
+.cp-cols h2{font-weight:900;font-size:15px;line-height:1.2;padding-bottom:6px;border-bottom:3px solid var(--ink);margin-bottom:2px}
+.cp-cols li{border-bottom:1px solid var(--hair)}
+.cp-cols a{display:flex;align-items:center;gap:10px;min-height:44px;font-weight:600;font-size:15px;line-height:1.25;text-decoration:none;overflow-wrap:anywhere}
+.cp-cols a:hover{text-decoration:underline;text-decoration-thickness:2px}
+.cp-cols img{width:20px;height:20px;border-radius:3px;flex:none;background:var(--logo-bg)}
+.cp-cols .soon{font-family:var(--text);font-size:15px;line-height:1.45;color:var(--mute);margin-top:10px}
+.cp-small{display:grid;grid-template-columns:1fr auto;gap:12px 32px;align-items:center;padding-top:16px;font-size:14px;color:var(--mute)}
+.cp-small p{max-width:70ch}
 .edition{display:flex;align-items:center;gap:8px;font-weight:600;color:var(--ink)}
 .edition button{font:inherit;font-weight:600;color:var(--ink);background:transparent;border:1px solid var(--hair);min-height:44px;padding:0 12px;cursor:pointer;border-radius:0}
 .edition button:hover{border-color:var(--ink)}
@@ -187,6 +207,9 @@ img.bare{background:transparent!important}
     .front{grid-template-columns:1fr 1fr}
  .front .lead{grid-column:1/-1;padding:0 0 26px;border-bottom:1px solid var(--hair);margin-bottom:22px}
  .front > :nth-child(2){padding-left:0;border-left:0}
+ .cp-cols{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:24px}
+ .cp-cols > :nth-child(2){padding-right:0}
+ .cp-cols > :nth-child(3){padding-left:0;border-left:0}
 }
 @media (max-width:720px){
  body{font-size:17px}
@@ -208,9 +231,10 @@ img.bare{background:transparent!important}
  .music-sites{display:block}
  .sec.band + .sec.band{border-left:0;margin-left:0;padding-left:0}
  .two{grid-template-columns:1fr}
- .colophon{grid-template-columns:1fr}
+ .cp-small{grid-template-columns:1fr}
  .sport{display:block}
  .irish{padding:22px 0 10px;border-left:0;margin-left:0;border-top:1px solid var(--hair)}
  .sec.lead-site{padding-bottom:26px}
 }
 @media (prefers-reduced-motion:reduce){.lead > :not(.acts),.night,.music figure,.go::after,.links a::after{transition:none}}
+@media (max-width:480px){.cp-cols{grid-template-columns:1fr}.cp-cols > *{padding:0!important;border-left:0!important}}
