@@ -10,7 +10,7 @@
 @font-face{font-family:"Source Serif 4";font-weight:600;font-style:normal;font-display:swap;src:url("/fonts/source-serif-4-latin-600-normal.woff2") format("woff2")}
 
 :root{
- --paper:#FBFAF7;--ink:#111110;--mute:#4E4D49;--rule:#111110;--hair:#CFCCC4;--tint:#F0EEE8;--logo-bg:#fff;--plate:#0d0d0d;
+ --paper:#FBFAF7;--ink:#111110;--mute:#4E4D49;--rule:#111110;--hair:#CFCCC4;--tint:#F0EEE8;--logo-bg:#fff;--plate:#0d0d0d;--dylan-ground:#171513;
  --mu:#DA020E;--lim:#00693E;--irf:#0B6E4F;--irr:#0A6B3D;--bd:#B3261E;--fc:#111110;
  --sel:#FFE27A;
  --head:"Libre Franklin","Franklin Gothic Medium","Helvetica Neue",Arial,sans-serif;
@@ -88,7 +88,7 @@ ul,ol{list-style:none}
 .brief .next b{font-family:var(--head);font-weight:800}
 
 .music figure{margin-top:12px;background:var(--plate)}
-.music figure{background:#0d0d0d}
+.music figure{background:var(--dylan-ground)}
 .music figure img{display:block;width:100%;height:auto;aspect-ratio:5/4;object-fit:contain}
 .music h3{font-family:var(--head);font-weight:900;font-size:clamp(24px,2.1vw,30px);line-height:1.05;letter-spacing:-.02em;margin:14px 0 6px;color:var(--ink)}
 .music p{font-size:16.5px;line-height:1.5}
@@ -114,10 +114,9 @@ ul,ol{list-style:none}
 .secs.quads .sec:last-child{padding-right:0;border-right:0}
 .sec.dy{display:grid;grid-template-columns:1fr 1fr;gap:0 var(--gut);padding:0 0 30px;border-right:0}
 .sec.dy .deck b{font-family:var(--head);font-weight:800}
-.setlist{counter-reset:s;border-top:6px solid var(--c);margin-top:22px}
-.setlist li{counter-increment:s;border-bottom:1px solid var(--hair)}
-.setlist a{display:grid;grid-template-columns:2.2em 1fr;align-items:center;min-height:46px;font-family:var(--head);font-weight:600;font-size:16px;text-decoration:none}
-.setlist a::before{content:counter(s,decimal-leading-zero);font-weight:800;color:var(--c);font-variant-numeric:tabular-nums}
+.setlist{border-top:6px solid var(--c);margin-top:22px}
+.setlist li{border-bottom:1px solid var(--hair)}
+.setlist a{display:flex;align-items:center;justify-content:space-between;min-height:46px;font-family:var(--head);font-weight:600;font-size:16px;text-decoration:none}
 .setlist a:hover{color:var(--c)}
 .sec.dy > div{padding-top:0}
 .sec.dy .top{margin-top:22px}
