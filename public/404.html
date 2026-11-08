@@ -11,7 +11,7 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
 <link rel="preload" href="/fonts/libre-franklin-latin-900-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/site.css?v=202611080921">
+<link rel="stylesheet" href="/site.css?v=202611080927">
 <script>try{var t=localStorage.getItem("rm-theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
 </head>
 <body>
@@ -19,7 +19,7 @@
 <header>
   <div class="mast">
     <a class="name" href="/">Richard McAllister</a>
-    <p class="dateline">Sport &amp; music · five sites<br>Skåne</p>
+    <p class="dateline">Sport &amp; music · five sites<br><span id="today">Today</span> · Skåne</p>
   </div>
   <nav class="sections" aria-label="Sections">
     <a href="/#united" style="--c:var(--mu)">United</a>
@@ -30,10 +30,21 @@
   </nav>
 </header>
 <main class="nf" style="--c:var(--mu)">
-  <h1>This page isn't in today's edition</h1>
+  <h1>This page isn’t in today’s edition</h1>
   <p>Correction: the address may be old or mistyped. Every site is on the front page.</p>
   <a class="go" href="/" style="--c:var(--ink)">Back to the front page</a>
 </main>
+<footer class="colophon">
+  <p>Independent fan sites, built and run by me. Not affiliated with any club, union or artist.</p>
+  <div class="edition" role="group" aria-label="Appearance"><span>Edition</span><button type="button" data-t="">Auto</button><button type="button" data-t="light">Day</button><button type="button" data-t="dark">Night</button></div>
+</footer>
 </div>
+<script>
+(function(){var root=document.documentElement,btns=document.querySelectorAll(".edition button");
+function mark(){var cur=root.dataset.theme||"";btns.forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.t===cur))})}
+btns.forEach(function(b){b.addEventListener("click",function(){if(b.dataset.t){root.dataset.theme=b.dataset.t}else{delete root.dataset.theme}
+try{b.dataset.t?localStorage.setItem("rm-theme",b.dataset.t):localStorage.removeItem("rm-theme")}catch(e){}mark()})});mark();
+try{document.getElementById("today").textContent=new Date().toLocaleDateString("en-GB",{weekday:"long",day:"numeric",month:"long",year:"numeric",timeZone:"Europe/Stockholm"}).replace(/,/g,"")}catch(e){}})();
+</script>
 </body>
 </html>
