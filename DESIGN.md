@@ -273,6 +273,9 @@ Franklin 15px with tabular figures. An 800 13px head row over a 2px ink rule, ha
 ### Byline
 The RMC mark at 40px tall (`rmc-mark.svg` by day, `rmc-mark-on-dark.svg` by night), then the name in Franklin 900 20px and the place in Byline Grey 14px.
 
+### On your birthday
+A section between the front page and The sites. The page head sits on the left of the double rule with the Day and Month selects and a Today button on the right. A plain sentence counts what happened on that date. Below, one block per site with records that day, set in three newspaper columns with hairline column rules: a 3px site-colour rule, the logo and name, the count in site colour, then three highlights (earliest, biggest win or the middle one, most recent) as year, headline and detail rows. "See all" opens the full list in place of the highlights. Sites with nothing that day are named in a muted line underneath. Celtic's colour (`--cel`) appears only in its block.
+
 ### Archive lead
 The lead story is drawn at random from six real United stories in the manutd.wiki archive (league and FA Cup only, since European ties are not in the archive) on each visit, and "Another story" swaps it with the same 0.25s fade as the archive night. The page ships the 1886 story in its HTML, so it still reads with scripts off.
 

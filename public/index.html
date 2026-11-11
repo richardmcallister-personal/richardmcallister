@@ -22,7 +22,7 @@
 <link rel="manifest" href="/site.webmanifest">
 <link rel="preload" href="/fonts/libre-franklin-latin-900-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/source-serif-4-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/site.css?v=202611081429">
+<link rel="stylesheet" href="/site.css?v=202611111450">
 <script>try{var t=localStorage.getItem("rm-theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
 </head>
 <body>
@@ -40,7 +40,8 @@
     <a href="#ireland-rugby" style="--c:var(--irr)">Ireland rugby</a>
     <a href="#dylan" style="--c:var(--bd)">Dylan</a>
     <a href="#ledzeppelin" style="--c:var(--lz)">Zeppelin</a>
-    <a class="sp" href="#built">How they’re built</a>
+    <a class="sp" href="#birthday">Your birthday</a>
+    <a href="#built">How they’re built</a>
     <a href="#about">About</a>
   </nav>
 </header>
@@ -88,6 +89,21 @@
     </ul>
   </section>
 </div>
+
+<section class="bday" id="birthday" aria-labelledby="bday-h">
+  <div class="bday-head">
+    <h2 class="paper-h" id="bday-h">On your birthday</h2>
+    <form class="bday-pick" id="bday-form" onsubmit="return false">
+      <label for="bday-day">Day</label><select id="bday-day" name="day"></select>
+      <label for="bday-month">Month</label><select id="bday-month" name="month"></select>
+      <button type="button" class="another" id="bday-today">Today</button>
+    </form>
+  </div>
+  <p class="bday-sum" id="bday-sum" aria-live="polite">Pick a day and month to see every match and show on record for that date, from all seven sites.</p>
+  <div class="bday-grid" id="bday-grid"></div>
+  <p class="bday-none" id="bday-none"></p>
+  <noscript><p class="bday-sum">The birthday lookup needs JavaScript.</p></noscript>
+</section>
 
 <h2 class="paper-h" id="sites">The sites</h2>
 <h3 class="grp">Sport</h3>
@@ -310,6 +326,71 @@
   tell(Math.floor(Math.random()*STORIES.length));
   document.getElementById("lead-btn").addEventListener("click",function(){var n=other();lead.setAttribute("aria-live","polite");
     if(still){tell(n);return}lead.classList.add("out");setTimeout(function(){tell(n);lead.classList.remove("out")},220)});
+
+  // On your birthday: every match and show on record for a calendar date, from all seven sites
+  var OTD={
+    mu:{n:"Manchester United",k:"United",u:"https://manutd.wiki",logo:"/logos/manutd.png",bare:1,c:"var(--mu)",one:"match",many:"matches"},
+    cel:{n:"Celtic",k:"Celtic",u:"https://celtic.richardmcallister.app",logo:"/logos/celtic.png",c:"var(--cel)",one:"match",many:"matches"},
+    lim:{n:"Limerick hurling",k:"Limerick",u:"https://limerickhurling.wiki",logo:"/logos/limerickhurling.png",c:"var(--lim)",one:"match",many:"matches"},
+    irf:{n:"Ireland football",k:"Ireland football",u:"https://irelandfootball.wiki",logo:"/logos/irelandfootball.png",c:"var(--irf)",one:"match",many:"matches"},
+    irr:{n:"Ireland rugby",k:"Ireland rugby",u:"https://irelandrugby.wiki",logo:"/logos/irelandrugby.png",c:"var(--irr)",one:"match",many:"matches",since:"Rugby results go back to 2020."},
+    bd:{n:"Bob Dylan",k:"Dylan",u:"https://bobdylan.app",logo:"/logos/bobdylan.png",c:"var(--bd)",one:"show",many:"shows"},
+    lz:{n:"Led Zeppelin",k:"Led Zeppelin",u:"https://ledzeppelin.app",logo:"/logos/ledzeppelin.png",c:"var(--lz)",one:"show",many:"shows"}
+  };
+  var ORDER=["mu","cel","lim","irf","irr","bd","lz"],MONTHS=["January","February","March","April","May","June","July","August","September","October","November","December"],
+      LEN=[31,29,31,30,31,30,31,31,30,31,30,31],cache={},daySel=document.getElementById("bday-day"),monSel=document.getElementById("bday-month");
+  function el(tag,cls,text){var e=document.createElement(tag);if(cls)e.className=cls;if(text!=null)e.textContent=text;return e}
+  for(var i=1;i<=31;i++){var o=el("option",null,String(i));o.value=i;daySel.appendChild(o)}
+  MONTHS.forEach(function(m,i){var o=el("option",null,m);o.value=i+1;monSel.appendChild(o)});
+  function margin(h){var m=/^Won (\d+)–(\d+)/.exec(h);if(m)return m[1]-m[2];
+    m=/^Won (\d+)-(\d+) to (\d+)-(\d+)/.exec(h);if(m)return (m[1]*3+ +m[2])-(m[3]*3+ +m[4]);return -1}
+  function picks(list){ // earliest, biggest win (or the middle one), most recent
+    if(list.length<=3)return list.slice();
+    var best=null,bm=0;list.forEach(function(e){var m=margin(e[2]);if(m>bm||(m===bm&&best&&m>0&&e[0]>best[0])){bm=m;best=e}});
+    var mid=best||list[Math.floor(list.length/2)],out=[list[0]];
+    if(out.indexOf(mid)<0)out.push(mid);if(out.indexOf(list[list.length-1])<0)out.push(list[list.length-1]);
+    for(var i=Math.floor(list.length/2),step=1;out.length<3&&step<list.length;step++){ // top up from the middle outwards
+      var j=i+(step%2?1:-1)*Math.ceil(step/2);if(j>=0&&j<list.length&&out.indexOf(list[j])<0)out.push(list[j])}
+    return out.sort(function(a,b){return a[0]-b[0]})}
+  function row(e){var site=OTD[e[1]],li=el("li"),a=el("a");a.href=site.u+e[4];
+    a.appendChild(el("span","yr",String(e[0])));var t=el("span");t.appendChild(el("b",null,e[2]));if(e[3])t.appendChild(el("small",null,e[3]));a.appendChild(t);li.appendChild(a);return li}
+  function list(items){var ol=el("ol");items.forEach(function(e){ol.appendChild(row(e))});return ol}
+  function joinAnd(a){return a.length<2?a.join(""):a.slice(0,-1).join(", ")+" and "+a[a.length-1]}
+  function render(mm,dd,data){
+    var key=mm+"-"+dd,day=data[key]||[],by={},grid=document.getElementById("bday-grid"),label=(+dd)+" "+MONTHS[+mm-1];
+    day.forEach(function(e){(by[e[1]]=by[e[1]]||[]).push(e)});
+    grid.textContent="";var parts=[],none=[],y0=9999,y1=0;
+    ORDER.forEach(function(k){var s=OTD[k],items=by[k];
+      if(!items){none.push(s.k);return}
+      parts.push(items.length+" "+s.k+" "+(items.length===1?s.one:s.many));
+      y0=Math.min(y0,items[0][0]);y1=Math.max(y1,items[items.length-1][0]);
+      var art=el("article","od");art.style.setProperty("--c",s.c);
+      var h=el("h3"),img=el("img",s.bare?"bare":null);img.src=s.logo;img.alt="";img.width=30;img.height=30;img.loading="lazy";
+      var name=el("span");var link=el("a",null,s.n);link.href=s.u;name.appendChild(link);name.appendChild(el("small",null,items.length+" "+(items.length===1?s.one:s.many)+" on "+label));
+      h.appendChild(img);h.appendChild(name);art.appendChild(h);
+      var top=list(picks(items));art.appendChild(top);
+      if(items.length>3){var det=el("details"),sum=el("summary",null,"See all "+items.length);det.appendChild(sum);det.appendChild(list(items));
+        det.addEventListener("toggle",function(){top.hidden=det.open;sum.textContent=det.open?"Show the highlights":"See all "+items.length});art.appendChild(det)}
+      grid.appendChild(art)});
+    document.getElementById("bday-sum").textContent=parts.length?("On "+label+": "+joinAnd(parts)+", from "+y0+" to "+y1+"."):("Nothing on record for "+label+".");
+    var n=none.length?"Nothing on record on "+label+" for "+joinAnd(none)+".":"";
+    if(none.indexOf("Ireland rugby")>=0)n+=" "+OTD.irr.since;
+    document.getElementById("bday-none").textContent=n.trim();
+  }
+  function go(push){var m=+monSel.value,d=+daySel.value;
+    Array.prototype.forEach.call(daySel.options,function(o){o.disabled=+o.value>LEN[m-1]});
+    if(d>LEN[m-1]){d=LEN[m-1];daySel.value=d}
+    var mm=("0"+m).slice(-2),dd=("0"+d).slice(-2);
+    if(push){try{var q=new URL(location.href);q.searchParams.set("d",mm+"-"+dd);q.hash="birthday";history.replaceState(null,"",q)}catch(e){}}
+    var got=cache[mm]||(cache[mm]=fetch("/data/otd/"+mm+".json").then(function(r){if(!r.ok)throw r;return r.json()}));
+    got.then(function(data){if(+monSel.value===m&&+daySel.value===d)render(mm,dd,data)},function(){delete cache[mm];
+      document.getElementById("bday-sum").textContent="Couldn’t load that date. Check your connection and try again."})}
+  function setToday(){var p=new Date().toLocaleDateString("en-GB",{day:"numeric",month:"numeric",timeZone:"Europe/Stockholm"}).split("/");daySel.value=+p[0];monSel.value=+p[1]}
+  var qd=null;try{qd=new URLSearchParams(location.search).get("d")}catch(e){}
+  if(qd&&/^\d\d-\d\d$/.test(qd)&&+qd.slice(0,2)>=1&&+qd.slice(0,2)<=12){monSel.value=+qd.slice(0,2);daySel.value=+qd.slice(3)}else setToday();
+  daySel.addEventListener("change",function(){go(true)});monSel.addEventListener("change",function(){go(true)});
+  document.getElementById("bday-today").addEventListener("click",function(){setToday();go(true)});
+  go(false);
 })();
 </script>
 </body>

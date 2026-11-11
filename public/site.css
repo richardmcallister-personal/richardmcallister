@@ -11,7 +11,7 @@
 
 :root{
  --paper:#FBFAF7;--ink:#111110;--mute:#4E4D49;--rule:#111110;--hair:#CFCCC4;--logo-bg:#fff;--dylan-ground:#171513;--zep-ground:#202322;
- --mu:#DA020E;--lim:#00693E;--irf:#0B6E4F;--irr:#0A6B3D;--bd:#B3261E;--lz:#8A5A12;--fc:#111110;
+ --mu:#DA020E;--lim:#00693E;--irf:#0B6E4F;--irr:#0A6B3D;--bd:#B3261E;--lz:#8A5A12;--cel:#007A3D;--fc:#111110;
  --sel:#FFE27A;
  --head:"Libre Franklin","Franklin Gothic Medium","Helvetica Neue",Arial,sans-serif;
  --text:"Source Serif 4",Georgia,"Times New Roman",serif;
@@ -20,10 +20,10 @@
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
  --paper:#141311;--ink:#EEEBE4;--mute:#B9B5AC;--rule:#EEEBE4;--hair:#3A3833;--logo-bg:#F2EFE8;
- --mu:#FF3B3B;--lim:#3FBE74;--irf:#2FB58A;--irr:#48B979;--bd:#D9675A;--lz:#E4A952;--fc:#EEEBE4;--sel:#6B5A12;color-scheme:dark}}
+ --mu:#FF3B3B;--lim:#3FBE74;--irf:#2FB58A;--irr:#48B979;--bd:#D9675A;--lz:#E4A952;--cel:#4CC285;--fc:#EEEBE4;--sel:#6B5A12;color-scheme:dark}}
 :root[data-theme="dark"]{
  --paper:#141311;--ink:#EEEBE4;--mute:#B9B5AC;--rule:#EEEBE4;--hair:#3A3833;--logo-bg:#F2EFE8;
- --mu:#FF3B3B;--lim:#3FBE74;--irf:#2FB58A;--irr:#48B979;--bd:#D9675A;--lz:#E4A952;--fc:#EEEBE4;--sel:#6B5A12;color-scheme:dark}
+ --mu:#FF3B3B;--lim:#3FBE74;--irf:#2FB58A;--irr:#48B979;--bd:#D9675A;--lz:#E4A952;--cel:#4CC285;--fc:#EEEBE4;--sel:#6B5A12;color-scheme:dark}
 
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%;scroll-padding-top:16px}
@@ -104,6 +104,31 @@ ul,ol{list-style:none}
 .lead > :not(.acts){transition:opacity .25s ease}
 .lead.out > :not(.acts){opacity:0}
 .lead .acts{margin-top:2px}
+
+/* on your birthday */
+.bday-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px 32px;margin-top:44px;padding-bottom:12px;border-bottom:5px double var(--rule)}
+.bday-head .paper-h{margin:0;padding:0;border:0}
+.bday-pick{display:flex;flex-wrap:wrap;align-items:center;gap:8px 10px;font-family:var(--head);font-weight:600;font-size:14px}
+.bday-pick select{font:inherit;font-weight:800;font-size:16px;color:var(--ink);background:var(--paper);border:1px solid var(--rule);border-radius:0;min-height:44px;padding:0 8px}
+.bday-pick label + select{margin-right:6px}
+.bday-sum{font-size:19px;line-height:1.5;margin:14px 0 2px;max-width:72ch;text-wrap:pretty}
+.bday-none{font-family:var(--head);font-size:14px;color:var(--mute);margin-top:6px}
+.bday-grid{columns:3 300px;column-gap:var(--gut);column-rule:1px solid var(--hair)}
+.od{break-inside:avoid;padding:16px 0 14px}
+.od h3{display:flex;align-items:center;gap:12px;border-top:3px solid var(--c);padding-top:10px;margin-bottom:2px;font-family:var(--head);font-weight:900;font-size:20px;letter-spacing:-.015em;line-height:1.1}
+.od h3 a{display:inline-block;padding:11px 0;margin:-11px 0;text-decoration:none}
+.od h3 a:hover{text-decoration:underline}
+.od h3 img{width:30px;height:30px;border-radius:4px;flex:none;background:var(--logo-bg)}
+.od h3 small{display:block;font-weight:600;font-size:14px;letter-spacing:0;color:var(--c);margin-top:3px}
+.od li a{display:grid;grid-template-columns:3em minmax(0,1fr);gap:0 10px;min-height:44px;padding:9px 0;border-bottom:1px solid var(--hair);text-decoration:none;font-family:var(--head)}
+.od .yr{font-weight:800;font-size:15px;line-height:1.35;color:var(--c);font-variant-numeric:tabular-nums}
+.od li b{display:block;font-weight:800;font-size:15.5px;line-height:1.3}
+.od li small{display:block;font-size:13.5px;line-height:1.35;color:var(--mute);margin-top:1px}
+.od li a:hover b{text-decoration:underline}
+.od summary{display:inline-flex;align-items:center;min-height:44px;font-family:var(--head);font-weight:800;font-size:14px;color:var(--c);cursor:pointer;list-style:none}
+.od summary::-webkit-details-marker{display:none}
+.od summary:hover{text-decoration:underline}
+.od details[open] ol{margin-bottom:6px}
 
 /* sections, one per site */
 .paper-h{font-family:var(--head);font-weight:900;font-size:clamp(28px,3vw,40px);letter-spacing:-.025em;line-height:1;margin:44px 0 0;padding-bottom:12px;border-bottom:5px double var(--rule)}

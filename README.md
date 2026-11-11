@@ -10,3 +10,13 @@ Deploy: Cloudflare → Workers & Pages → Create → Import a repository → th
 Build command: none. Deploy command: `npx wrangler deploy`. Pushes to `main` deploy automatically.
 
 Local preview: `npx wrangler dev` (or open `public/index.html`).
+
+## On your birthday
+
+The homepage section "On your birthday" reads `public/data/otd/01.json` to `12.json`, one file per month,
+built from the public data of manutd.wiki, Celtic, limerickhurling.wiki, irelandfootball.wiki,
+irelandrugby.wiki (from 2020), bobdylan.app and ledzeppelin.app. Refresh it with:
+
+    python3 scripts/build-otd.py   (then commit public/data/otd)
+
+A shared link can carry the date: `https://richardmcallister.app/?d=11-08#birthday`.

@@ -4,3 +4,5 @@
   Permissions-Policy: camera=(), microphone=(), geolocation=()
 /site.css
   Cache-Control: public, max-age=0, must-revalidate
+/data/otd/*
+  Cache-Control: public, max-age=86400
