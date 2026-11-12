@@ -11,7 +11,7 @@
 
 :root{
  --paper:#FBFAF7;--ink:#111110;--mute:#4E4D49;--rule:#111110;--hair:#CFCCC4;--logo-bg:#fff;--dylan-ground:#171513;--zep-ground:#202322;
- --mu:#DA020E;--lim:#00693E;--irf:#0B6E4F;--irr:#0A6B3D;--bd:#B3261E;--lz:#8A5A12;--cel:#007A3D;--fc:#111110;
+ --mu:#DA020E;--lim:#00693E;--irf:#0B6E4F;--irr:#0A6B3D;--bd:#B3261E;--lz:#8A5A12;--cel:#007A3D;--bc:#7F5700;--fc:#111110;
  --sel:#FFE27A;
  --head:"Libre Franklin","Franklin Gothic Medium","Helvetica Neue",Arial,sans-serif;
  --text:"Source Serif 4",Georgia,"Times New Roman",serif;
@@ -20,10 +20,10 @@
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
  --paper:#141311;--ink:#EEEBE4;--mute:#B9B5AC;--rule:#EEEBE4;--hair:#3A3833;--logo-bg:#F2EFE8;
- --mu:#FF3B3B;--lim:#3FBE74;--irf:#2FB58A;--irr:#48B979;--bd:#D9675A;--lz:#E4A952;--cel:#4CC285;--fc:#EEEBE4;--sel:#6B5A12;color-scheme:dark}}
+ --mu:#FF3B3B;--lim:#3FBE74;--irf:#2FB58A;--irr:#48B979;--bd:#D9675A;--lz:#E4A952;--cel:#4CC285;--bc:#E2B04A;--fc:#EEEBE4;--sel:#6B5A12;color-scheme:dark}}
 :root[data-theme="dark"]{
  --paper:#141311;--ink:#EEEBE4;--mute:#B9B5AC;--rule:#EEEBE4;--hair:#3A3833;--logo-bg:#F2EFE8;
- --mu:#FF3B3B;--lim:#3FBE74;--irf:#2FB58A;--irr:#48B979;--bd:#D9675A;--lz:#E4A952;--cel:#4CC285;--fc:#EEEBE4;--sel:#6B5A12;color-scheme:dark}
+ --mu:#FF3B3B;--lim:#3FBE74;--irf:#2FB58A;--irr:#48B979;--bd:#D9675A;--lz:#E4A952;--cel:#4CC285;--bc:#E2B04A;--fc:#EEEBE4;--sel:#6B5A12;color-scheme:dark}
 
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%;scroll-padding-top:16px}
@@ -90,6 +90,7 @@ ul,ol{list-style:none}
 .music figure{margin-top:12px}
 .music figure{background:var(--dylan-ground);transition:background .25s ease}
 .bands{margin-top:18px;border-top:1px solid var(--hair)}
+.music .sub-h{margin-top:22px;--c:var(--ink)}
 .music figure img{display:block;width:100%;height:auto;aspect-ratio:5/4;object-fit:contain}
 .music h3{font-family:var(--head);font-weight:900;font-size:clamp(24px,2.1vw,30px);line-height:1.05;letter-spacing:-.02em;margin:14px 0 6px;color:var(--ink)}
 .music p{font-size:16.5px;line-height:1.5}
@@ -129,6 +130,7 @@ ul,ol{list-style:none}
 .od summary::-webkit-details-marker{display:none}
 .od summary:hover{text-decoration:underline}
 .od details[open] ol{margin-bottom:6px}
+.bday-more{display:none;margin-top:8px}
 
 /* sections, one per site */
 .paper-h{font-family:var(--head);font-weight:900;font-size:clamp(28px,3vw,40px);letter-spacing:-.025em;line-height:1;margin:44px 0 0;padding-bottom:12px;border-bottom:5px double var(--rule)}
@@ -154,6 +156,8 @@ ul,ol{list-style:none}
 .sec.band + .sec.band{border-left:1px solid var(--hair);padding-left:var(--gut);margin-left:calc(var(--gut) * -.5)}
 .sec.band .top{margin-top:22px}
 .sec.band .deck b{font-family:var(--head);font-weight:800}
+.sec.band.solo{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0 var(--gut);border-bottom:1px solid var(--hair)}
+.sec.band.solo .setlist{margin-top:22px}
 .setlist{border-top:6px solid var(--c);margin-top:18px}
 .setlist li{border-bottom:1px solid var(--hair)}
 .setlist a{display:flex;align-items:center;justify-content:space-between;min-height:46px;font-family:var(--head);font-weight:600;font-size:16px;text-decoration:none}
@@ -253,7 +257,9 @@ img.bare{background:transparent!important}
  .music figure{max-width:280px}
  .secs{display:block}
  .sec{display:block;padding-top:0}
- .music-sites{display:block}
+ .music-sites,.sec.band.solo{display:block}
+ .bday-grid.clip .od:nth-child(n+3){display:none}
+ .bday-grid.clip + .bday-more{display:inline-flex;align-items:center}
  .sec.band + .sec.band{border-left:0;margin-left:0;padding-left:0}
  .two{grid-template-columns:1fr}
  .cp-small{grid-template-columns:1fr}

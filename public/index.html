@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Richard McAllister · sites</title>
-<meta name="description" content="Richard McAllister's independent sites: manutd.wiki, limerickhurling.wiki, irelandfootball.wiki, irelandrugby.wiki, bobdylan.app and ledzeppelin.app.">
+<meta name="description" content="Richard McAllister's independent sites: manutd.wiki, limerickhurling.wiki, irelandfootball.wiki, irelandrugby.wiki, bobdylan.app, ledzeppelin.app and Billy Connolly.">
 <meta name="theme-color" content="#FBFAF7" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#141311" media="(prefers-color-scheme: dark)">
 <meta property="og:title" content="Richard McAllister · sites">
-<meta property="og:description" content="Six fan sites for the things I follow: United, Limerick hurling, Ireland football and rugby, Bob Dylan and Led Zeppelin.">
+<meta property="og:description" content="Seven fan sites for the things I follow: United, Limerick hurling, Ireland football and rugby, Bob Dylan, Led Zeppelin and Billy Connolly.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://richardmcallister.app/">
 <meta property="og:image" content="https://richardmcallister.app/og-image-1200x630.png">
@@ -22,7 +22,7 @@
 <link rel="manifest" href="/site.webmanifest">
 <link rel="preload" href="/fonts/libre-franklin-latin-900-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/source-serif-4-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/site.css?v=202611111450">
+<link rel="stylesheet" href="/site.css?v=202611121844">
 <script>try{var t=localStorage.getItem("rm-theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
 </head>
 <body>
@@ -31,7 +31,7 @@
 <header>
   <div class="mast">
     <a class="name" href="/">Richard McAllister</a>
-    <p class="dateline">Sport &amp; music · six sites<br><span id="today">Sunday 8 November 2026</span> · Skåne</p>
+    <p class="dateline">Sport, music &amp; comedy · seven sites<br><span id="today">Sunday 8 November 2026</span> · Skåne</p>
   </div>
   <nav class="sections" aria-label="Sections">
     <a href="#united" style="--c:var(--mu)">United</a>
@@ -40,6 +40,7 @@
     <a href="#ireland-rugby" style="--c:var(--irr)">Ireland rugby</a>
     <a href="#dylan" style="--c:var(--bd)">Dylan</a>
     <a href="#ledzeppelin" style="--c:var(--lz)">Zeppelin</a>
+    <a href="#billy" style="--c:var(--bc)">Billy</a>
     <a class="sp" href="#birthday">Your birthday</a>
     <a href="#built">How they’re built</a>
     <a href="#about">About</a>
@@ -53,7 +54,7 @@
     <p class="stand" id="lead-stand">The club’s first FA Cup tie ends level, and then ends early. It is the opening page in an archive of every United season on manutd.wiki.</p>
     <p class="strip"><span id="lead-home">Fleetwood Rangers 2</span><span class="comp" id="lead-comp">FA Cup, first round</span><span class="away" id="lead-away">Newton Heath 2</span></p>
     <div class="body">
-      <p><span class="dl"><img class="bare" src="/logos/manutd.png" alt="" width="20" height="20">From the manutd.wiki archive, <span id="lead-date">30 October 1886</span>.</span> <span id="lead-p1">Jack Doughty scored both. Newton Heath refused to play extra time and were thrown out of the cup.</span></p>
+      <p><span class="dl"><img class="bare" src="/logos/manutd.png" alt="" width="20" height="20"><span id="lead-src">From the manutd.wiki archive</span>, <span id="lead-date">30 October 1886</span>.</span> <span id="lead-p1">Jack Doughty scored both. Newton Heath refused to play extra time and were thrown out of the cup.</span></p>
       <p>Every season since 1886–87 has its own page on manutd.wiki, alongside the next match, where to watch it, and how to get to Old Trafford.</p>
     </div>
     <div class="acts"><a class="go" id="lead-go" href="https://manutd.wiki/history/season/?s=1886-87"><span id="lead-season">Explore the 1886–87 season</span></a><button type="button" class="another" id="lead-btn">Another story</button></div>
@@ -87,6 +88,10 @@
       <li><a href="https://bobdylan.app" style="--c:var(--bd)"><img src="/logos/bobdylan.png" alt="" width="30" height="30"><b>Bob Dylan</b><small>Shows, setlists and songs since 1960</small></a></li>
       <li><a href="https://ledzeppelin.app" style="--c:var(--lz)"><img src="/logos/ledzeppelin.png" alt="" width="30" height="30"><b>Led Zeppelin</b><small>Every show on record, 1968 to 2007</small></a></li>
     </ul>
+    <h2 class="sub-h">Comedy</h2>
+    <ul class="fx">
+      <li><a href="https://billy.richardmcallister.app" style="--c:var(--bc)"><img src="/logos/billy.png" alt="" width="30" height="30"><b>Billy Connolly</b><small>Records, tours, films and stories</small></a></li>
+    </ul>
   </section>
 </div>
 
@@ -99,8 +104,9 @@
       <button type="button" class="another" id="bday-today">Today</button>
     </form>
   </div>
-  <p class="bday-sum" id="bday-sum" aria-live="polite">Pick a day and month to see every match and show on record for that date, from all seven sites.</p>
+  <p class="bday-sum" id="bday-sum" aria-live="polite">Pick a day and month to see every match and show on record for that date, across all the sites.</p>
   <div class="bday-grid" id="bday-grid"></div>
+  <button type="button" class="another bday-more" id="bday-more">Show all sites</button>
   <p class="bday-none" id="bday-none"></p>
   <noscript><p class="bday-sum">The birthday lookup needs JavaScript.</p></noscript>
 </section>
@@ -152,6 +158,21 @@
 </section>
 <section class="sec band" id="ledzeppelin" style="--c:var(--lz)" aria-labelledby="lz-h">
   <div class="top"><img src="/logos/ledzeppelin.png" alt="" width="56" height="56"><h3 id="lz-h">ledzeppelin.app<small>Records, songs and shows</small></h3></div>
+<h3 class="grp">Comedy</h3>
+<section class="sec band solo" id="billy" style="--c:var(--bc)" aria-labelledby="bc-h">
+  <div>
+    <div class="top"><img src="/logos/billy.png" alt="" width="56" height="56"><h3 id="bc-h">Billy Connolly<small>Records, stage, screen and stories</small></h3></div>
+    <p class="deck">Every record, the tours, the films and television, and the stories behind them. <b>259 dated shows</b> across 53 tours.</p>
+    <a class="go" href="https://billy.richardmcallister.app">Open the Billy Connolly site</a>
+  </div>
+  <ul class="links setlist">
+    <li><a href="https://billy.richardmcallister.app/records/">Every record</a></li>
+    <li><a href="https://billy.richardmcallister.app/live/">On stage, tour by tour</a></li>
+    <li><a href="https://billy.richardmcallister.app/films/">Films</a></li>
+    <li><a href="https://billy.richardmcallister.app/screen/">Television and travel series</a></li>
+    <li><a href="https://billy.richardmcallister.app/stories/">The stories behind the songs</a></li>
+  </ul>
+</section>
   <p class="deck">Look up a setlist, see every song they played live, or follow a listening journey. <b>536 shows</b> on record, from 1968 to the O2 in 2007.</p>
   <a class="go" href="https://ledzeppelin.app">Open ledzeppelin.app</a>
   <ul class="links setlist">
@@ -166,24 +187,25 @@
 <div class="two">
   <section id="built" aria-labelledby="built-h">
     <h2 class="sechead" id="built-h">How they’re built</h2>
-    <p class="intro">Same pattern for every site: small, cheap to run, and deploys itself on every push.</p>
+    <p class="intro">Every site is plain pages on Cloudflare Workers, deployed from GitHub on every push. Live data goes through each site’s own Worker and is cached there, so API keys never reach the browser. All of it was built with Claude Code.</p>
     <table class="agate">
-      <thead><tr><th scope="col">Layer</th><th scope="col">Choice</th><th scope="col">Why</th></tr></thead>
+      <thead><tr><th scope="col">Site</th><th scope="col">Data from</th><th scope="col">The hard part</th></tr></thead>
       <tbody>
-        <tr><td>Pages</td><td>Static HTML and Hugo</td><td>Loads instantly, nothing to patch</td></tr>
-        <tr><td>Hosting</td><td>Cloudflare Workers</td><td>Global edge, custom domains, free tier covers it</td></tr>
-        <tr><td>Live data</td><td>Worker proxy with KV cache</td><td>API keys stay server-side; one fetch serves everyone</td></tr>
-        <tr><td>Sources</td><td>Sports data APIs, Wikipedia</td><td>Fixtures and results live; history built into JSON</td></tr>
-        <tr><td>Deploys</td><td>GitHub to Workers Builds</td><td>Push to main and it’s live in about a minute</td></tr>
-        <tr><td>Design</td><td>One system, per-site colour</td><td>Light and dark on every site</td></tr>
-        <tr><td>Partner</td><td>Claude Code</td><td>Pair-programmed end to end</td></tr>
+        <tr><td>manutd.wiki</td><td>API-Football, Wikipedia, Wikimedia Commons, tickets.manutd.com</td><td>API-Football’s free plan has no current-season data, so live results needed the paid plan.</td></tr>
+        <tr><td>Celtic</td><td>Wikipedia, API-Football</td><td>Deciding how to count Rangers across 2012: one club, with an asterisk on everything since.</td></tr>
+        <tr><td>limerickhurling.wiki</td><td>Wikipedia</td><td>Hurling scores are goals and points, so every result is kept as 2-15 and as its total, 21, for wins and margins to add up.</td></tr>
+        <tr><td>irelandfootball.wiki</td><td>Wikipedia, API-Football</td><td>Joining a century of Wikipedia results to the live feed. Games from before the feed are found by date instead.</td></tr>
+        <tr><td>irelandrugby.wiki</td><td>Highlightly Rugby API, Wikipedia</td><td>The free plan allows 100 calls a day and lists no future URC or European fixtures, so those are kept by hand.</td></tr>
+        <tr><td>bobdylan.app</td><td>setlist.fm, Wikipedia</td><td>setlist.fm allows about two requests a second, so 4164 shows take a slow, polite crawl.</td></tr>
+        <tr><td>ledzeppelin.app</td><td>setlist.fm</td><td>58 of the 536 shows have no setlist on record.</td></tr>
+        <tr><td>Billy Connolly</td><td>billyconnolly.com tour pages via the Internet Archive, Wikipedia</td><td>The official tour pages are gone, so dates come from archived copies: 259 shows across 53 tours, with many early ones undated.</td></tr>
       </tbody>
     </table>
   </section>
   <section id="about" class="column" aria-labelledby="about-h">
     <h2 class="sechead" id="about-h">About</h2>
     <div class="byline"><img class="mk on-light" src="/brand/rmc-mark.svg" alt="" width="129" height="40"><img class="mk on-dark" src="/brand/rmc-mark-on-dark.svg" alt="" width="129" height="40"><div><b>Richard McAllister</b><span>Skåne, Sweden</span></div></div>
-    <p>I’m Irish, living in Skåne in the south of Sweden. By day I run technology and digital for an international business; these sites are where I build for fun: United since childhood, Limerick in the blood, Ireland whatever the sport, and Dylan or Zeppelin on the stereo.</p>
+    <p>I’m Irish, living in Skåne in the south of Sweden. By day I run technology and digital for an international business; these sites are where I build for fun: United since childhood, Limerick in the blood, Ireland whatever the sport, and Dylan, Zeppelin or Billy Connolly on the stereo.</p>
     <div class="row" style="--c:var(--ink)"><a class="go" href="https://manutd.wiki">Start with manutd.wiki</a><a class="go" href="https://github.com/richardmcallister-personal">GitHub</a></div>
   </section>
 </div>
@@ -205,10 +227,11 @@
       </ul>
     </div>
     <div>
-      <h2>Music</h2>
+      <h2>Music and comedy</h2>
       <ul>
         <li><a href="https://bobdylan.app/"><img src="/logos/bobdylan.png" alt="" width="20" height="20" loading="lazy">bobdylan.app</a></li>
         <li><a href="https://ledzeppelin.app/"><img src="/logos/ledzeppelin.png" alt="" width="20" height="20" loading="lazy">ledzeppelin.app</a></li>
+        <li><a href="https://billy.richardmcallister.app/"><img src="/logos/billy.png" alt="" width="20" height="20" loading="lazy">Billy Connolly</a></li>
       </ul>
     </div>
     <div>
@@ -309,7 +332,47 @@
     {d:"14 April 1999",s:"1998-99",h:"Giggs runs through Arsenal and United are in the final",
      st:"Ten men, a penalty saved in stoppage time, and a solo goal in extra time at Villa Park.",
      home:"Manchester United 2",comp:"FA Cup semi-final replay, after extra time",away:"Arsenal 1",
-     p:"David Beckham scored first and Ryan Giggs won it in extra time. United went on to win the Treble."}
+     p:"David Beckham scored first and Ryan Giggs won it in extra time. United went on to win the Treble."},
+    {d:"24 April 1948",s:"1947-48",h:"Rowley scores twice as United win the FA Cup at Wembley",
+     st:"Blackpool are beaten 4–2 in United’s first FA Cup final for 39 years.",
+     home:"Manchester United 4",comp:"FA Cup final",away:"Blackpool 2",
+     p:"Jack Rowley scored twice, with Stan Pearson and John Anderson getting the others."},
+    {d:"25 May 1963",s:"1962-63",h:"Herd and Law win the FA Cup five years after Munich",
+     st:"Leicester City are beaten 3–1 at Wembley for United’s first trophy since the crash.",
+     home:"Manchester United 3",comp:"FA Cup final",away:"Leicester City 1",
+     p:"David Herd scored twice and Denis Law got the other."},
+    {d:"21 May 1977",s:"1976-77",h:"United beat Liverpool and stop them winning the Treble",
+     st:"Two goals in five minutes at Wembley end Liverpool’s hopes of the league, the FA Cup and the European Cup.",
+     home:"Manchester United 2",comp:"FA Cup final",away:"Liverpool 1",
+     p:"Stuart Pearson and Jimmy Greenhoff scored. Liverpool went on to win the European Cup four days later."},
+    {d:"18 May 1985",s:"1984-85",h:"Ten men and a Whiteside curler win the FA Cup",
+     st:"Kevin Moran becomes the first player sent off in an FA Cup final, and United still beat Everton in extra time.",
+     home:"Manchester United 1",comp:"FA Cup final, after extra time",away:"Everton 0",
+     p:"Norman Whiteside scored the only goal in extra time."},
+    {d:"11 May 1996",s:"1995-96",h:"Cantona’s late volley wins the FA Cup and a second Double",
+     st:"Liverpool are beaten 1–0 at Wembley, and United become the first club to win the Double twice.",
+     home:"Manchester United 1",comp:"FA Cup final",away:"Liverpool 0",
+     p:"Eric Cantona scored the only goal near the end."},
+    {d:"5 February 1958",s:"1957-58",src:"From Wikipedia",h:"A draw in Belgrade takes United into the European Cup semi-finals",
+     st:"The Busby Babes go through 5–4 on aggregate. On the way home the next day, their plane crashes at Munich.",
+     home:"Red Star Belgrade 3",comp:"European Cup, quarter-final second leg",away:"Manchester United 3",
+     p:"Dennis Viollet scored in the second minute and Bobby Charlton added two before half-time, then Red Star came back after the break."},
+    {d:"29 May 1968",s:"1967-68",src:"From Wikipedia",h:"Ten years after Munich, United are champions of Europe",
+     st:"Bobby Charlton scores twice and Benfica are beaten in extra time at Wembley. United are the first English club to win the European Cup.",
+     home:"Manchester United 4",comp:"European Cup final, after extra time",away:"Benfica 1",
+     p:"It was 1–1 after 90 minutes. George Best, Brian Kidd and Charlton scored in the first nine minutes of extra time."},
+    {d:"15 May 1991",s:"1990-91",src:"From Wikipedia",h:"Mark Hughes scores twice against his old club and United win in Rotterdam",
+     st:"In English clubs’ first season back in Europe after the Heysel ban, United beat Barcelona to win the Cup Winners’ Cup.",
+     home:"Manchester United 2",comp:"Cup Winners’ Cup final",away:"Barcelona 1",
+     p:"Hughes scored in the 67th and 74th minutes. Ronald Koeman pulled one back for Barcelona."},
+    {d:"26 May 1999",s:"1998-99",src:"From Wikipedia",h:"Two goals in stoppage time win United the European Cup and the Treble",
+     st:"Bayern Munich lead from the sixth minute in Barcelona until Teddy Sheringham and Ole Gunnar Solskjær score in stoppage time.",
+     home:"Manchester United 2",comp:"Champions League final",away:"Bayern Munich 1",
+     p:"Mario Basler scored early for Bayern. Sheringham equalised in the first minute of stoppage time and Solskjær won it two minutes later. The league and FA Cup were already won."},
+    {d:"21 May 2008",s:"2007-08",src:"From Wikipedia",h:"Van der Sar saves from Anelka and United win in Moscow",
+     st:"Chelsea are beaten on penalties after a 1–1 draw at the Luzhniki Stadium.",
+     home:"Manchester United 1",comp:"Champions League final, won 6–5 on penalties",away:"Chelsea 1",
+     p:"Cristiano Ronaldo scored and Frank Lampard equalised before half-time. Ronaldo and John Terry both missed in the shoot-out before Edwin van der Sar saved from Nicolas Anelka."}
   ];
   var lead=document.querySelector(".lead"),cs=0;
   function tell(i){var x=STORIES[i];cs=i;
@@ -319,6 +382,7 @@
     document.getElementById("lead-comp").textContent=x.comp;
     document.getElementById("lead-away").textContent=x.away;
     document.getElementById("lead-date").textContent=x.d;
+    document.getElementById("lead-src").textContent=x.src||"From the manutd.wiki archive";
     document.getElementById("lead-p1").textContent=x.p;
     document.getElementById("lead-season").textContent="Explore the "+x.s.replace("-","–")+" season";
     document.getElementById("lead-go").href="https://manutd.wiki/history/season/?s="+x.s;}
@@ -335,29 +399,27 @@
     irf:{n:"Ireland football",k:"Ireland football",u:"https://irelandfootball.wiki",logo:"/logos/irelandfootball.png",c:"var(--irf)",one:"match",many:"matches"},
     irr:{n:"Ireland rugby",k:"Ireland rugby",u:"https://irelandrugby.wiki",logo:"/logos/irelandrugby.png",c:"var(--irr)",one:"match",many:"matches",since:"Rugby results go back to 2020."},
     bd:{n:"Bob Dylan",k:"Dylan",u:"https://bobdylan.app",logo:"/logos/bobdylan.png",c:"var(--bd)",one:"show",many:"shows"},
-    lz:{n:"Led Zeppelin",k:"Led Zeppelin",u:"https://ledzeppelin.app",logo:"/logos/ledzeppelin.png",c:"var(--lz)",one:"show",many:"shows"}
+    lz:{n:"Led Zeppelin",k:"Led Zeppelin",u:"https://ledzeppelin.app",logo:"/logos/ledzeppelin.png",c:"var(--lz)",one:"show",many:"shows"},
+    bc:{n:"Billy Connolly",k:"Billy Connolly",u:"https://billy.richardmcallister.app",logo:"/logos/billy.png",c:"var(--bc)",one:"show",many:"shows",since:"Billy Connolly’s dated shows run from 2001 to 2017."}
   };
-  var ORDER=["mu","cel","lim","irf","irr","bd","lz"],MONTHS=["January","February","March","April","May","June","July","August","September","October","November","December"],
+  var ORDER=["mu","cel","lim","irf","irr","bd","lz","bc"],MONTHS=["January","February","March","April","May","June","July","August","September","October","November","December"],
       LEN=[31,29,31,30,31,30,31,31,30,31,30,31],cache={},daySel=document.getElementById("bday-day"),monSel=document.getElementById("bday-month");
   function el(tag,cls,text){var e=document.createElement(tag);if(cls)e.className=cls;if(text!=null)e.textContent=text;return e}
   for(var i=1;i<=31;i++){var o=el("option",null,String(i));o.value=i;daySel.appendChild(o)}
   MONTHS.forEach(function(m,i){var o=el("option",null,m);o.value=i+1;monSel.appendChild(o)});
-  function margin(h){var m=/^Won (\d+)–(\d+)/.exec(h);if(m)return m[1]-m[2];
-    m=/^Won (\d+)-(\d+) to (\d+)-(\d+)/.exec(h);if(m)return (m[1]*3+ +m[2])-(m[3]*3+ +m[4]);return -1}
-  function picks(list){ // earliest, biggest win (or the middle one), most recent
+  function picks(list){ // the three most important (finals, derbies, landmark nights), topped up with the latest, earliest and middle
     if(list.length<=3)return list.slice();
-    var best=null,bm=0;list.forEach(function(e){var m=margin(e[2]);if(m>bm||(m===bm&&best&&m>0&&e[0]>best[0])){bm=m;best=e}});
-    var mid=best||list[Math.floor(list.length/2)],out=[list[0]];
-    if(out.indexOf(mid)<0)out.push(mid);if(out.indexOf(list[list.length-1])<0)out.push(list[list.length-1]);
-    for(var i=Math.floor(list.length/2),step=1;out.length<3&&step<list.length;step++){ // top up from the middle outwards
-      var j=i+(step%2?1:-1)*Math.ceil(step/2);if(j>=0&&j<list.length&&out.indexOf(list[j])<0)out.push(list[j])}
+    var out=list.filter(function(e){return e[5]>=20}).sort(function(a,b){return b[5]-a[5]||b[0]-a[0]}).slice(0,3);
+    var fill=[list[list.length-1],list[0]];
+    for(var i=Math.floor(list.length/2),step=0;step<list.length;step++)fill.push(list[i+(step%2?1:-1)*Math.ceil(step/2)]);
+    fill.forEach(function(e){if(e&&out.length<3&&out.indexOf(e)<0)out.push(e)});
     return out.sort(function(a,b){return a[0]-b[0]})}
   function row(e){var site=OTD[e[1]],li=el("li"),a=el("a");a.href=site.u+e[4];
     a.appendChild(el("span","yr",String(e[0])));var t=el("span");t.appendChild(el("b",null,e[2]));if(e[3])t.appendChild(el("small",null,e[3]));a.appendChild(t);li.appendChild(a);return li}
   function list(items){var ol=el("ol");items.forEach(function(e){ol.appendChild(row(e))});return ol}
   function joinAnd(a){return a.length<2?a.join(""):a.slice(0,-1).join(", ")+" and "+a[a.length-1]}
   function render(mm,dd,data){
-    var key=mm+"-"+dd,day=data[key]||[],by={},grid=document.getElementById("bday-grid"),label=(+dd)+" "+MONTHS[+mm-1];
+    var key=mm+"-"+dd,day=data[key]||[],more=document.getElementById("bday-more"),by={},grid=document.getElementById("bday-grid"),label=(+dd)+" "+MONTHS[+mm-1];
     day.forEach(function(e){(by[e[1]]=by[e[1]]||[]).push(e)});
     grid.textContent="";var parts=[],none=[],y0=9999,y1=0;
     ORDER.forEach(function(k){var s=OTD[k],items=by[k];
@@ -372,9 +434,11 @@
       if(items.length>3){var det=el("details"),sum=el("summary",null,"See all "+items.length);det.appendChild(sum);det.appendChild(list(items));
         det.addEventListener("toggle",function(){top.hidden=det.open;sum.textContent=det.open?"Show the highlights":"See all "+items.length});art.appendChild(det)}
       grid.appendChild(art)});
+    var shown=grid.children.length;grid.classList.toggle("clip",shown>2);more.textContent="Show all "+shown+" sites";
     document.getElementById("bday-sum").textContent=parts.length?("On "+label+": "+joinAnd(parts)+", from "+y0+" to "+y1+"."):("Nothing on record for "+label+".");
     var n=none.length?"Nothing on record on "+label+" for "+joinAnd(none)+".":"";
     if(none.indexOf("Ireland rugby")>=0)n+=" "+OTD.irr.since;
+    if(none.indexOf("Billy Connolly")>=0)n+=" "+OTD.bc.since;
     document.getElementById("bday-none").textContent=n.trim();
   }
   function go(push){var m=+monSel.value,d=+daySel.value;
@@ -390,6 +454,7 @@
   if(qd&&/^\d\d-\d\d$/.test(qd)&&+qd.slice(0,2)>=1&&+qd.slice(0,2)<=12){monSel.value=+qd.slice(0,2);daySel.value=+qd.slice(3)}else setToday();
   daySel.addEventListener("change",function(){go(true)});monSel.addEventListener("change",function(){go(true)});
   document.getElementById("bday-today").addEventListener("click",function(){setToday();go(true)});
+  document.getElementById("bday-more").addEventListener("click",function(){document.getElementById("bday-grid").classList.remove("clip")});
   go(false);
 })();
 </script>
