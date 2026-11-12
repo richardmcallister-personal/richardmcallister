@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Richard McAllister · sites</title>
-<meta name="description" content="Richard McAllister's independent sites: manutd.wiki, limerickhurling.wiki, irelandfootball.wiki, irelandrugby.wiki, bobdylan.app, ledzeppelin.app and Billy Connolly.">
+<meta name="description" content="Richard McAllister's independent sites: manutd.wiki, celtic.richardmcallister.app, limerickhurling.wiki, irelandfootball.wiki, irelandrugby.wiki, bobdylan.app, ledzeppelin.app and Billy Connolly.">
 <meta name="theme-color" content="#FBFAF7" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#141311" media="(prefers-color-scheme: dark)">
 <meta property="og:title" content="Richard McAllister · sites">
-<meta property="og:description" content="Seven fan sites for the things I follow: United, Limerick hurling, Ireland football and rugby, Bob Dylan, Led Zeppelin and Billy Connolly.">
+<meta property="og:description" content="Eight fan sites for the things I follow: United, Celtic, Limerick hurling, Ireland football and rugby, Bob Dylan, Led Zeppelin and Billy Connolly.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://richardmcallister.app/">
 <meta property="og:image" content="https://richardmcallister.app/og-image-1200x630.png">
@@ -31,10 +31,11 @@
 <header>
   <div class="mast">
     <a class="name" href="/">Richard McAllister</a>
-    <p class="dateline">Sport, music &amp; comedy · seven sites<br><span id="today">Sunday 8 November 2026</span> · Skåne</p>
+    <p class="dateline">Sport, music &amp; comedy · eight sites<br><span id="today">Sunday 8 November 2026</span> · Skåne</p>
   </div>
   <nav class="sections" aria-label="Sections">
     <a href="#united" style="--c:var(--mu)">United</a>
+    <a href="#celtic" style="--c:var(--cel)">Celtic</a>
     <a href="#limerick" style="--c:var(--lim)">Hurling</a>
     <a href="#ireland-football" style="--c:var(--irf)">Ireland football</a>
     <a href="#ireland-rugby" style="--c:var(--irr)">Ireland rugby</a>
@@ -64,6 +65,7 @@
     <h2 id="fx-h">Sport</h2>
     <ul class="fx">
       <li><a href="https://manutd.wiki/" style="--c:var(--mu)"><img class="bare" src="/logos/manutd.png" alt="" width="30" height="30"><b>Manchester United</b><small>Next match and where to watch</small></a></li>
+      <li><a href="https://celtic.richardmcallister.app/" style="--c:var(--cel)"><img src="/logos/celtic.png" alt="" width="30" height="30"><b>Celtic</b><small>Results since 1888, honours, the Old Firm</small></a></li>
       <li><a href="https://limerickhurling.wiki" style="--c:var(--lim)"><img src="/logos/limerickhurling.png" alt="" width="30" height="30"><b>Limerick hurling</b><small>Next fixture, last result, scorers</small></a></li>
       <li><a href="https://irelandfootball.wiki" style="--c:var(--irf)"><img src="/logos/irelandfootball.png" alt="" width="30" height="30"><b>Ireland football</b><small>Broadcasters by country, the group</small></a></li>
       <li><a href="https://irelandrugby.wiki" style="--c:var(--irr)"><img src="/logos/irelandrugby.png" alt="" width="30" height="30"><b>Ireland rugby</b><small>All five teams, results and tables</small></a></li>
@@ -126,6 +128,11 @@
     <a class="go" href="https://manutd.wiki">Open manutd.wiki</a>
   </section>
   <div class="irish">
+    <section class="brief-site" id="celtic" style="--c:var(--cel)" aria-labelledby="cel-h">
+      <div class="top"><img src="/logos/celtic.png" alt="" width="40" height="40"><h3 id="cel-h">Celtic<small>Celtic Football Club</small></h3></div>
+      <p>Every Celtic result since 1888, the honours, the squad and team news, and the full Old Firm record.</p>
+      <a class="go" href="https://celtic.richardmcallister.app">Open the Celtic site</a>
+    </section>
     <section class="brief-site" id="limerick" style="--c:var(--lim)" aria-labelledby="lim-h">
       <div class="top"><img src="/logos/limerickhurling.png" alt="" width="40" height="40"><h3 id="lim-h">limerickhurling.wiki<small>Limerick hurling</small></h3></div>
       <p>Find Limerick’s next fixture, see who scored last time, or browse the county’s honours.</p>
@@ -221,6 +228,7 @@
       <h2>Sport</h2>
       <ul>
         <li><a href="https://manutd.wiki/"><img class="bare" src="/logos/manutd.png" alt="" width="20" height="20" loading="lazy">manutd.wiki</a></li>
+        <li><a href="https://celtic.richardmcallister.app/"><img src="/logos/celtic.png" alt="" width="20" height="20" loading="lazy">Celtic</a></li>
         <li><a href="https://limerickhurling.wiki/"><img src="/logos/limerickhurling.png" alt="" width="20" height="20" loading="lazy">limerickhurling.wiki</a></li>
         <li><a href="https://irelandfootball.wiki/"><img src="/logos/irelandfootball.png" alt="" width="20" height="20" loading="lazy">irelandfootball.wiki</a></li>
         <li><a href="https://irelandrugby.wiki/"><img src="/logos/irelandrugby.png" alt="" width="20" height="20" loading="lazy">irelandrugby.wiki</a></li>
@@ -391,7 +399,7 @@
   document.getElementById("lead-btn").addEventListener("click",function(){var n=other();lead.setAttribute("aria-live","polite");
     if(still){tell(n);return}lead.classList.add("out");setTimeout(function(){tell(n);lead.classList.remove("out")},220)});
 
-  // On your birthday: every match and show on record for a calendar date, from all seven sites
+  // On your birthday: every match and show on record for a calendar date, from every site
   var OTD={
     mu:{n:"Manchester United",k:"United",u:"https://manutd.wiki",logo:"/logos/manutd.png",bare:1,c:"var(--mu)",one:"match",many:"matches"},
     cel:{n:"Celtic",k:"Celtic",u:"https://celtic.richardmcallister.app",logo:"/logos/celtic.png",c:"var(--cel)",one:"match",many:"matches"},

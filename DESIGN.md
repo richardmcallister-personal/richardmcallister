@@ -304,3 +304,5 @@ The Music column opens on a random real night from the Dylan or Led Zeppelin arc
 - **Don't** use a site's colour outside its own section, or introduce a house accent colour.
 - **Don't** use crests as decoration, sports-graphics clichés or any costume treatment such as teletext.
 - **Don't** use straight quotes or apostrophes in copy.
+
+Celtic (celtic.richardmcallister.app) has a brief at the top of the right-hand Sport column, above the three Irish briefs, and appears in the nav, the front-page Sport list, the footer and the share image. The masthead counts eight sites.

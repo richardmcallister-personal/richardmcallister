@@ -1,6 +1,6 @@
 # richardmcallister.app
 
-Showcase for Richard McAllister's sites: manutd.wiki, limerickhurling.wiki, irelandfootball.wiki,
+Showcase for Richard McAllister's sites: manutd.wiki, celtic.richardmcallister.app, limerickhurling.wiki, irelandfootball.wiki,
 irelandrugby.wiki, bobdylan.app, ledzeppelin.app and billy.richardmcallister.app (plus footballclub.wiki under "Also building").
 
 - `public/` — the whole site: `index.html`, `site.css`, `404.html`, `favicon.svg`, `_headers`
