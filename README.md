@@ -1,7 +1,7 @@
 # richardmcallister.app
 
 Showcase for Richard McAllister's sites: manutd.wiki, celtic.richardmcallister.app, limerickhurling.wiki, irelandfootball.wiki,
-irelandrugby.wiki, bobdylan.app, ledzeppelin.app and billy.richardmcallister.app (plus footballclub.wiki under "Also building").
+irelandrugby.wiki, bobdylan.app, ledzeppelin.app and billy.richardmcallister.app and footballclub.wiki.
 
 - `public/` — the whole site: `index.html`, `site.css`, `404.html`, `favicon.svg`, `_headers`
 - `wrangler.jsonc` — Cloudflare Workers static-assets deploy, custom domains `richardmcallister.app` + `www`

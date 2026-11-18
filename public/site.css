@@ -143,6 +143,9 @@ ul,ol{list-style:none}
 .irish{border-left:1px solid var(--hair);padding:22px 0 10px var(--gut);margin-left:calc(var(--gut) * -.5)}
 .brief-site{padding-bottom:18px}
 .brief-site + .brief-site{padding-top:8px}
+.fc-site{margin-top:30px;padding-bottom:0}
+.sec .fc-site .top h3{font-size:22px;letter-spacing:-.02em;line-height:1.05}
+.sec .fc-site .top h3 small{font-size:14px;margin-top:3px}
 .brief-site .top{display:flex;align-items:center;gap:12px;border-top:3px solid var(--c);padding-top:12px}
 .brief-site .top img{width:40px;height:40px;border-radius:6px;flex:none;background:var(--logo-bg)}
 .brief-site h3{font-family:var(--head);font-weight:900;font-size:22px;letter-spacing:-.02em;line-height:1.05;overflow-wrap:anywhere}

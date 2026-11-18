@@ -177,7 +177,7 @@ There is no house accent. Each site's colour is the primary colour inside its ow
 - **Ireland Rugby Green** (`ireland-rugby-green`; night `night-ireland-rugby-green`): irelandrugby.wiki's section.
 - **Dylan Brick** (`dylan-brick`; night `night-dylan-brick`): bobdylan.app's section, and the Music column while a Dylan night is showing.
 - **Zeppelin Amber** (`zeppelin-amber`; night `night-zeppelin-amber`): ledzeppelin.app's section, and the Music column while a Zeppelin night is showing. Taken from the site's own amber, darkened by day to pass contrast on newsprint.
-- **footballclub Ink** (`footballclub-ink`, the same value as ink; night `night-ink`): the early-preview footballclub.wiki gets no colour of its own until it ships one.
+- **footballclub Ink** (`footballclub-ink`, the same value as ink; night `night-ink`): footballclub.wiki keeps ink rather than a colour of its own.
 
 ### Neutral
 - **Newsprint** (`newsprint`; night `night-newsprint`): the page ground.
