@@ -13,5 +13,7 @@
     { "pattern": "richardmcallister.app", "custom_domain": true },
     { "pattern": "www.richardmcallister.app", "custom_domain": true }
   ],
-  "observability": { "enabled": true }
+  "observability": { "enabled": true },
+  // Branch builds run `npx wrangler preview`, which needs this block (it can stay empty).
+  "previews": {}
 }
