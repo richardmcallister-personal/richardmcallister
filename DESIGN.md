@@ -225,13 +225,13 @@ There is no house accent. Each site's colour is the primary colour inside its ow
 
 The page is a single 1320px measure with a 20px minimum edge (larger where the safe area needs it). Everything snaps to whole column modules, and columns are separated by 1px hairlines rather than gaps. Column padding is 22px (`--col`) and the gutter between paired sections is 40px (`--gut`).
 
-- **Masthead:** the name on the left, a two-line dateline on the right (desk, live date, Skåne), then a 5px double rule and a wrapping section bar closed by a 1px ink rule. The section bar names every site in its colour; "How they're built" and "About" are pushed to the right.
-- **Front:** three columns at 2fr / 1fr / 1fr. The lead story is in the wide column and its body runs as two newspaper columns (28px gap).
-- **Sections:** one site per section, never crowded. United leads the Sport group, and the three Irish sites share the column beside it as briefs. Dylan and Led Zeppelin share the Music group as two equal sections split by a hairline, each with its links set as a setlist. "How they're built" and About sit as a pair.
-- **Colophon:** built on manutd.wiki's footer, set as a newspaper colophon. A double rule, then a nameplate (RMC mark and name in Franklin 900) beside a one-line sources note. Below, four columns split by hairlines like the front page: Sport, Music, Also building and This page, each headed with a 3px ink rule. Site links stay in ink with a 20px logo; site colours stay in their own sections. Small print and the edition toggle close it. Four columns become two at 1060px and one at 480px.
+- **Masthead:** the name on the left with a one-line Source Serif italic standfirst under it saying what the page is; on the right the live date and Skåne over three page links (Your birthday, How they're built, About). Then a 5px double rule and a one-row section bar closed by a 1px ink rule. The section bar names every site by subject in its colour, grouped Sport / Music / Comedy by small Byline Grey labels split by hairlines; on phones it scrolls sideways with a fade at the right edge instead of wrapping or hiding links.
+- **Front:** three columns at 2fr / 1fr / 1fr. The lead story is in the wide column and its body runs as two newspaper columns (28px gap), with "Coming next" as a run-in note under a hairline at its foot. The middle column is the index of all nine sites (Sport, then Music and comedy); the Music column holds only the archive night.
+- **Sections:** one site per section, never crowded, each named by its subject with its domain as the coloured subtitle. United leads the Sport group with Celtic and Club football as briefs under it, and the three Irish sites share the column beside it as briefs. Dylan, Led Zeppelin and Billy Connolly sit as three equal sections split by hairlines under Music and comedy. Each section is a deck and one "Open" link; no deep-link lists (the front page and the sites themselves carry those). "How they're built" and About sit as a pair.
+- **Colophon:** built on manutd.wiki's footer, set as a newspaper colophon. A double rule, then a nameplate (RMC mark and name in Franklin 900) beside a one-line sources note. The colophon nameplate and the favicons are the only places the RMC mark appears. Below, three columns split by hairlines like the front page: Sport, Music and comedy, and This page, each headed with a 3px ink rule. Site links stay in ink with a 20px logo, named by subject; site colours stay in their own sections. Small print and the edition toggle close it. Three columns become two at 720px and one at 480px.
 - **Rhythm:** 22px between blocks, 44px before page heads, 48px before the colophon, and 12 to 16px within a block.
-- **At 1060px or less:** the lead spans the full width and the other two columns pair up under it.
-- **At 720px or less:** everything stacks into one column with hairlines between, the lead body goes to one column, the results strip stacks, the section bar drops its right-hand links, and the Music figure is capped at 280px.
+- **At 1060px or less:** the lead spans the full width and the other two columns pair up under it; in Music and comedy, Dylan and Led Zeppelin pair up and Billy Connolly spans the row under them.
+- **At 720px or less:** everything stacks into one column with hairlines between, the lead body goes to one column, the results strip stacks, the section bar scrolls sideways, the agate table stacks each site as a block (name, "Data from", the hard part), and the Music figure is capped at 280px.
 
 ## Elevation & Depth
 
@@ -271,7 +271,7 @@ The final score set as a line of type: home, competition and away on a three-par
 Franklin 15px with tabular figures. An 800 13px head row over a 2px ink rule, hairlines between rows, the first column in 800 and the last in Byline Grey.
 
 ### Byline
-The RMC mark at 40px tall (`rmc-mark.svg` by day, `rmc-mark-on-dark.svg` by night), then the name in Franklin 900 20px and the place in Byline Grey 14px.
+The name in Franklin 900 20px and the place in Byline Grey 14px. No mark: the RMC tiles are a signature for the colophon and favicons only, because their Space Grotesk letters and orange C don't belong to the paper's type and colour.
 
 ### On your birthday
 A section between the front page and The sites. The page head sits on the left of the double rule with the Day and Month selects and a Today button on the right. A plain sentence counts what happened on that date. Below, one block per site with records that day, set in three newspaper columns with hairline column rules: a 3px site-colour rule, the logo and name, the count in site colour, then three highlights ranked by an importance score from the build script (finals and semi-finals, derbies, European nights, opening and closing nights of tours, first and last shows, Irish dates), topped up with the latest, earliest and middle as year, headline and detail rows. "See all" opens the full list in place of the highlights. On phones only the first two site blocks show, with a "Show all N sites" button. Sites with nothing that day are named in a muted line underneath. Celtic's colour (`--cel`) appears only in its block.
@@ -305,4 +305,6 @@ The Music column opens on a random real night from the Dylan or Led Zeppelin arc
 - **Don't** use crests as decoration, sports-graphics clichés or any costume treatment such as teletext.
 - **Don't** use straight quotes or apostrophes in copy.
 
-Celtic (celtic.richardmcallister.app) has a brief at the top of the right-hand Sport column, above the three Irish briefs, and appears in the nav, the front-page Sport list, the footer and the share image. The masthead counts eight sites.
+Celtic (celtic.richardmcallister.app) has a brief under United in the Sport group, and appears in the nav, the front-page index, the footer and the share image. Its crest is shown as `logos/celtic-tile.png` (the crest reversed to white on Celtic green), because the thin green-on-white crest washes out at 20 to 40px. The masthead standfirst counts nine sites.
+
+The share image (`og-image-1200x630.png`) is set as the paper's front page: masthead, double rule, standfirst and the nine sites in their colours. Rebuild it with `python3 scripts/build-og.py`.

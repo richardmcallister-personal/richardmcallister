@@ -17,8 +17,8 @@ One person's own stack of fan sites, built for his own use: United since childho
 
 ## Operating Context
 - Used to jump to a site, often on a phone and often around match days.
-- Each site card links to that site's main tasks: next match and where to watch, fixtures, results and tables, setlists, and archive moments (e.g. the 1886 FA Cup tie, the 1966 "Judas!" show).
-- "Also building" covers footballclub.wiki (358 clubs in 19 leagues, early preview) and a planned combined Irish sport calendar feed. "How they're built" and "About" sections give background.
+- The front page indexes all nine sites in one column and leads with archive moments (e.g. the 1886 FA Cup tie, the 1966 "Judas!" show); each site's section further down is a short deck and one link into it.
+- "Coming next" (under the lead story) covers the planned combined Irish sport calendar feed. "How they're built" and "About" sections give background.
 
 ## Capabilities and Constraints
 - Static site: everything lives in `public/` (`index.html`, `site.css`, `404.html`, brand assets, per-site logos). No build step, no Worker script.
@@ -29,8 +29,8 @@ One person's own stack of fan sites, built for his own use: United since childho
 - Undecided: whether and when the combined Irish sport calendar ships.
 
 ## Brand Commitments
-- RMC brand kit in `public/brand/` (three-key logo, lockups, mark) is Richard's signature: it appears on the About byline and in the favicons. The mark is used as drawn, so its C key stays orange. At 32px and below, use the C key on its own.
-- Favicons, app icons, the manifest and the share image (`og-image-1200x630.png`) come from the same logo pack.
+- RMC brand kit in `public/brand/` (three-key logo, lockups, mark) is Richard's signature: it appears in the colophon nameplate and in the favicons only. The mark is used as drawn, so its C key stays orange. At 32px and below, use the C key on its own.
+- Favicons, app icons and the manifest come from the same logo pack. The share image (`og-image-1200x630.png`) is set in the paper's own type and colours, so a shared link looks like the page it opens (`scripts/build-og.py`).
 - Every fan site keeps its own identity on this page: its real logo and its own colour.
 - Voice: first person, plain and warm, sentence case.
 - Rejected looks: a generic fan site (crests as decoration, sports-graphics clichés) and gimmicks or costumes (a teletext version was tried and rejected as hard to read and not Richard's world).
